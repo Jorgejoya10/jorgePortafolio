@@ -19,7 +19,10 @@
     "send": "Enviar",
     "contact_success": "¡Gracias! Te contactaré pronto.",
     "contact_error": "Por favor, escribe un correo válido.",
-    "or": "o usa"
+    "or": "o usa",
+    "accept": "Acepto los",
+    "terms": "Términos y Condiciones",
+    "error_terms": "Debes aceptar los Términos y Condiciones para continuar."
   },
   "roadmap": {
     "title": "Mi Aventura.",

@@ -17,9 +17,12 @@
     "email_placeholder": "user@mail.com",
     "telegram": "Message me on Telegram",
     "send": "Send",
-    "contact_success": "Thank you! I’ll get back to you soon.",
-    "contact_error": "Please enter a valid email.",
-    "or": "or use"
+    "contact_success": "Thanks! I'll reach out to you soon.",
+    "contact_error": "Please enter a valid email address.",
+    "or": "or use",
+    "accept": "I accept the",
+    "terms": "Terms and Conditions",
+    "error_terms": "You must accept the Terms and Conditions to proceed."
   },
   "roadmap": {
     "title": "My Adventure.",

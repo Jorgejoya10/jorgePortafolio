@@ -1,36 +1,37 @@
-import { useState, useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { useState } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import Nav from "../components/Navbar";
 import ContactModal from "../components/ContactoModal";
-import Background from "../components/Background";
 import { Toaster } from "react-hot-toast";
 import Footer from "../components/footer/footer";
+import DynamicBackground from "../components/backgrounds/DynamicBackground";
+import useDarkMode from "../hooks/useDarkMode";
 
 const Layout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
-  // Cargar preferencia al iniciar
-  useEffect(() => {
-    const storedTheme = localStorage.getItem("darkMode");
-    if (storedTheme !== null) {
-      setDarkMode(storedTheme === "true");
-    }
-  }, []);
-  // Guardar preferencia al cambiar
-  useEffect(() => {
-    localStorage.setItem("darkMode", darkMode.toString());
-  }, [darkMode]);
+  const [darkMode, setDarkMode] = useDarkMode();
+  const location = useLocation();
+
+  // Función para determinar tipo de fondo por ruta
+
+  const getBackgroundType = (pathname: string): "gradient" | "geometric" => {
+    const gradientRoutes = ["/desarrollo", "/terms", "/privacy"];
+    return gradientRoutes.includes(pathname) ? "gradient" : "geometric";
+  };
+
+  const backgroundType = getBackgroundType(location.pathname);
 
   return (
     <div
       className={`flex flex-col min-h-screen w-full relative overflow-hidden ${
-        darkMode ? "bg-black text-white" : "bg-white text-black"
+        darkMode ? "text-white" : "text-black"
       }`}
     >
+      {/* Fondo dinámico según ruta */}
+      <DynamicBackground type={backgroundType} darkMode={darkMode} />
+
       {/* Notificaciones */}
       <Toaster position="bottom-right" reverseOrder={false} />
-      {/* Fondo decorativo dinámico */}
-      <Background darkMode={darkMode} />
 
       {/* Navbar y contenido */}
       <div className="relative z-10">

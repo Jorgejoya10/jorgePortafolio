@@ -2,10 +2,10 @@ interface BackgroundProps {
   darkMode: boolean;
 }
 
-const Background = ({ darkMode }: BackgroundProps) => {
+const Geometric = ({ darkMode }: BackgroundProps) => {
   return (
     <div
-      className="absolute inset-0 z-0"
+      className="absolute inset-0 w-full h-full z-0"
       style={
         darkMode
           ? {
@@ -20,13 +20,15 @@ const Background = ({ darkMode }: BackgroundProps) => {
             }
           : {
               background: "#ffffff",
-              backgroundImage:
-                "radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.35) 1px, transparent 0)",
+              backgroundImage: `
+                radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.1) 1px, transparent 0)
+              `,
               backgroundSize: "20px 20px",
+              backgroundPosition: "0 0",
             }
       }
     />
   );
 };
 
-export default Background;
+export default Geometric;

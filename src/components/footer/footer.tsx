@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+
 interface FooterProps {
   darkMode: boolean;
 }
@@ -23,12 +24,12 @@ const Footer = ({ darkMode }: FooterProps) => {
 
         {/* Navegación */}
         <div className="flex flex-wrap justify-center gap-4 text-sm font-medium">
-          <a href="/terms" className="hover:text-purple-400 transition duration-300">
+          <Link to="/terms" className="hover:text-purple-400 transition duration-300">
             {t("footer.terms")}
-          </a>
-          <a href="/privacy" className="hover:text-purple-400 transition duration-300">
+          </Link>
+          <Link to="/privacy" className="hover:text-purple-400 transition duration-300">
             {t("footer.privacy")}
-          </a>
+          </Link>
         </div>
 
         {/* Derechos */}

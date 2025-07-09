@@ -3,6 +3,7 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { IoIosCloseCircle } from "react-icons/io";
 import { FaTelegramPlane } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -13,6 +14,7 @@ interface ContactModalProps {
 const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
   const { t } = useTranslation();
   const [email, setEmail] = useState("");
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
 
   const isValidEmail = (email: string): boolean => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -21,6 +23,11 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    if (!acceptedTerms) {
+      toast.error(t("contact_modal.error_terms"));
+      return;
+    }
 
     if (!isValidEmail(email)) {
       toast.error(t("contact_modal.contact_error"));
@@ -32,8 +39,9 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
 
     toast.success(t("contact_modal.contact_success"));
 
-    setEmail(""); // limpia el input
-    onClose(); // cierra modal después de mostrar toast
+    setEmail("");
+    setAcceptedTerms(false);
+    onClose();
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -41,9 +49,7 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
       e.preventDefault();
       const form = e.currentTarget.closest("form");
       if (form) {
-        form.dispatchEvent(
-          new Event("submit", { cancelable: true, bubbles: true })
-        );
+        form.dispatchEvent(new Event("submit", { cancelable: true, bubbles: true }));
       }
     }
   };
@@ -51,15 +57,11 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
   if (!isOpen) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-center justify-center"
-      onClick={onClose} // ✅ Cierra el modal si se hace clic fuera
-    >
+    <div className="fixed inset-0 z-50 flex items-center justify-center" onClick={onClose}>
       <div
         className={darkMode ? "modal-dark" : "modal-light"}
-        onClick={(e) => e.stopPropagation()} // ✅ Evita que el clic interior cierre el modal
+        onClick={(e) => e.stopPropagation()}
       >
-        {/* Botón de cierre */}
         <button
           onClick={onClose}
           className="absolute top-2 right-2 text-2xl transition hover:scale-110"
@@ -89,6 +91,26 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
             className={darkMode ? "input-dark" : "input-light"}
           />
 
+          {/* Checkbox de términos */}
+          <label className="flex items-start text-sm gap-2 text-white">
+            <input
+              type="checkbox"
+              checked={acceptedTerms}
+              onChange={(e) => setAcceptedTerms(e.target.checked)}
+              className="accent-purple-500 mt-1"
+            />
+            <span>
+              {t("contact_modal.accept")}{" "}
+              <Link
+                to="/terms"
+                className="underline text-purple-400 hover:text-purple-300"
+                target="_blank"
+              >
+                {t("contact_modal.terms")}
+              </Link>
+            </span>
+          </label>
+
           <div className="flex justify-between items-center gap-2">
             <button
               type="submit"
@@ -103,7 +125,7 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
               rel="noopener noreferrer"
               aria-label="Contactar por Telegram"
               className="text-xl p-2 rounded-full transition hover:scale-110
-      bg-gradient-to-br from-sky-400 to-blue-600 text-white"
+        bg-gradient-to-br from-sky-400 to-blue-600 text-white"
             >
               <FaTelegramPlane />
             </a>
