@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { IoIosCloseCircle } from "react-icons/io";
+import { FaTelegramPlane } from "react-icons/fa";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -88,23 +89,24 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
             className={darkMode ? "input-dark" : "input-light"}
           />
 
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-2">
+            <button
+              type="submit"
+              className="bg-gradient-to-r hover:scale-105 from-purple-500 to-pink-500 text-white px-4 py-2 rounded-md hover:brightness-110 transition"
+            >
+              {t("contact_modal.send")}
+            </button>
+            <p>{t("contact_modal.or")}</p>
             <a
               href="https://t.me/tuusuario"
               target="_blank"
               rel="noopener noreferrer"
-              className={
-                darkMode ? "telegram-link-dark" : "telegram-link-light"
-              }
+              aria-label="Contactar por Telegram"
+              className="text-xl p-2 rounded-full transition hover:scale-110
+      bg-gradient-to-br from-sky-400 to-blue-600 text-white"
             >
-              {t("contact_modal.telegram")}
+              <FaTelegramPlane />
             </a>
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-2 rounded-md hover:brightness-110 transition"
-            >
-              {t("contact_modal.send")}
-            </button>
           </div>
         </form>
       </div>

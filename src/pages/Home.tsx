@@ -1,31 +1,36 @@
+import { useTranslation } from "react-i18next";
+import Roadmap from "../components/Roadmap";
+
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-        Jorge Chávez
-      </h1>
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-light mb-">
-        Desarrollador Full Stack y Arquitecto de Software Seguro
-      </h2>
+    <section className="min-h-screen flex flex-col items-center text-center px-4 sm:px-8 mt-4">
+      <div className="flex flex-col md:flex-row items-center gap-6">
+        <img
+          src="/public/imagenes/dibujo.png"
+          alt="Avatar"
+          className="w-32 sm:w-40 md:w-48"
+        />
+        <div className="text-center md:text-left">
+          <p className="text-base sm:text-xl md:text-x mb-1">
+            {t("home.hello")}{" "}
+            <span className="text-purple-500 font-medium">Jorge Chávez.</span>
+          </p>
 
-      <p className="max-w-2xl text-base sm:text-lg  leading-relaxed">
-        Soy ingeniero en computación por la UNAM, apasionado por el desarrollo
-        web moderno y la seguridad informática. He trabajado en proyectos que
-        combinan interfaces elegantes con arquitecturas seguras, integrando
-        tecnologías como React, Node.js, MongoDB y protocolos criptográficos.
-        Actualmente curso un diplomado en Seguridad de la Información en el
-        <a
-          href="https://siberiano.aragon.unam.mx/labsec/dsi_etcom3/calendario"
-          target="_blank"
-          className="text-blue-400 underline ml-1"
-        >
-          LabSec UNAM
-        </a>{" "}
-        y desarrollo mi tesis profesional enfocada en el diseño e implementación
-        de software seguro.
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-2">
+            {t("home.subtitle")}
+          </h1>
+        </div>
+      </div>
+      <p className="mt-6 max-w-3xl text-sm sm:text-base md:text-lg leading-relaxed">
+        {t("home.description")}
       </p>
+      <div className="mt-2 w-full">
+        <Roadmap />
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,23 +1,71 @@
 {
   "navbar": {
-    "download_cv": "Descargar CV",
-    "development": "Desarrollo",
+    "download_cv": "Descargar C.V.",
+    "development": "Desarrollo de Software",
     "security": "Seguridad informática",
     "contact": "Contacto",
     "language": "Idioma",
     "dark_mode": "Modo oscuro"
   },
   "home": {
-    "title": "Jorge Chávez",
-    "subtitle": "Desarrollador Full Stack y Arquitecto de Software Seguro",
-    "description": "Soy ingeniero en computación por la UNAM, apasionado por el desarrollo web moderno y la seguridad informática. He trabajado en proyectos que combinan interfaces elegantes con arquitecturas seguras, integrando tecnologías como React, Node.js, MongoDB y protocolos criptográficos. Actualmente curso un diplomado en Seguridad de la Información en el LabSec UNAM y desarrollo mi tesis profesional enfocada en el diseño e implementación de software seguro."
+    "hello": "Hola! Soy",
+    "subtitle": "Ingeniero en Computación.",
+    "description": "Profesional en desarrollo de software seguro, enfocado en aplicaciones web de alta calidad que cumplen con los estándares internacionales de seguridad (ISO 7498-2) y calidad de software (ISO 9126). Especializado en el diseño de arquitecturas seguras en todas las fases del ciclo de vida del desarrollo de software, así como en la evaluación de calidad y el cumplimiento de la normativa legal mexicana vigente."
   },
   "contact_modal": {
-    "title": "Escribe tu correo para conectar",
+    "title": "Escribe tu correo para conectar ツ",
     "email_placeholder": "usuario@mail.com",
     "telegram": "Escríbeme por Telegram",
     "send": "Enviar",
     "contact_success": "¡Gracias! Te contactaré pronto.",
-    "contact_error": "Por favor, escribe un correo válido."
+    "contact_error": "Por favor, escribe un correo válido.",
+    "or": "o usa"
+  },
+  "roadmap": {
+    "title": "Mi Aventura.",
+    "steps": [
+      {
+        "title": "Ingeniería en Computación – UNAM FES Aragón.",
+        "description": "Estudios en la Facultad de Estudios Superiores Aragón con enfoque en desarrollo web, sistemas operativos y arquitectura de software.",
+        "date": "Agosto 2021 – Presente",
+        "logo": "/public/imagenes/unam.png"
+      },
+      {
+        "title": "Oracle Academy",
+        "description": "Fundamentos del lenguaje C, programación estructurada y estructuras de datos esenciales.",
+        "date": "Agosto 2023 – Octubre 2023",
+        "logo": "/public/imagenes/oracle.png"
+      },
+      {
+        "title": "Cisco Academy",
+        "description": "Curso 'Network Security Fundamentals', con énfasis en modelos OSI, protocolos de red y análisis de tráfico.",
+        "date": "Enero 2024 – Mar 2024",
+        "logo": "/public/imagenes/cisco.png"
+      },
+      {
+        "title": "Laboratorio de Seguridad Informática – FES Aragón.",
+        "description": "Participación activa en el LabSec, especializándome en criptografía, protocolos, estándares como ISO 7498-2 y análisis de riesgos.",
+        "date": "Agosto 2024 – Presente",
+        "logo": "/public/imagenes/labo.png"
+      },
+      {
+        "title": "Taloon.org",
+        "description": "Desarrollador Full Stack liderando refactorización de plataformas, arquitectura segura (SSAM), desarrollo de API pública y componentes visuales.",
+        "date": "Agosto 2024 – Presente",
+        "logo": "/public/imagenes/taloon.png"
+      },
+      {
+        "title": "Tesis: Diseño e implementación de un sistema de software seguro.",
+        "description": "Investigación en desarrollo de software seguro. Comparativa práctica con OWASP Top 10, diseño del modelo SSAM y publicación académica.",
+        "date": "Enero 2025 – En proceso",
+        "logo": "/public/imagenes/tesis.png"
+      },
+      {
+        "title": "Diplomado seguridad de la información – ET COMUNICACIONES & UNAM",
+        "description": "Diplomado de 25 módulos donde se abordan aspectos técnicos, legales y arquitectónicos en ciberseguridad.",
+        "date": "Ago 2025 – En proceso",
+        "logo": "/public/imagenes/seguridad.png"
+      }
+    ]
   }
 }

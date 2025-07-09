@@ -1,23 +1,71 @@
 {
   "navbar": {
-    "download_cv": "Download CV",
-    "development": "Development",
+    "download_cv": "Download C.V.",
+    "development": "Software Development",
     "security": "Cyber Security",
     "contact": "Contact",
     "language": "Language",
     "dark_mode": "Dark mode"
   },
   "home": {
-    "title": "Jorge Chávez",
-    "subtitle": "Full Stack Developer and Secure Software Architect",
-    "description": "I am a Computer Engineer from UNAM, passionate about modern web development and information security. I have worked on projects that combine elegant interfaces with secure architectures, integrating technologies like React, Node.js, MongoDB, and cryptographic protocols. I am currently enrolled in an Information Security diploma program at LabSec UNAM and working on my professional thesis focused on the design and implementation of secure software."
+    "hello": "Hello! I am",
+    "subtitle": "Software Engineer.",
+    "description": "Professional in secure software development, focused on high-quality web applications that comply with international security (ISO 7498-2) and software quality (ISO 9126) standards. Specialized in the design of secure architectures throughout all phases of the software development lifecycle, as well as in quality assessment and compliance with current Mexican legal regulations."
   },
   "contact_modal": {
-  "title": "Write your email to connect",
-  "email_placeholder": "user@mail.com",
-  "telegram": "Message me on Telegram",
-  "send": "Send",
-  "contact_success": "Thank you! I’ll get back to you soon.",
-  "contact_error": "Please enter a valid email."
-}
+    "title": "Write your email to connect ツ",
+    "email_placeholder": "user@mail.com",
+    "telegram": "Message me on Telegram",
+    "send": "Send",
+    "contact_success": "Thank you! I’ll get back to you soon.",
+    "contact_error": "Please enter a valid email.",
+    "or": "or use"
+  },
+  "roadmap": {
+    "title": "My Adventure.",
+    "steps": [
+      {
+        "title": "Computer Engineering – UNAM FES Aragón",
+        "description": "Studies at the Faculty of Higher Studies Aragón focused on web development, operating systems, and software architecture.",
+        "date": "August 2021 – Present",
+        "logo": "/public/imagenes/unam.png"
+      },
+      {
+        "title": "Oracle Academy",
+        "description": "Fundamentals of the C programming language, structured programming, and essential data structures.",
+        "date": "August 2023 – October 2023",
+        "logo": "/public/imagenes/oracle.png"
+      },
+      {
+        "title": "Cisco Academy",
+        "description": "Course on 'Network Security Fundamentals', with emphasis on OSI models, network protocols, and traffic analysis.",
+        "date": "January 2024 – March 2024",
+        "logo": "/public/imagenes/cisco.png"
+      },
+      {
+        "title": "Computer Security Lab – FES Aragón",
+        "description": "Active participation in LabSec, specializing in cryptography, protocols, standards such as ISO 7498-2, and risk analysis.",
+        "date": "August 2024 – Present",
+        "logo": "/public/imagenes/labo.png"
+      },
+      {
+        "title": "Taloon.org",
+        "description": "Full Stack Developer leading platform refactorings, secure architecture (SSAM), public API development, and visual components.",
+        "date": "August 2024 – Present",
+        "logo": "/public/imagenes/taloon.png"
+      },
+      {
+        "title": "Thesis: Design and Implementation of a Secure Software System.",
+        "description": "Research in secure software development. Practical comparison with OWASP Top 10, SSAM model design, and academic publication.",
+        "date": "January 2025 – In Progress",
+        "logo": "/public/imagenes/tesis.png"
+      },
+      {
+        "title": "Information Security Diploma – ET COMUNICACIONES & UNAM",
+        "description": "Diploma covering 25 modules on technical, legal, and architectural aspects of cybersecurity.",
+        "date": "August 2025 – In Progress",
+        "logo": "/public/imagenes/seguridad.png"
+      }
+    ]
+  }
 }

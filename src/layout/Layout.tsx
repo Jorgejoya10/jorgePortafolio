@@ -8,7 +8,6 @@ import { Toaster } from "react-hot-toast";
 const Layout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
-
   // Cargar preferencia al iniciar
   useEffect(() => {
     const storedTheme = localStorage.getItem("darkMode");
@@ -16,7 +15,6 @@ const Layout = () => {
       setDarkMode(storedTheme === "true");
     }
   }, []);
-
   // Guardar preferencia al cambiar
   useEffect(() => {
     localStorage.setItem("darkMode", darkMode.toString());
