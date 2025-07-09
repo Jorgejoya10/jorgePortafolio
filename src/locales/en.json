@@ -1,0 +1,22 @@
+{
+  "navbar": {
+    "download_cv": "Download CV",
+    "development": "Development",
+    "security": "Cyber Security",
+    "contact": "Contact",
+    "language": "Language",
+    "dark_mode": "Dark mode"
+  },
+  "home": {
+    "title": "Jorge Chávez",
+    "subtitle": "Full Stack Developer and Secure Software Architect",
+    "description": "I am a Computer Engineer from UNAM, passionate about modern web development and information security. I have worked on projects that combine elegant interfaces with secure architectures, integrating technologies like React, Node.js, MongoDB, and cryptographic protocols. I am currently enrolled in an Information Security diploma program at LabSec UNAM and working on my professional thesis focused on the design and implementation of secure software."
+  },
+  "contact_modal": {
+  "title": "Contact me",
+  "email_placeholder": "Your email",
+  "message_placeholder": "Your message",
+  "telegram": "Send via Telegram",
+  "send": "Send"
+}
+}
