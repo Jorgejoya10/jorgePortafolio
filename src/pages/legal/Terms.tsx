@@ -9,7 +9,7 @@ const Terms = () => {
   }[];
 
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12 text-gray-300">
+    <section className="max-w-4xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold mb-2">{t("terms.title")}</h1>
       <p className="text-sm text-gray-400 mb-6 italic">{t("terms.updated")}</p>
       <p className="mb-8">{t("terms.intro")}</p>

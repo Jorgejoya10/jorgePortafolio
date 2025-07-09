@@ -4,7 +4,7 @@ const Privacy = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-4xl mx-auto px-6 py-12 text-gray-300">
+    <section className="max-w-4xl mx-auto px-6 py-12">
       <h1 className="text-3xl font-bold mb-6">{t("privacy.title")}</h1>
 
       <p className="mb-2 italic text-sm text-gray-400">

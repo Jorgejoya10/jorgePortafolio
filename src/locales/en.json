@@ -82,15 +82,15 @@
     "rights": "All rights reserved."
   },
   "privacy": {
-    "title": "Privacy Notice",
-    "updated": "Last updated: July 2025",
+    "title": "Privacy Notice.",
+    "updated": "Last updated: July 2025.",
     "intro": "In compliance with the Federal Law on Protection of Personal Data Held by Private Parties (LFPDP), this website informs its users that the only personal data collected is the email address, which will be treated confidentially and in accordance with the principles of lawfulness, consent, information, quality, purpose, loyalty, proportionality, and responsibility established by the Law.",
     "1": {
-      "title": "1. Data Controller Identity",
+      "title": "1. Data Controller Identity.",
       "content": "The data controller is the development team of the website [Project Name], with official contact via email at: [youremail@example.com]."
     },
     "2": {
-      "title": "2. Purpose of Data Processing",
+      "title": "2. Purpose of Data Processing.",
       "list": {
         "0": "Send replies to contact messages requested by the user.",
         "1": "Share updates about our services, features, or important platform changes, if the user authorizes it."
@@ -98,15 +98,15 @@
       "footer": "It will not be used for unsolicited advertising purposes or shared with third parties."
     },
     "3": {
-      "title": "3. Data Retention and Security",
+      "title": "3. Data Retention and Security.",
       "content": "The email will only be retained as long as necessary to fulfill the purposes mentioned above. We implement technical, administrative, and organizational security measures to protect the data from loss, alteration, destruction, or unauthorized access."
     },
     "4": {
-      "title": "4. Data Transfers",
+      "title": "4. Data Transfers.",
       "content": "We do not transfer personal data to third parties, except in cases legally permitted by the LFPDP or when required by a competent authority."
     },
     "5": {
-      "title": "5. ARCO Rights",
+      "title": "5. ARCO Rights.",
       "list": {
         "0": "Access your personal data.",
         "1": "Rectify it if it is inaccurate or incomplete.",
@@ -116,17 +116,17 @@
       "footer": "You can exercise these rights by sending a request to the contact email, specifying your full name and attaching a digital official ID."
     },
     "6": {
-      "title": "6. Changes to the Privacy Notice",
+      "title": "6. Changes to the Privacy Notice.",
       "content": "We reserve the right to make changes to this Privacy Notice. Any changes will be published in this same section, indicating the update date."
     },
     "7": {
-      "title": "7. Consent",
+      "title": "7. Consent.",
       "content": "By providing your email through this website, it is understood that you have read, understood, and accepted the terms of this Privacy Notice."
     }
   },
   "terms": {
-    "title": "Terms and Conditions of Use",
-    "updated": "Last updated: July 2025",
+    "title": "Terms and Conditions of Use.",
+    "updated": "Last updated: July 2025.",
     "intro": "By accessing and using this website, you agree to the following Terms and Conditions. If you do not agree, please refrain from using this site.",
     "sections": [
       {
@@ -168,7 +168,7 @@
       },
       {
         "title": "9. Contact. ",
-        "content": "For any questions or clarifications regarding these Terms and Conditions, please contact: jorgejoya.100@gmail.com ."
+        "content": "For any questions or clarifications regarding these Terms and Conditions, please contact: jorgejoya.100@gmail.com."
       }
     ]
   }

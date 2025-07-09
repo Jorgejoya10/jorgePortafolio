@@ -82,12 +82,12 @@
     "rights": "Todos los derechos reservados."
   },
   "privacy": {
-    "title": "Aviso de Privacidad",
-    "updated": "Última actualización: Julio de 2025",
+    "title": "Aviso de Privacidad.",
+    "updated": "Última actualización: Julio de 2025.",
     "intro": "En cumplimiento con lo establecido por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDP), este sitio web informa a sus usuarios que el único dato personal que recabamos es el correo electrónico, mismo que será tratado de manera confidencial y conforme a los principios de licitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad previstos en dicha Ley.",
     "1": {
       "title": "1. Identidad del Responsable",
-      "content": "El responsable del tratamiento de los datos personales es Alberto Jorge Chávez Mendoza, con contacto oficial vía correo electrónico a: jorgejoya.100@gmail.com"
+      "content": "El responsable del tratamiento de los datos personales es Alberto Jorge Chávez Mendoza, con contacto oficial vía correo electrónico a: jorgejoya.100@gmail.com."
     },
     "2": {
       "title": "2. Finalidad del Tratamiento de Datos",
@@ -98,15 +98,15 @@
       "footer": "No se utilizará para fines publicitarios no solicitados ni se compartirá con terceros."
     },
     "3": {
-      "title": "3. Conservación y Seguridad de los Datos",
+      "title": "3. Conservación y Seguridad de los Datos.",
       "content": "El correo electrónico se conservará únicamente mientras sea necesario para cumplir con la finalidad antes mencionada. Implementamos medidas de seguridad técnicas, administrativas y organizacionales que garantizan la protección de los datos contra pérdida, alteración, destrucción o acceso no autorizado."
     },
     "4": {
-      "title": "4. Transferencias de Datos",
+      "title": "4. Transferencias de Datos.",
       "content": "No realizamos transferencias de datos personales a terceros, salvo en los casos legalmente permitidos por la LFPDP o cuando sea requerido por una autoridad competente."
     },
     "5": {
-      "title": "5. Derechos ARCO",
+      "title": "5. Derechos ARCO.",
       "list": {
         "0": "Acceder a tus datos personales.",
         "1": "Rectificarlos si son inexactos o incompletos.",
@@ -116,17 +116,17 @@
       "footer": "Puedes ejercer estos derechos enviando una solicitud al correo electrónico de contacto, especificando tu nombre completo y adjuntando una identificación oficial digital."
     },
     "6": {
-      "title": "6. Modificaciones al Aviso de Privacidad",
+      "title": "6. Modificaciones al Aviso de Privacidad.",
       "content": "Nos reservamos el derecho de realizar modificaciones a este Aviso de Privacidad. Cualquier cambio será publicado en esta misma sección, indicando la fecha de actualización."
     },
     "7": {
-      "title": "7. Consentimiento",
+      "title": "7. Consentimiento.",
       "content": "Al proporcionar tu correo electrónico a través de este sitio web, se entiende que has leído, comprendido y aceptado los términos de este Aviso de Privacidad."
     }
   },
   "terms": {
-    "title": "Términos y Condiciones de Uso del Sitio Web",
-    "updated": "Última actualización: Julio de 2025",
+    "title": "Términos y Condiciones de Uso del Sitio Web.",
+    "updated": "Última actualización: Julio de 2025.",
     "intro": "Al acceder y utilizar este sitio web, aceptas quedar sujeto a los siguientes Términos y Condiciones. Si no estás de acuerdo con ellos, por favor abstente de utilizar este sitio.",
     "sections": [
       {
@@ -168,7 +168,7 @@
       },
       {
         "title": "9. Contacto.",
-        "content": "Para cualquier duda o aclaración sobre estos Términos y Condiciones, puedes escribir a: jorgejoya.100@gmail.com ."
+        "content": "Para cualquier duda o aclaración sobre estos Términos y Condiciones, puedes escribir a: jorgejoya.100@gmail.com."
       }
     ]
   }
