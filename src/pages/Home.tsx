@@ -8,7 +8,7 @@ const Home = () => {
     <section className="min-h-screen flex flex-col items-center text-center px-4 sm:px-8 mt-4">
       <div className="flex flex-col md:flex-row items-center gap-6">
         <img
-          src="/public/imagenes/dibujo.png"
+          src="imagenes/dibujo.png"
           alt="Avatar"
           className="w-32 sm:w-40 md:w-48"
         />

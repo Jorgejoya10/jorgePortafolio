@@ -10,7 +10,7 @@
   "home": {
     "hello": "Hola! Soy",
     "subtitle": "Ingeniero en Computación.",
-    "description": "Profesional en desarrollo de software seguro, enfocado en aplicaciones web de alta calidad que cumplen con los estándares internacionales de seguridad (ISO 7498-2) y calidad de software (ISO 9126). Especializado en el diseño de arquitecturas seguras en todas las fases del ciclo de vida del desarrollo de software, así como en la evaluación de calidad y el cumplimiento de la normativa legal mexicana vigente."
+    "description": "Profesional en desarrollo de software seguro, enfocado en aplicaciones web de alta calidad que cumplan con los estándares internacionales de seguridad (ISO 7498-2) y calidad de software (ISO 9126). Especializado en el diseño de arquitecturas seguras en todas las fases del ciclo de vida del desarrollo de software, así como en la evaluación de calidad y el cumplimiento de la normativa legal mexicana vigente."
   },
   "contact_modal": {
     "title": "Escribe tu correo para conectar ツ",
@@ -28,43 +28,147 @@
         "title": "Ingeniería en Computación – UNAM FES Aragón.",
         "description": "Estudios en la Facultad de Estudios Superiores Aragón con enfoque en desarrollo web, sistemas operativos y arquitectura de software.",
         "date": "Agosto 2021 – Presente",
-        "logo": "/public/imagenes/unam.png"
+        "logo": "/imagenes/unam.png",
+        "link": "https://www.aragon.unam.mx/fes-aragon/?utm_source=LUA&fbclid=IwAR2N_TeV4eeDkQ1KzDAnnLtEQQO9AtIAi2ymk2xSaUu1VT7ACXKjgP_36Ic#!/oferta-academica/licenciaturas/computacion"
       },
       {
         "title": "Oracle Academy",
-        "description": "Fundamentos del lenguaje C, programación estructurada y estructuras de datos esenciales.",
+        "description": "Fundamentos del lenguaje JAVA, programación orientada a objetos y estructuras de datos esenciales.",
         "date": "Agosto 2023 – Octubre 2023",
-        "logo": "/public/imagenes/oracle.png"
+        "logo": "/imagenes/oracle.png",
+        "link": "https://academy.oracle.com/es/solutions-curriculum-java.html#java1-tab"
       },
       {
         "title": "Cisco Academy",
         "description": "Curso 'Network Security Fundamentals', con énfasis en modelos OSI, protocolos de red y análisis de tráfico.",
         "date": "Enero 2024 – Mar 2024",
-        "logo": "/public/imagenes/cisco.png"
+        "logo": "/imagenes/cisco.png",
+        "link": "https://www.netacad.com/courses/network-security?courseLang=en-US"
       },
       {
         "title": "Laboratorio de Seguridad Informática – FES Aragón.",
         "description": "Participación activa en el LabSec, especializándome en criptografía, protocolos, estándares como ISO 7498-2 y análisis de riesgos.",
         "date": "Agosto 2024 – Presente",
-        "logo": "/public/imagenes/labo.png"
+        "logo": "/imagenes/labo.png",
+        "link": "https://siberiano.aragon.unam.mx/labsec/"
       },
       {
         "title": "Taloon.org",
         "description": "Desarrollador Full Stack liderando refactorización de plataformas, arquitectura segura (SSAM), desarrollo de API pública y componentes visuales.",
         "date": "Agosto 2024 – Presente",
-        "logo": "/public/imagenes/taloon.png"
+        "logo": "/imagenes/taloonDark.png",
+        "link": "https://taloon.org/"
       },
       {
         "title": "Tesis: Diseño e implementación de un sistema de software seguro.",
         "description": "Investigación en desarrollo de software seguro. Comparativa práctica con OWASP Top 10, diseño del modelo SSAM y publicación académica.",
         "date": "Enero 2025 – En proceso",
-        "logo": "/public/imagenes/tesis.png"
+        "logo": "/imagenes/tesis.png"
       },
       {
         "title": "Diplomado seguridad de la información – ET COMUNICACIONES & UNAM",
         "description": "Diplomado de 25 módulos donde se abordan aspectos técnicos, legales y arquitectónicos en ciberseguridad.",
         "date": "Ago 2025 – En proceso",
-        "logo": "/public/imagenes/seguridad.png"
+        "logo": "/imagenes/seguridad.png",
+        "link": "https://siberiano.aragon.unam.mx/labsec/dsi_etcom3/"
+      }
+    ],
+    "visitSite": "Visitar sitio"
+  },
+  "footer": {
+    "role": "Jorge Chávez – Desarrollador Full Stack & Analista de Seguridad",
+    "terms": "Términos y condiciones",
+    "privacy": "Aviso de privacidad",
+    "rights": "Todos los derechos reservados."
+  },
+  "privacy": {
+    "title": "Aviso de Privacidad",
+    "updated": "Última actualización: Julio de 2025",
+    "intro": "En cumplimiento con lo establecido por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDP), este sitio web informa a sus usuarios que el único dato personal que recabamos es el correo electrónico, mismo que será tratado de manera confidencial y conforme a los principios de licitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad previstos en dicha Ley.",
+    "1": {
+      "title": "1. Identidad del Responsable",
+      "content": "El responsable del tratamiento de los datos personales es Alberto Jorge Chávez Mendoza, con contacto oficial vía correo electrónico a: jorgejoya.100@gmail.com"
+    },
+    "2": {
+      "title": "2. Finalidad del Tratamiento de Datos",
+      "list": {
+        "0": "Enviar respuestas a mensajes de contacto solicitados por el usuario.",
+        "1": "Compartir actualizaciones sobre nuestros servicios, funcionalidades o cambios importantes en la plataforma, si el usuario así lo autoriza."
+      },
+      "footer": "No se utilizará para fines publicitarios no solicitados ni se compartirá con terceros."
+    },
+    "3": {
+      "title": "3. Conservación y Seguridad de los Datos",
+      "content": "El correo electrónico se conservará únicamente mientras sea necesario para cumplir con la finalidad antes mencionada. Implementamos medidas de seguridad técnicas, administrativas y organizacionales que garantizan la protección de los datos contra pérdida, alteración, destrucción o acceso no autorizado."
+    },
+    "4": {
+      "title": "4. Transferencias de Datos",
+      "content": "No realizamos transferencias de datos personales a terceros, salvo en los casos legalmente permitidos por la LFPDP o cuando sea requerido por una autoridad competente."
+    },
+    "5": {
+      "title": "5. Derechos ARCO",
+      "list": {
+        "0": "Acceder a tus datos personales.",
+        "1": "Rectificarlos si son inexactos o incompletos.",
+        "2": "Cancelarlos cuando consideres que no se requieren para las finalidades mencionadas.",
+        "3": "Oponerte al tratamiento de los mismos para fines específicos."
+      },
+      "footer": "Puedes ejercer estos derechos enviando una solicitud al correo electrónico de contacto, especificando tu nombre completo y adjuntando una identificación oficial digital."
+    },
+    "6": {
+      "title": "6. Modificaciones al Aviso de Privacidad",
+      "content": "Nos reservamos el derecho de realizar modificaciones a este Aviso de Privacidad. Cualquier cambio será publicado en esta misma sección, indicando la fecha de actualización."
+    },
+    "7": {
+      "title": "7. Consentimiento",
+      "content": "Al proporcionar tu correo electrónico a través de este sitio web, se entiende que has leído, comprendido y aceptado los términos de este Aviso de Privacidad."
+    }
+  },
+  "terms": {
+    "title": "Términos y Condiciones de Uso del Sitio Web",
+    "updated": "Última actualización: Julio de 2025",
+    "intro": "Al acceder y utilizar este sitio web, aceptas quedar sujeto a los siguientes Términos y Condiciones. Si no estás de acuerdo con ellos, por favor abstente de utilizar este sitio.",
+    "sections": [
+      {
+        "title": "1. Identidad del Responsable.",
+        "content": "Este sitio web es administrado por Alberto Jorge Chávez Mendoza, con contacto oficial vía correo electrónico: jorgejoya.100@gmail.com ."
+      },
+      {
+        "title": "2. Aceptación de los Términos.",
+        "content": "El acceso y uso del sitio implican la aceptación plena e incondicional de estos Términos y Condiciones por parte del usuario. El sitio se reserva el derecho de modificarlos en cualquier momento. Los cambios entrarán en vigor desde su publicación."
+      },
+      {
+        "title": "3. Uso del Sitio.",
+        "content": "El usuario se compromete a:",
+        "list": [
+          "Usar el sitio únicamente para fines lícitos.",
+          "No intentar acceder a información restringida o a cuentas de otros usuarios.",
+          "No realizar ataques de tipo técnico (por ejemplo, inyección de código, sobrecarga de solicitudes, scraping automatizado no autorizado, etc.)."
+        ]
+      },
+      {
+        "title": "4. Propiedad Intelectual.",
+        "content": "Todo el contenido disponible en este sitio web, incluyendo texto, imágenes, logotipos, código fuente, animaciones, y diseño, es propiedad exclusiva del titular del sitio o de sus respectivos licenciantes. Queda prohibida su reproducción, distribución o modificación sin autorización expresa por escrito."
+      },
+      {
+        "title": "5. Recopilación de Datos Personales.",
+        "content": "El único dato personal que se recopila a través de este sitio es el correo electrónico proporcionado por el usuario para efectos de contacto o suscripción. Dicho dato será tratado conforme al Aviso de Privacidad."
+      },
+      {
+        "title": "6. Limitación de Responsabilidad.",
+        "content": "Este sitio se proporciona \"tal cual\", sin garantías de ningún tipo, expresas o implícitas. No se garantiza que el sitio esté libre de errores o interrupciones. En ningún caso el titular del sitio será responsable por daños directos o indirectos derivados del uso del sitio."
+      },
+      {
+        "title": "7. Enlaces a Terceros.",
+        "content": "Este sitio puede contener enlaces a sitios web de terceros. No somos responsables por los contenidos, políticas de privacidad o prácticas de dichos sitios."
+      },
+      {
+        "title": "8. Legislación Aplicable y Jurisdicción.",
+        "content": "Este sitio opera bajo las leyes de los Estados Unidos Mexicanos, y cualquier controversia será resuelta ante los tribunales competentes de la Ciudad de México."
+      },
+      {
+        "title": "9. Contacto.",
+        "content": "Para cualquier duda o aclaración sobre estos Términos y Condiciones, puedes escribir a: jorgejoya.100@gmail.com ."
       }
     ]
   }

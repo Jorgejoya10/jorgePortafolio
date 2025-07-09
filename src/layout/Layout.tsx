@@ -4,6 +4,7 @@ import Nav from "../components/Navbar";
 import ContactModal from "../components/ContactoModal";
 import Background from "../components/Background";
 import { Toaster } from "react-hot-toast";
+import Footer from "../components/footer/footer";
 
 const Layout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,7 +23,7 @@ const Layout = () => {
 
   return (
     <div
-      className={`min-h-screen w-full relative overflow-hidden ${
+      className={`flex flex-col min-h-screen w-full relative overflow-hidden ${
         darkMode ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
@@ -38,7 +39,7 @@ const Layout = () => {
           darkMode={darkMode}
           setDarkMode={setDarkMode}
         />
-        <main className="pt-20 px-4 md:px-8">
+        <main className="flex-1 pt-20 px-4 md:px-8">
           <Outlet />
         </main>
       </div>
@@ -49,6 +50,9 @@ const Layout = () => {
         onClose={() => setIsModalOpen(false)}
         darkMode={darkMode}
       />
+
+      {/* Footer */}
+      <Footer darkMode={darkMode} />
     </div>
   );
 };
