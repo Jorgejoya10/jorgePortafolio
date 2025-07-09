@@ -13,12 +13,11 @@
     "description": "Soy ingeniero en computación por la UNAM, apasionado por el desarrollo web moderno y la seguridad informática. He trabajado en proyectos que combinan interfaces elegantes con arquitecturas seguras, integrando tecnologías como React, Node.js, MongoDB y protocolos criptográficos. Actualmente curso un diplomado en Seguridad de la Información en el LabSec UNAM y desarrollo mi tesis profesional enfocada en el diseño e implementación de software seguro."
   },
   "contact_modal": {
-  "title": "Contáctame",
-  "email_placeholder": "Tu correo electrónico",
-  "message_placeholder": "Tu mensaje",
-  "telegram": "Enviar por Telegram",
-  "send": "Enviar"
-}
-
-
+    "title": "Escribe tu correo para conectar",
+    "email_placeholder": "usuario@mail.com",
+    "telegram": "Escríbeme por Telegram",
+    "send": "Enviar",
+    "contact_success": "¡Gracias! Te contactaré pronto.",
+    "contact_error": "Por favor, escribe un correo válido."
+  }
 }

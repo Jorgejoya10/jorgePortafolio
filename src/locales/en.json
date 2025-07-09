@@ -13,10 +13,11 @@
     "description": "I am a Computer Engineer from UNAM, passionate about modern web development and information security. I have worked on projects that combine elegant interfaces with secure architectures, integrating technologies like React, Node.js, MongoDB, and cryptographic protocols. I am currently enrolled in an Information Security diploma program at LabSec UNAM and working on my professional thesis focused on the design and implementation of secure software."
   },
   "contact_modal": {
-  "title": "Contact me",
-  "email_placeholder": "Your email",
-  "message_placeholder": "Your message",
-  "telegram": "Send via Telegram",
-  "send": "Send"
+  "title": "Write your email to connect",
+  "email_placeholder": "user@mail.com",
+  "telegram": "Message me on Telegram",
+  "send": "Send",
+  "contact_success": "Thank you! I’ll get back to you soon.",
+  "contact_error": "Please enter a valid email."
 }
 }
