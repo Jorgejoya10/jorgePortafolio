@@ -1,6 +1,10 @@
-const FrontendSection = () => {
+interface Props {
+  id: string;
+}
+
+const FrontendSection = ({ id }: Props) => {
   return (
-    <section className="w-full px-6 py-12 flex flex-col items-center gap-6">
+    <section id={id} className="w-full px-6 py-12 flex flex-col items-center gap-6">
       {/* Encabezado */}
       <div className="bg-[#ADD5C8] rounded-[2rem] px-10 py-8 text-left w-full max-w-4xl h-130">
         <h2 className="text-8xl font-bold leading-tight text-[#165842]">

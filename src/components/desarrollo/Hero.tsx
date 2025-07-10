@@ -5,13 +5,14 @@ import TextLoop from "./utils/TextLoop";
 
 interface HeroProps {
   darkMode: boolean;
+  id: string;
 }
 
 const Hero = ({ darkMode }: HeroProps) => {
   const { i18n } = useTranslation();
 
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
+    <section id="hero" className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">
       {/* Astronauta */}
       <motion.img
         src={

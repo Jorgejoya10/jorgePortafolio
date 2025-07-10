@@ -8,6 +8,16 @@ interface Props {
   darkMode: boolean;
 }
 
+const sectionColors: Record<string, string> = {
+  hero: "#000000", // o blanco si darkMode es false
+  frontend: "#ADD5C8",
+  backend: "#F9DD69",
+  security: "#B5C0E2",
+  projects: "#000000", // o blanco si darkMode es false
+};
+
+const sectionIds = ["hero", "frontend", "backend", "security", "projects"];
+
 const AnimateBackground = ({ darkMode }: Props) => {
   const bgRef = useRef<HTMLDivElement | null>(null);
 
@@ -15,41 +25,52 @@ const AnimateBackground = ({ darkMode }: Props) => {
     const bg = bgRef.current;
     if (!bg) return;
 
-    // Colores base según darkMode
-    const colorStart = darkMode ? "#000000" : "#ffffff";
-    const colorEnd = "#D1FAE5"; // puedes parametrizarlo si lo deseas
+    // Ajustar colores según darkMode
+    sectionColors.hero = darkMode ? "#000000" : "#ffffff";
+    sectionColors.projects = darkMode ? "#000000" : "#ffffff";
 
-    // Interpolación entre colores
-    const from = gsap.utils.splitColor(colorStart);
-    const to = gsap.utils.splitColor(colorEnd);
-    const interpolate = gsap.utils.interpolate(from, to);
+    gsap.set(bg, { backgroundColor: sectionColors.hero });
 
-    gsap.set(bg, { backgroundColor: colorStart });
+    const triggers: ScrollTrigger[] = [];
 
-    ScrollTrigger.create({
-      trigger: bg,
-      start: "top top",
-      end: "bottom bottom",
-      scrub: true,
-      onUpdate: (self) => {
-        const progress = self.progress;
-        const interpolated = interpolate(progress); // → [r, g, b]
-        const rgbString = `rgb(${interpolated.map(Math.round).join(",")})`;
+    sectionIds.forEach((id) => {
+      const section = document.getElementById(id);
+      if (!section) return;
 
-        gsap.to(bg, {
-          backgroundColor: rgbString,
-          duration: 0.3,
-          overwrite: "auto",
-        });
-      },
+      const nextColor = sectionColors[id];
+
+      const trigger = ScrollTrigger.create({
+        trigger: section,
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        onEnter: () => {
+          gsap.to(bg, {
+            backgroundColor: nextColor,
+            duration: 0.5,
+            overwrite: "auto",
+          });
+        },
+        onEnterBack: () => {
+          gsap.to(bg, {
+            backgroundColor: nextColor,
+            duration: 0.5,
+            overwrite: "auto",
+          });
+        },
+      });
+
+      triggers.push(trigger);
     });
 
     return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+      triggers.forEach((trigger) => trigger.kill());
     };
   }, [darkMode]);
 
-  return <div ref={bgRef} className="absolute inset-0 -z-10" />;
+  return <div ref={bgRef} className="fixed inset-0 -z-10 transition-colors duration-500" />;
 };
 
 export default AnimateBackground;
+
+

@@ -11,15 +11,10 @@ const DynamicBackground = ({ type, darkMode }: Props) => {
   switch (type) {
     case "geometric":
       return <Geometric darkMode={darkMode} />;
-
     case "gradient":
       return <Gradient darkMode={darkMode} />;
-      
-      case "animated-gradient":
-        return <AnimateBackground darkMode={darkMode}/>;
-        // return <Gradient darkMode={darkMode} />;
-        // return <Geometric darkMode={darkMode} />;
-
+    case "animated-gradient":
+      return <AnimateBackground darkMode={darkMode} />;
     default:
       return null;
   }
