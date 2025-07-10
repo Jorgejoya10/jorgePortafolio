@@ -33,7 +33,7 @@ const FrontendSection = ({ id }: Props) => {
           <img
             src="/desarrollo/diseño.png"
             alt="Diseño"
-            className="w-64 h-64 mb-4"
+            className="w-70 h-70 mb-4"
           />
           <p className="text-6xl font-semibold">Es diseño.</p>
         </div>
@@ -43,7 +43,7 @@ const FrontendSection = ({ id }: Props) => {
           <img
             src="/desarrollo/testeo.png"
             alt="Testeo"
-            className="w-64 h-64 mb-4"
+            className="w-70 h-70 mb-4"
           />
           <p className="text-6xl font-semibold">Es testeo.</p>
         </div>
@@ -68,7 +68,7 @@ const FrontendSection = ({ id }: Props) => {
             Es <br />
             <span className="text-7xl">creatividad.</span>
           </h2>
-          <p className="text-xl text-gray-600 mt-3">
+          <p className="text-2xl text-gray-600 mt-3">
             Algunos lo llaman “Frontend”.
           </p>
         </div>

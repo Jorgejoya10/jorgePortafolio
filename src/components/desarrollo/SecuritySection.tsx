@@ -4,72 +4,59 @@ interface Props {
 
 const SecuritySection = ({ id }: Props) => {
   return (
-    <section id={id} className="w-full px-6 py-12 flex flex-col items-center gap-6">
-      {/* Encabezado */}
-      <div className="bg-[#ADD5C8] rounded-[2rem] px-10 py-8 text-left w-full max-w-4xl h-130">
-        <h2 className="text-8xl font-bold leading-tight text-[#165842]">
-          El desarrollo <br />
-          <span className="text-black">es más que código.</span>
+    <section
+      id={id}
+      className="w-full px-6 py-12 flex flex-col items-center gap-6"
+    >
+      {/* Encabezado azul */}
+      <div className="bg-[#B5C0E2] rounded-[2rem] px-10 py-8 text-left w-full max-w-4xl h-100">
+        <h2 className="text-8xl font-bold text-[#6350E2] leading-tight">
+          Es protección
         </h2>
+        <h2 className="text-8xl font-bold text-black leading-tight">
+          de activos.
+        </h2>
+        <p className="text-2xl text-gray-700 mt-2">“Cyber Seguridad”</p>
       </div>
 
-      {/* Planeación del proyecto */}
-      <div className="bg-black rounded-[2rem] px-10 py-8 text-white flex items-center justify-between w-full max-w-4xl h-140">
-        <p className="text-6xl font-semibold leading-tight max-w-sm">
-          Es planeación <br />
-          del proyecto.
-        </p>
-        <img
-          src="/desarrollo/planeacion.png"
-          alt="Planeación"
-          className="w-110 h-auto rounded-xl"
+      {/* Tarjeta central */}
+      <div className="bg-white rounded-[2rem] p-6 w-full max-w-4xl">
+        <div className="flex items-end justify-between gap-15">
+          <img
+          src="/desarrollo/seguridad.png"
+          alt="Arquitectura de Seguridad"
+          className="w-110 h-auto rounded-xl mb-2"
         />
+        <p className="text-4xl font-semibold text-gray-600">Siempre trabajando bajo los estándares internacionales.</p>
+        </div>
+        <p className="text-7xl font-bold text-black mt-2">
+          Creación de una <br /> arquitectura de seguridad.
+        </p>
       </div>
 
-      {/* Diseño y Testeo */}
-      <div className="flex gap-6 w-full max-w-4xl">
-        {/* Diseño */}
-        <div className="bg-[#165842] text-white flex-1 rounded-[2rem] px-8 py-10 flex flex-col items-center justify-center">
+      {/* Tarjetas inferiores */}
+      <div className="flex flex-col sm:flex-row gap-6 w-full max-w-4xl">
+        {/* Criptografía */}
+        <div className="flex-1 bg-black rounded-[1.5rem] px-6 py-8 flex flex-col items-center text-center">
           <img
-            src="/desarrollo/diseño.png"
-            alt="Diseño"
-            className="w-64 h-64 mb-4"
+            src="/desarrollo/cripto.jpg"
+            alt="Fases del desarrollo"
+            className="w-74 h-auto mb-4"
           />
-          <p className="text-6xl font-semibold">Es diseño.</p>
+          <p className="text-5xl text-white font-semibold">
+            Es tener <br /> fundamentos matemáticos.
+          </p>
         </div>
 
-        {/* Testeo */}
-        <div className="bg-[#DBE4E0] text-black flex-1 rounded-[2rem] px-8 py-10 flex flex-col items-center justify-center">
+        {/* Seguridad en fases */}
+        <div className="flex-1 bg-black rounded-[1.5rem] px-6 py-8 flex flex-col items-center text-center">
           <img
-            src="/desarrollo/testeo.png"
-            alt="Testeo"
-            className="w-64 h-64 mb-4"
+            src="/desarrollo/fases.png"
+            alt="Fases del desarrollo"
+            className="w-74 h-auto mb-4"
           />
-          <p className="text-6xl font-semibold">Es testeo.</p>
-        </div>
-      </div>
-
-      {/* Creatividad */}
-
-      <div className="bg-white rounded-[2rem] p-6 w-full max-w-4xl text-black relative overflow-hidden">
-        {/* Imagen en la esquina superior derecha */}
-        <div className="absolute top-6 right-6 w-[70%] max-w-[600px]">
-          <img
-            src="/desarrollo/creatividad.png"
-            alt="Creatividad"
-            className="w-full h-auto rounded-xl"
-          />
-        </div>
-
-        {/* Texto abajo a la izquierda */}
-        <div className="mt-[320px]">
-          {/* Ajusta el margen según la altura de tu imagen */}
-          <h2 className="text-7xl font-bold leading-tight">
-            Es <br />
-            <span className="text-7xl">creatividad.</span>
-          </h2>
-          <p className="text-xl text-gray-600 mt-3">
-            Algunos lo llaman “Frontend”.
+          <p className="text-5xl text-white font-semibold">
+            Es seguridad en <br /> todas las fases <br /> del desarrollo.
           </p>
         </div>
       </div>
