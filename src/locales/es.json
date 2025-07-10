@@ -78,6 +78,34 @@
     ],
     "visitSite": "Visitar sitio"
   },
+  "frontend": {
+    "title": "El desarrollo",
+    "subtitle": "es más que código.",
+    "planning": "Es planeación\ndel proyecto.",
+    "design": "Es diseño.",
+    "responsive": "Es pensar\nen los\nmás peque\nños.",
+    "creativity": {
+      "title": "Es\ncreatividad.",
+      "description": "Algunos lo llaman “Frontend”."
+    }
+  },
+  "backend": {
+    "title": "Es conexión",
+    "subtitle": "con servidores.",
+    "description": "Algunos lo llaman “Backend”.",
+    "automation": "Es automatizar procesos.",
+    "store": "Es almacenar\ninformación.",
+    "logic": "Es crear una lógica\nde negocio."
+  },
+  "security": {
+    "title1": "Es protección",
+    "title2": "de activos.",
+    "subtitle": "“Cyber Seguridad”",
+    "standards": "Siempre trabajando bajo los estándares internacionales.",
+    "architecture": "Es creación de una\narquitectura de seguridad.",
+    "math": "Es tener\nfundamentos matemáticos.",
+    "phases": "Es seguridad en\ntodas las fases\ndel desarrollo."
+  },
   "footer": {
     "role": "Jorge Chávez – Desarrollador Full Stack & Analista de Seguridad",
     "terms": "Términos y condiciones",
