@@ -47,14 +47,14 @@ const AnimateBackground = ({ darkMode }: Props) => {
         onEnter: () => {
           gsap.to(bg, {
             backgroundColor: nextColor,
-            duration: 0.5,
+            duration: 0.1,
             overwrite: "auto",
           });
         },
         onEnterBack: () => {
           gsap.to(bg, {
             backgroundColor: nextColor,
-            duration: 0.5,
+            duration: 0.1,
             overwrite: "auto",
           });
         },

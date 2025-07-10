@@ -25,7 +25,7 @@ const FrontendSection = ({ id }: Props) => {
         <img
           src="/desarrollo/planeacion.png"
           alt="Planeación"
-          className="w-110 h-auto rounded-xl"
+          className="w-110 h-auto"
         />
       </div>
 
@@ -69,7 +69,7 @@ const FrontendSection = ({ id }: Props) => {
 
         {/* Texto abajo a la izquierda */}
         <div className="mt-[320px]">
-          <h2 className="text-7xl font-bold leading-tight whitespace-pre-line">
+          <h2 className="text-8xl font-bold leading-22 whitespace-pre-line">
             {t("frontend.creativity.title")}
           </h2>
           <p className="text-2xl text-gray-600 mt-3">

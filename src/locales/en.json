@@ -106,6 +106,9 @@
     "math": "It’s having\nmathematical foundations.",
     "phases": "It’s security in\nall phases\nof development."
   },
+  "projects": {
+    "title": "My Projects."
+  },
   "footer": {
     "role": "Jorge Chávez – Full Stack Developer & Security Analyst",
     "terms": "Terms & Conditions",

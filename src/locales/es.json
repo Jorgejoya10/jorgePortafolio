@@ -106,6 +106,9 @@
     "math": "Es tener\nfundamentos matemáticos.",
     "phases": "Es seguridad en\ntodas las fases\ndel desarrollo."
   },
+  "projects": {
+    "title": "Mis proyectos."
+  },
   "footer": {
     "role": "Jorge Chávez – Desarrollador Full Stack & Analista de Seguridad",
     "terms": "Términos y condiciones",
