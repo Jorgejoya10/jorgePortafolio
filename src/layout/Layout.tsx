@@ -41,7 +41,7 @@ const Layout = () => {
           setDarkMode={setDarkMode}
         />
         <main className="flex-1 pt-20 px-4 md:px-8">
-          <Outlet />
+          <Outlet context={{ darkMode }} />
         </main>
       </div>
 
