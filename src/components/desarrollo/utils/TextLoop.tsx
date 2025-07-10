@@ -12,7 +12,7 @@ const TextLoop = () => {
       "网络开发人员.",
       "Sviluppatore Web.",
       "웹 개발자.",
-      'forbróir gréasáin.',
+      'Forbróir Gréasáin.',
       'वेब डेवलपर.'
     ],
     en: [
@@ -22,7 +22,7 @@ const TextLoop = () => {
       "网络开发人员.",
       "Sviluppatore Web.",
       "웹 개발자.",
-      'forbróir gréasáin.',
+      'Forbróir Gréasáin.',
       'वेब डेवलपर.'
     ],
   };
@@ -30,7 +30,7 @@ const TextLoop = () => {
   const words = roles[i18n.language as "es" | "en"] || roles.en;
 
   return (
-    <span className=" text-3xl md:text-5xl font-bold">
+    <span className=" text-3xl md:text-7xl font-bold">
       <Typewriter
         words={words}
         loop={0} // infinito

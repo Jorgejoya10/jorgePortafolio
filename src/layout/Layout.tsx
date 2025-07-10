@@ -14,8 +14,12 @@ const Layout = () => {
 
   // Función para determinar tipo de fondo por ruta
 
-  const getBackgroundType = (pathname: string): "gradient" | "geometric" => {
-    const gradientRoutes = ["/desarrollo", "/terms", "/privacy"];
+  const getBackgroundType = (
+    pathname: string
+  ): "gradient" | "geometric" | "animated-gradient" => {
+    if (pathname === "/desarrollo") return "animated-gradient";
+
+    const gradientRoutes = ["/terms", "/privacy"];
     return gradientRoutes.includes(pathname) ? "gradient" : "geometric";
   };
 

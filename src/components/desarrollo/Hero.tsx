@@ -1,9 +1,7 @@
-// src/components/desarrollo/Hero.tsx
-
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Carrusel from "./utils/Carrusel";
-import TextLoop from "./utils/TextLoop"; // ✅ Nuevo componente
+import TextLoop from "./utils/TextLoop"; 
 
 interface HeroProps {
   darkMode: boolean;
@@ -11,8 +9,6 @@ interface HeroProps {
 
 const Hero = ({ darkMode }: HeroProps) => {
   const { i18n } = useTranslation();
-
-  console.log("Modo oscuro activo:", darkMode);
 
   return (
     <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden">

@@ -1,23 +1,28 @@
-import Geometric from './Geometric'
-import Gradient from './Gradient'
+import AnimateBackground from "./AnimateBackground";
+import Geometric from "./Geometric";
+import Gradient from "./Gradient";
 
-type BackgroundType = 'geometric' | 'gradient'
-
-interface DynamicBackgroundProps {
-  type: BackgroundType
-  darkMode: boolean
+interface Props {
+  type: "gradient" | "geometric" | "animated-gradient";
+  darkMode: boolean;
 }
 
-const DynamicBackground = ({ type, darkMode }: DynamicBackgroundProps) => {
+const DynamicBackground = ({ type, darkMode }: Props) => {
   switch (type) {
-    case 'geometric':
-      return <Geometric darkMode={darkMode} />
-    case 'gradient':
-      return <Gradient darkMode={darkMode} />
-    default:
-      return null
-  }
-}
+    case "geometric":
+      return <Geometric darkMode={darkMode} />;
 
+    case "gradient":
+      return <Gradient darkMode={darkMode} />;
+      
+      case "animated-gradient":
+        return <AnimateBackground darkMode={darkMode}/>;
+        // return <Gradient darkMode={darkMode} />;
+        // return <Geometric darkMode={darkMode} />;
+
+    default:
+      return null;
+  }
+};
 
 export default DynamicBackground;
