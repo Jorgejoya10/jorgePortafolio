@@ -26,6 +26,17 @@ body {
 }
 
 
+/* MENU MOBILE - MODO CLARO */
+.menu-light {
+  @apply bg-white/30 border border-[#0a192f]/40 backdrop-blur-lg shadow-lg rounded-xl transition-colors duration-300 text-slate-800;
+}
+
+/* MENU MOBILE - MODO OSCURO */
+.menu-dark {
+  @apply bg-[#0a192f]/40 border border-white/20 backdrop-blur-lg shadow-lg rounded-xl transition-colors duration-300 text-white;
+}
+
+
 /* Modal en modo claro */
 /* Estilo base para el modal en modo claro */
 .modal-light {
