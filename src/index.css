@@ -14,6 +14,16 @@ body {
   @apply border border-white/30 text-white hover:bg-white/10 transition rounded px-2 py-1 text-sm;
 }
 
+/* Boton sin borde */
+
+.btn-light-2 {
+  @apply   hover:bg-[#000]/10 transition rounded-xl px-2 py-1 text-sm;
+}
+.btn-dark-2{
+  @apply  hover:bg-[#fff]/10 transition rounded-xl px-2 py-1 text-sm;
+}
+
+
 
 /* NAVBAR – MODO CLARO */
 .navbar-light {
@@ -24,6 +34,18 @@ body {
 .navbar-dark {
   @apply bg-[#0a192f]/40 border border-white/20 backdrop-blur-lg shadow-lg rounded-xl transition-colors duration-300;
 }
+
+
+/* SIDEBAR - MODO CLARO */
+.sidebar-light {
+  @apply bg-white/10 border border-[#0a192f]/40 backdrop-blur-lg shadow-lg rounded-xl transition-colors duration-300;
+}
+
+/* SIDEBAR - MODO OSCURO */
+.sidebar-dark {
+  @apply bg-[#0a192f]/40 border border-white/20 backdrop-blur-lg shadow-lg rounded-xl transition-colors duration-300;
+}
+
 
 
 /* MENU MOBILE - MODO CLARO */
@@ -56,16 +78,6 @@ body {
 /* Inputs (modo oscuro) */
 .input-dark {
   @apply w-full px-4 py-2 rounded-md border bg-white/10 text-white placeholder-gray-300 border-white/20 focus:outline-none focus:ring;
-}
-
-/* Textarea (modo claro) */
-.textarea-light {
-  @apply w-full px-4 py-2 rounded-md border h-24 resize-none bg-white/30 text-slate-800 placeholder-slate-500 border-slate-300 focus:outline-none focus:ring;
-}
-
-/* Textarea (modo oscuro) */
-.textarea-dark {
-  @apply w-full px-4 py-2 rounded-md border h-24 resize-none bg-white/10 text-white placeholder-gray-300 border-white/20 focus:outline-none focus:ring;
 }
 
 /* Enlace Telegram */

@@ -1,9 +1,20 @@
+// src/pages/Seguridad.tsx
+import { useOutletContext } from "react-router-dom";
+import SideBar from '../components/seguridad/SideBar';
 
-const Seguridad = () => (
-  <section className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 ">
-      Mi trabajo en el area de seguridad informática.
-    </h1>
-  </section>
-)
-export default Seguridad;
+interface ContextType {
+  darkMode: boolean;
+}
+
+export default function Seguridad() {
+  const { darkMode } = useOutletContext<ContextType>();
+
+  return (
+    <div className="flex min-h-screen">
+      <SideBar darkMode={darkMode} />
+      <main className="flex-1 pt-[72px]">
+        {/* tu contenido */}
+      </main>
+    </div>
+  );
+}

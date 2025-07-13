@@ -19,8 +19,8 @@ const Home = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const rotateX = useTransform(y, [0, window.innerHeight], [17, -17]);
-  const rotateY = useTransform(x, [0, window.innerWidth], [-17, 17]);
+  const rotateX = useTransform(y, [0, window.innerHeight], [15, 15]);
+  const rotateY = useTransform(x, [0, window.innerWidth], [15, -15]);
 
   useEffect(() => {
     x.set(mousePosition.x);

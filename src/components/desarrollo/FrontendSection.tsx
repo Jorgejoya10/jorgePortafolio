@@ -21,7 +21,7 @@ const FrontendSection = ({ id }: Props) => {
       </div>
 
       {/* Planeación del proyecto */}
-      <div className="bg-black rounded-[2rem] px-6 py-6 sm:px-10 sm:py-8 text-white flex flex-col sm:flex-row items-center justify-between w-full max-w-4xl h-auto gap-6">
+      <div className="bg-black rounded-[2rem] px-6 py-6 sm:px-10 sm:py-8 text-white lg:h-160 flex flex-col sm:flex-row items-center justify-between w-full max-w-4xl h-auto gap-6">
         <p className="text-3xl sm:text-5xl md:text-6xl font-semibold leading-tight text-center sm:text-left max-w-xs whitespace-pre-line">
           {t("frontend.planning")}
         </p>

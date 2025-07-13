@@ -109,6 +109,23 @@
   "projects": {
     "title": "My Projects."
   },
+  "sidebar": {
+    "toggle": "Expand / Collapse",
+    "iso": {
+      "title": "ISO 7498-2",
+      "services": "Services.",
+      "mechanisms": "Mechanisms."
+    },
+    "crypto": {
+      "title": "Cryptography",
+      "symmetric": "Symmetric.",
+      "asymmetric": "Asymmetric.",
+      "hash": "Hash."
+    },
+    "protocols": {
+      "title": "Protocols"
+    }
+  },
   "footer": {
     "role": "Jorge Chávez – Full Stack Developer & Security Analyst",
     "terms": "Terms & Conditions",

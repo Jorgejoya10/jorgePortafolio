@@ -19,7 +19,7 @@ const Layout = () => {
   ): "gradient" | "geometric" | "animated-gradient" => {
     if (pathname === "/desarrollo") return "animated-gradient";
 
-    const gradientRoutes = ["/terms", "/privacy"];
+    const gradientRoutes = ["/terms", "/privacy", "/seguridad"];
     return gradientRoutes.includes(pathname) ? "gradient" : "geometric";
   };
 

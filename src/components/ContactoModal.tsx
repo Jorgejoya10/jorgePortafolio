@@ -72,7 +72,7 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
               darkMode
                 ? "text-white hover:text-red-400"
                 : "text-slate-600 hover:text-red-500"
-            }`}
+            } hover:cursor-pointer`}
             size={28}
           />
         </button>
@@ -114,7 +114,7 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
           <div className="flex justify-between items-center gap-2">
             <button
               type="submit"
-              className="bg-gradient-to-r hover:scale-105 from-purple-500 to-pink-500 text-white px-4 py-2 rounded-md hover:brightness-110 transition"
+              className="hover:cursor-pointer bg-gradient-to-r hover:scale-105 from-purple-500 to-pink-500 text-white px-4 py-2 rounded-md hover:brightness-110 transition"
             >
               {t("contact_modal.send")}
             </button>
