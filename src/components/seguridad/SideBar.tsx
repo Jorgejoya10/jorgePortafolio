@@ -1,5 +1,5 @@
 // src/components/seguridad/SideBar.tsx
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FaShieldAlt } from "react-icons/fa";
 import { GiSecretBook } from "react-icons/gi";
@@ -12,13 +12,34 @@ interface SideBarProps {
 
 const SideBar = ({ darkMode }: SideBarProps) => {
   const [collapsed, setCollapsed] = useState(true);
+  const sidebarRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
   const toggleSidebar = () => setCollapsed(!collapsed);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
+        setCollapsed(true);
+      }
+    };
+
+    if (!collapsed) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [collapsed]);
+
   return (
     <aside
-      className={`fixed mt-2 left-4 transition-all duration-300 h-auto ${
+      ref={sidebarRef}
+      className={`fixed mt-2 left-4 transition-all duration-300 h-auto z-50 ${
         collapsed ? "w-10" : "w-44"
       } ${darkMode ? "sidebar-dark" : "sidebar-light"}`}
     >
@@ -43,23 +64,37 @@ const SideBar = ({ darkMode }: SideBarProps) => {
               />
             }
             title={t("sidebar.iso.title")}
-            items={[t("sidebar.iso.services"), t("sidebar.iso.mechanisms")]}
+            items={[
+              { label: t("sidebar.iso.services"), to: "/security/ISO" },
+              { label: t("sidebar.iso.mechanisms"), to: "/security/ISO"},
+            ]}
             collapsed={collapsed}
           />
           <Section
             icon={<FaShieldAlt size={20} />}
             title={t("sidebar.crypto.title")}
             items={[
-              t("sidebar.crypto.symmetric"),
-              t("sidebar.crypto.asymmetric"),
-              t("sidebar.crypto.hash"),
+              {
+                label: t("sidebar.crypto.symmetric"),
+                to: "/security/Cryptography",
+              },
+              {
+                label: t("sidebar.crypto.asymmetric"),
+                to: "/security/Cryptography",
+              },
+              { label: t("sidebar.crypto.hash"), to: "/security/Cryptography" },
             ]}
             collapsed={collapsed}
           />
           <Section
             icon={<GiSecretBook size={20} />}
             title={t("sidebar.protocols.title")}
-            items={[]}
+            items={[
+              {
+                label: t("sidebar.protocols.title"),
+                to: "/security/Protocols",
+              },
+            ]}
             collapsed={collapsed}
           />
         </nav>

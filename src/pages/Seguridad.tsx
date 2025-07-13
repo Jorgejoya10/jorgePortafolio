@@ -1,6 +1,6 @@
 // src/pages/Seguridad.tsx
-import { useOutletContext } from "react-router-dom";
-import SideBar from '../components/seguridad/SideBar';
+import { useOutletContext, Outlet } from "react-router-dom";
+import SideBar from "../components/seguridad/SideBar";
 
 interface ContextType {
   darkMode: boolean;
@@ -12,8 +12,8 @@ export default function Seguridad() {
   return (
     <div className="flex min-h-screen">
       <SideBar darkMode={darkMode} />
-      <main className="flex-1 pt-[72px]">
-        {/* tu contenido */}
+      <main className="flex-1 pt-[10px] pl-10 px-4 transition-all duration-300">
+        <Outlet />
       </main>
     </div>
   );

@@ -1,10 +1,11 @@
 // src/components/seguridad/Section.tsx
 import type { ReactNode } from "react";
+import { Link } from "react-router-dom";
 
 interface SectionProps {
   icon: ReactNode;
   title: string;
-  items?: string[];
+  items: { label: string; to: string }[];
   collapsed?: boolean;
 }
 
@@ -15,12 +16,20 @@ const Section = ({ icon, title, items = [], collapsed = false }: SectionProps) =
         <span>{icon}</span>
         {!collapsed && <span>{title}</span>}
       </div>
-      {!collapsed &&
-        items.map((item, idx) => (
-          <p key={idx} className="pl-6 text-sm">
-            {item}
-          </p>
-        ))}
+      {!collapsed && (
+  <ul className="mt-2 space-y-1">
+    {items.map((item, idx) => (
+      <li key={idx}>
+        <Link
+          to={item.to}
+          className={`text-sm hover:underline`}
+        >
+          {item.label}
+        </Link>
+      </li>
+    ))}
+  </ul>
+)}
     </div>
   );
 };

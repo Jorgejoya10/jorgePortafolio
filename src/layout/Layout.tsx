@@ -17,9 +17,9 @@ const Layout = () => {
   const getBackgroundType = (
     pathname: string
   ): "gradient" | "geometric" | "animated-gradient" => {
-    if (pathname === "/desarrollo") return "animated-gradient";
+    if (pathname === "/development") return "animated-gradient";
 
-    const gradientRoutes = ["/terms", "/privacy", "/seguridad"];
+    const gradientRoutes = ["/terms", "/privacy", "/security", "/security/ISO", "/security/Cryptography", "/security/Protocols"];
     return gradientRoutes.includes(pathname) ? "gradient" : "geometric";
   };
 

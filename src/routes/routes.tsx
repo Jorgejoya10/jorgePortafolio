@@ -3,19 +3,30 @@ import Layout from "../layout/Layout";
 import Home from "../pages/Home";
 import Desarrollo from "../pages/Desarrollo";
 import Seguridad from "../pages/Seguridad";
-import Privacy from '../pages/legal/Privacy'
-import Terms from '../pages/legal/Terms'
+import ISO from "../pages/seguridad/ISO";
+import Cryptography from "../pages/seguridad/Cryptography";
+import Protocols from "../pages/seguridad/Protocols";
+import Privacy from "../pages/legal/Privacy";
+import Terms from "../pages/legal/Terms";
 
 const routes: RouteObject[] = [
   {
     path: "/",
-    element: <Layout />, 
+    element: <Layout />,
     children: [
       { path: "", element: <Home /> },
-      { path: "desarrollo", element: <Desarrollo /> },
-      { path: "seguridad", element: <Seguridad /> },
+      { path: "development", element: <Desarrollo /> },
+      {
+        path: "security",
+        element: <Seguridad />,
+        children: [
+          { path: "ISO", element: <ISO /> },
+          { path: "Cryptography", element: <Cryptography /> },
+          { path: "Protocols", element: <Protocols /> },
+        ],
+      },
       { path: "terms", element: <Terms /> },
-{ path: "privacy", element: <Privacy /> },
+      { path: "privacy", element: <Privacy /> },
     ],
   },
 ];

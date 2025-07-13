@@ -107,7 +107,7 @@ const Nav = ({ setIsModalOpen, darkMode, setDarkMode }: NavProps) => {
           >
             <button
               onClick={() => {
-                handleNavClick("/desarrollo");
+                handleNavClick("/development");
                 setIsOpen(false);
               }}
               className="block py-2 px-4 hover:underline w-full text-left"
@@ -116,7 +116,7 @@ const Nav = ({ setIsModalOpen, darkMode, setDarkMode }: NavProps) => {
             </button>
             <button
               onClick={() => {
-                handleNavClick("/seguridad");
+                handleNavClick("/security");
                 setIsOpen(false);
               }}
               className="block py-2 px-4 hover:underline w-full text-left"
@@ -130,13 +130,13 @@ const Nav = ({ setIsModalOpen, darkMode, setDarkMode }: NavProps) => {
       {/* ENLACES (desktop) */}
       <div className="hidden md:flex items-center gap-6 font-medium">
         <button
-          onClick={() => handleNavClick("/desarrollo")}
+          onClick={() => handleNavClick("/development")}
           className="hover:text-gray-400 cursor-pointer"
         >
           {t("navbar.development")}
         </button>
         <button
-          onClick={() => handleNavClick("/seguridad")}
+          onClick={() => handleNavClick("/security")}
           className="hover:text-gray-400 cursor-pointer"
         >
           {t("navbar.security")}
