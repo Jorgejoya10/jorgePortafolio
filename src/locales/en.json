@@ -126,6 +126,12 @@
       "title": "Protocols"
     }
   },
+  "securityLanding": {
+  "title": "What is meant by security?",
+  "quote": "The term 'security' is used in the sense of minimizing the vulnerabilities of assets and resources.",
+  "context": "Security in this new interconnected world is a matter of national security for developed countries and the necessary foundation for the supremacy of the world’s largest organizations.",
+  "description": "Here we will explain what security means using official resources from the most important international agencies in the world. From design and implementation standards to modern cryptography and resilient protocols."
+},
   "footer": {
     "role": "Jorge Chávez – Full Stack Developer & Security Analyst",
     "terms": "Terms & Conditions",

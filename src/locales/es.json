@@ -126,6 +126,13 @@
       "title": "Protocolos"
     }
   },
+  "securityLanding": {
+  "title": "¿Qué se entiende por seguridad?",
+  "quote": "El término 'seguridad' se utiliza en el sentido de minimizar las vulnerabilidades de los activos y recursos.",
+  "context": "La seguridad en este nuevo mundo interconectado es asunto de seguridad nacional para países desarrollados y la base necesaria para la supremacía de las organizaciones más grandes del mundo.",
+  "description": "Aquí explicaremos lo que es seguridad con recursos oficiales de las agencias internacionales más importantes del mundo. Desde estándares de diseño e implementación, hasta criptografía moderna y protocolos resilientes."
+}
+,
   "footer": {
     "role": "Jorge Chávez – Desarrollador Full Stack & Analista de Seguridad",
     "terms": "Términos y condiciones",

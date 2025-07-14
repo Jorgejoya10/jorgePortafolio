@@ -1,6 +1,7 @@
 // src/components/seguridad/SideBar.tsx
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 import { FaShieldAlt } from "react-icons/fa";
 import { GiSecretBook } from "react-icons/gi";
 import { MdOutlineSegment } from "react-icons/md";
@@ -14,9 +15,11 @@ const SideBar = ({ darkMode }: SideBarProps) => {
   const [collapsed, setCollapsed] = useState(true);
   const sidebarRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
+  const location = useLocation();
 
   const toggleSidebar = () => setCollapsed(!collapsed);
 
+  // Collapse on outside click
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
@@ -35,6 +38,11 @@ const SideBar = ({ darkMode }: SideBarProps) => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [collapsed]);
+
+  // Collapse on route change
+  useEffect(() => {
+    setCollapsed(true);
+  }, [location.pathname]);
 
   return (
     <aside
@@ -64,15 +72,19 @@ const SideBar = ({ darkMode }: SideBarProps) => {
               />
             }
             title={t("sidebar.iso.title")}
+            to="/security/ISO"
+            collapsed={collapsed}
             items={[
               { label: t("sidebar.iso.services"), to: "/security/ISO" },
-              { label: t("sidebar.iso.mechanisms"), to: "/security/ISO"},
+              { label: t("sidebar.iso.mechanisms"), to: "/security/ISO" },
             ]}
-            collapsed={collapsed}
           />
+
           <Section
             icon={<FaShieldAlt size={20} />}
             title={t("sidebar.crypto.title")}
+            to="/security/Cryptography"
+            collapsed={collapsed}
             items={[
               {
                 label: t("sidebar.crypto.symmetric"),
@@ -82,20 +94,24 @@ const SideBar = ({ darkMode }: SideBarProps) => {
                 label: t("sidebar.crypto.asymmetric"),
                 to: "/security/Cryptography",
               },
-              { label: t("sidebar.crypto.hash"), to: "/security/Cryptography" },
+              {
+                label: t("sidebar.crypto.hash"),
+                to: "/security/Cryptography",
+              },
             ]}
-            collapsed={collapsed}
           />
+
           <Section
             icon={<GiSecretBook size={20} />}
             title={t("sidebar.protocols.title")}
+            to="/security/Protocols"
+            collapsed={collapsed}
             items={[
               {
                 label: t("sidebar.protocols.title"),
                 to: "/security/Protocols",
               },
             ]}
-            collapsed={collapsed}
           />
         </nav>
       </div>
