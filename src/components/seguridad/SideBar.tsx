@@ -72,31 +72,27 @@ const SideBar = ({ darkMode }: SideBarProps) => {
               />
             }
             title={t("sidebar.iso.title")}
-            to="/security/ISO"
+            to="/security/Standars"
             collapsed={collapsed}
             items={[
-              { label: t("sidebar.iso.services"), to: "/security/ISO" },
-              { label: t("sidebar.iso.mechanisms"), to: "/security/ISO" },
+              { label: t("sidebar.iso.iso7498-2"), to: "/security/ISO7498-2" },
+              { label: t("sidebar.iso.iso2700"), to: "/security/ISO27000" },
             ]}
           />
 
           <Section
             icon={<FaShieldAlt size={20} />}
             title={t("sidebar.crypto.title")}
-            to="/security/Cryptography"
+            to="/security/Cryptology"
             collapsed={collapsed}
             items={[
               {
-                label: t("sidebar.crypto.symmetric"),
+                label: t("sidebar.crypto.cryptography"),
                 to: "/security/Cryptography",
               },
               {
-                label: t("sidebar.crypto.asymmetric"),
-                to: "/security/Cryptography",
-              },
-              {
-                label: t("sidebar.crypto.hash"),
-                to: "/security/Cryptography",
+                label: t("sidebar.crypto.steganography"),
+                to: "/security/Steganography",
               },
             ]}
           />

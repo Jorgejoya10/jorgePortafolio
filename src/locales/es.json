@@ -112,15 +112,14 @@
   "sidebar": {
     "toggle": "Expandir / Colapsar",
     "iso": {
-      "title": "ISO 7498-2",
-      "services": "Servicios.",
-      "mechanisms": "Mecanismos."
+      "title": "Estandares.",
+      "iso7498-2": "ISO 7498-2.",
+      "iso2700": "ISO 27000."
     },
     "crypto": {
-      "title": "Criptografía",
-      "symmetric": "Simétrica.",
-      "asymmetric": "Asimétrica.",
-      "hash": "Hash."
+      "title": "Criptología.",
+      "cryptography": "Criptografía.",
+      "steganography": "Estaganografía."
     },
     "protocols": {
       "title": "Protocolos"

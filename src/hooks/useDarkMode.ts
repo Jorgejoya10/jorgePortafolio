@@ -8,7 +8,7 @@ const useDarkMode = (): [boolean, (val: boolean) => void] => {
     const stored = localStorage.getItem("darkMode");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-    const initialMode = stored !== null ? stored === "true" : prefersDark;
+    const initialMode = stored !== null ? stored === "false" : prefersDark;
 
     setDarkMode(initialMode);
     document.documentElement.classList.toggle("dark", initialMode);
