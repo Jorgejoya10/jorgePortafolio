@@ -48,7 +48,7 @@ const SideBar = ({ darkMode }: SideBarProps) => {
     <aside
       ref={sidebarRef}
       className={`fixed mt-2 left-4 transition-all duration-300 h-auto z-50 ${
-        collapsed ? "w-10" : "w-44"
+        collapsed ? "w-10" : "w-32"
       } ${darkMode ? "sidebar-dark" : "sidebar-light"}`}
     >
       <div className="h-full flex flex-col">

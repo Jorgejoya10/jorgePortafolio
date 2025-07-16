@@ -22,7 +22,8 @@
     "or": "or use",
     "accept": "I accept the",
     "terms": "Terms and Conditions",
-    "error_terms": "You must accept the Terms and Conditions to proceed."
+    "error_terms": "You must accept the Terms and Conditions to proceed.",
+    "enterprise": "Are you a company?"
   },
   "roadmap": {
     "title": "My Adventure.",
@@ -126,11 +127,32 @@
     }
   },
   "securityLanding": {
-  "title": "What is meant by security?",
-  "quote": "The term 'security' is used in the sense of minimizing the vulnerabilities of assets and resources.",
-  "context": "Security in this new interconnected world is a matter of national security for developed countries and the necessary foundation for the supremacy of the world’s largest organizations.",
-  "description": "Here we will explain what security means using official resources from the most important international agencies in the world. From design and implementation standards to modern cryptography and resilient protocols."
-},
+    "title": "What is meant by security?",
+    "quote": "The term 'security' is used in the sense of minimizing the vulnerabilities of a system's assets and resources.",
+    "context": "Security in this new interconnected world is a matter of national security for developed countries and the necessary foundation for the supremacy of the world’s largest organizations.",
+    "description": "Here we will explain what security means using official resources from the most important international agencies in the world. From design and implementation standards to modern cryptography and resilient protocols."
+  },
+  "securityServices": {
+    "title": "How can I help you?",
+    "audit": {
+      "title": "Security Audits",
+      "description": "Technical and regulatory evaluation to strengthen your systems and processes."
+    },
+    "testing": {
+      "title": "Quality Testing",
+      "description": "Functional, stress, and security testing to validate your software behavior."
+    },
+    "certification": {
+      "title": "Certification Readiness",
+      "description": "I help you meet ISO 27001, SOC2, and OWASP standards for your products and processes."
+    },
+    "consulting": {
+      "title": "Professional Consulting",
+      "description": "Specialized consulting in secure software development, cryptography, and resilient architecture design."
+    },
+    "cta": "Ready to improve the security of your system or product?",
+    "contact": "Get in Touch"
+  },
   "footer": {
     "role": "Jorge Chávez – Full Stack Developer & Security Analyst",
     "terms": "Terms & Conditions",

@@ -92,7 +92,7 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
           />
 
           {/* Checkbox de términos */}
-          <label className="flex items-start text-sm gap-2 text-white">
+          <label className="flex items-start text-sm gap-2">
             <input
               type="checkbox"
               checked={acceptedTerms}
@@ -129,6 +129,15 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
             >
               <FaTelegramPlane />
             </a>
+          </div>
+          <div>
+             <Link
+                to="/terms"
+                className="underline text-blue-700 hover:text-blue-500"
+                target="_blank"
+              >
+                {t("contact_modal.enterprise")}
+              </Link>
           </div>
         </form>
       </div>

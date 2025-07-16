@@ -10,7 +10,7 @@ const Geometric = ({ darkMode }: BackgroundProps) => {
         darkMode
           ? {
               background:
-                "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 45%), #000000",
+                "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 35%), #000000",
             }
           : {
               background: "#ffffff",
@@ -18,7 +18,7 @@ const Geometric = ({ darkMode }: BackgroundProps) => {
         radial-gradient(
           circle at top center,
           rgba(70, 130, 180, 0.5),
-          transparent 25%
+          transparent 20%
         )
       `,
               filter: "blur(70px)",
