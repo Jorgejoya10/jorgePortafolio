@@ -25,6 +25,37 @@
     "error_terms": "You must accept the Terms and Conditions to proceed.",
     "enterprise": "Are you a company?"
   },
+  "enterpriseForm": {
+    "title": "Enterprise Contact Form",
+    "name": "Full Name",
+    "company": "Company Name",
+    "companySize": "Company Size",
+    "companySizeOptions": {
+      "micro": "Micro (1–10)",
+      "small": "Small (11–50)",
+      "medium": "Medium (51–250)",
+      "large": "Large (250+)"
+    },
+    "service": "Required Service",
+    "serviceOptions": {
+      "audit": "Security Audit",
+      "pentest": "Penetration Testing",
+      "consulting": "Consulting",
+      "readiness": "Certification Readiness"
+    },
+    "email": "Email",
+    "submit": "Submit Request",
+    "placeholders": {
+      "name": "e.g. John Doe",
+      "company": "e.g. CyberTech Inc.",
+      "email": "e.g. contact@cybertech.com"
+    }
+  },
+  "notifications": {
+    "invalidEmail": "❌ Invalid email address",
+    "incompleteFields": "⚠️ Please complete all required fields",
+    "success": "📨 Request submitted successfully"
+  },
   "roadmap": {
     "title": "My Adventure.",
     "steps": [

@@ -101,7 +101,7 @@ const SecurityLanding = () => {
           {t("securityServices.cta")}
         </h3>
         <Link
-          to="#contact"
+          to="/enterprise"
           className="inline-block mt-4 px-6 py-2 rounded-lg border font-semibold transition hover:bg-white/10"
         >
           {t("securityServices.contact")}

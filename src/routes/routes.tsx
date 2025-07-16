@@ -12,6 +12,7 @@ import Steganography from "../pages/seguridad/Cryptology/Steganography";
 import Protocols from "../pages/seguridad/Protocols";
 import Privacy from "../pages/legal/Privacy";
 import Terms from "../pages/legal/Terms";
+import Enterprise from '../pages/enterprise'
 
 const routes: RouteObject[] = [
   {
@@ -33,8 +34,9 @@ const routes: RouteObject[] = [
           { path: "Protocols", element: <Protocols /> },
         ],
       },
-      { path: "terms", element: <Terms /> },
-      { path: "privacy", element: <Privacy /> },
+      { path: "Terms", element: <Terms /> },
+      { path: "Privacy", element: <Privacy /> },
+      { path: "Enterprise", element: <Enterprise /> },
     ],
   },
 ];

@@ -25,6 +25,89 @@
     "error_terms": "Debes aceptar los Términos y Condiciones para continuar.",
     "enterprise": "¿Eres una empresa?"
   },
+  "enterpriseForm": {
+    "title": "Formulario de Contacto Empresarial",
+    "name": "Nombre Completo",
+    "company": "Nombre de la Empresa",
+    "companySize": "Tamaño de la Empresa",
+    "companySizeOptions": {
+      "micro": "Micro (1–10)",
+      "small": "Pequeña (11–50)",
+      "medium": "Mediana (51–250)",
+      "large": "Grande (250+)"
+    },
+    "service": "Servicio Requerido",
+    "serviceOptions": {
+      "audit": "Auditoría de Seguridad",
+      "pentest": "Pruebas de Penetración",
+      "consulting": "Consultoría",
+      "readiness": "Preparación para Certificación"
+    },
+    "email": "Correo Electrónico",
+    "submit": "Enviar Solicitud",
+    "placeholders": {
+      "name": "Ej: Juan Pérez",
+      "company": "Ej: Tecnología Segura SA",
+      "email": "Ej: contacto@empresa.com"
+    }
+  },
+  "iso7498": {
+    "intro": "El objetivo de este documento es proponer una base de seguridad para el intercambio de información entre procesos de aplicación.",
+    "securityDefinitionTitle": "¿Qué es seguridad según ISO 7498-2?",
+    "securityDefinition": "Seguridad es minimizar las vulnerabilidades de los activos de un sistema. Una vulnerabilidad es una debilidad explotable. Una amenaza es una posible violación de seguridad.",
+    "questionsTitle": "Preguntas clave:",
+    "questions": {
+      "1": "¿Qué es un sistema?",
+      "2": "¿Qué es un activo?",
+      "3": "¿Qué es una vulnerabilidad?",
+      "4": "¿Qué es una amenaza?",
+      "5": "¿Qué es el riesgo?",
+      "6": "¿Qué es un ataque?"
+    },
+    "systemDefinition": "Definimos qué sistema queremos proteger",
+    "systemInfo": "Usaremos un sistema informático como ejemplo.",
+    "systemComponents": {
+      "title": "Sistema:",
+      "items": {
+        "1": "Información",
+        "2": "Software",
+        "3": "Hardware",
+        "4": "Personas"
+      }
+    },
+    "answersTitle": "Respuestas a las preguntas:",
+    "answers": {
+      "1": {
+        "q": "¿Qué quiero proteger?",
+        "a": "Los componentes fundamentales del sistema. Si uno falla, el sistema deja de funcionar."
+      },
+      "2": {
+        "q": "¿Qué debilidades tiene el sistema?",
+        "a": "Cada activo tiene vulnerabilidades inherentes, técnicas o humanas."
+      },
+      "3": {
+        "q": "¿Contra qué lo quiero proteger?",
+        "a": "Contra amenazas que explotan vulnerabilidades."
+      },
+      "4": {
+        "q": "¿Cómo lo protejo?",
+        "a": "Aplicando propiedades de seguridad: confidencialidad, integridad y disponibilidad."
+      },
+      "5": {
+        "q": "¿Qué pasa si fallan?",
+        "a": "Ocurre un ataque, que explota vulnerabilidades y viola la seguridad."
+      },
+      "6": {
+        "q": "¿Qué probabilidad hay de que ocurra?",
+        "a": "Riesgo = probabilidad × impacto."
+      }
+    }
+  },
+  "notifications": {
+    "invalidEmail": "❌ Email no válido",
+    "incompleteFields": "⚠️ Por favor completa todos los campos",
+    "success": "📨 Solicitud enviada correctamente"
+  },
   "roadmap": {
     "title": "Mi Aventura.",
     "steps": [
