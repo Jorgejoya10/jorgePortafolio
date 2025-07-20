@@ -9,11 +9,11 @@ const ISO7498 = () => {
   return (
     <section className="max-w-6xl mx-auto px-2">
       <HeaderAndNotice/>
-      <ISOIntro />
-      <SecurityDefinition />
-      <KeyQuestions />
-      <SystemDiagram />
-      <DeepQuestions />
+      <ISOIntro/>
+      <SecurityDefinition/>
+      <KeyQuestions/>
+      <SystemDiagram/>
+      <DeepQuestions/>
     </section>
   );
 };

@@ -52,23 +52,29 @@
     }
   },
  "iso7498": {
-  "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Parte 2: Arquitectura de Seguridad.",
-  "disclaimer": {
-    "1": "*Este análisis hace referencia a conceptos clave del estándar",
-    "2": ", parte de la familia 7498 sobre arquitectura de seguridad para sistemas abiertos. La parte 2 tiene un costo aproximado de",
-    "3": " en el sitio oficial de ",
-    "4": " No contamos con derechos de autor para su distribución completa, pero sí podemos presentar de forma legítima fragmentos y explicaciones basadas en su contenido, ya que ha sido adquirido legalmente para estudio y análisis. Además, puedes consultar de forma gratuita la primera parte de la familia ",
-    "5": "que ofrece definiciones y fundamentos relevantes para comprender el marco de seguridad abordado en esta sección."
+  "headerAndNotice": {
+    "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Part 2: Security Architecture.",
+    "paragraph": "*Este análisis hace referencia a conceptos clave del estándar <strong>ISO 7498-2</strong>, parte de la familia 7498 sobre arquitectura de seguridad para sistemas abiertos. La parte 2 tiene un costo aproximado de <strong>150 USD</strong> en el sitio oficial de <a class='text-blue-600 underline' href='https://www.iso.org/standard/14256.html' target='_blank' rel='noopener noreferrer'>ISO</a>. No contamos con derechos de autor para su distribución completa, pero sí podemos presentar de forma legítima fragmentos y explicaciones basadas en su contenido, ya que ha sido adquirido legalmente para estudio y análisis. Además, puedes consultar de forma gratuita la primera parte de la familia <a class='text-blue-600 underline' href='https://www.iso.org/es/contents/data/standard/02/02/20269.html?browse=tc' target='_blank' rel='noopener noreferrer'>ISO 7498</a>, que ofrece definiciones y fundamentos relevantes para comprender el marco de seguridad abordado en esta sección."
   },
-  "intro": {
-    "strong": "El título nos revela",
-    "text": "que el objetivo de este estándar es proponer una base de seguridad para el intercambio de información entre procesos de aplicación. En ese sentido, es fundamental contar primero con una comprensión clara de los conceptos básicos en materia de seguridad de la información."
+  "isoIntro": {
+    "highlight": "El título nos revela",
+    "body": "que el objetivo de este estándar es proponer una base de seguridad para el intercambio de información entre procesos de aplicación. En ese sentido, es fundamental contar primero con una comprensión clara de los conceptos básicos en materia de seguridad de la información."
   },
-  "security": {
+   "securityDefinition": {
     "title": "¿Qué se entiende por seguridad?",
-    "description": "El término «seguridad» se utiliza en el sentido de minimizar las vulnerabilidades de los activos y recursos de un sistema. Un activo es cualquier cosa de valor. Una vulnerabilidad es cualquier debilidad que pueda explotarse para vulnerar un sistema. Una amenaza es una posible violación de la seguridad."
+    "body": {
+      "1": "El término ",
+      "2": " es cualquier cosa de valor. Una ",
+      "3": " es cualquier debilidad que pueda explotarse para vulnerar un sistema. Una ",
+      "4": " es una posible violación de la seguridad."
+    },
+    "terms": {
+      "asset": "«activo»",
+      "vulnerability": "«vulnerabilidad»",
+      "threat": "«amenaza»"
+    }
   },
-  "questions": {
+  "keyQuestions": {
     "title": "Es normal que tengas preguntas.",
     "list": [
       "¿Qué es un sistema?",
@@ -78,9 +84,9 @@
       "¿Qué es el riesgo?",
       "¿Qué es un ataque?"
     ],
-    "footer": "Para poder responder estas preguntas primero debemos definir cuál es nuestro sistema que queremos proteger. Puede ser casi cualquier cosa: una casa, un automóvil, un edificio o un sistema informático."
+    "conclusion": "Para poder responder estas preguntas primero debemos definir cuál es nuestro sistema que queremos proteger. Puede ser casi cualquier cosa: una casa, un automóvil, un edificio o un sistema informático."
   },
-  "system": {
+   "systemDiagram": {
     "title": "Sistema.",
     "items": [
       "1. Información.",
@@ -121,6 +127,7 @@
       "note": "R = P (ocurrencia) × Impacto"
     }
   ]
+
 },
   "notifications": {
     "invalidEmail": "❌ Email no válido",

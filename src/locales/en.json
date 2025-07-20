@@ -139,24 +139,30 @@
     "phases": "It’s security in\nall phases\nof development."
   },
   "iso7498": {
-  "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Part 2: Security Architecture.",
-  "disclaimer": {
-    "1": "*This analysis refers to key concepts from the standard",
-    "2": ", part of the 7498 family on security architecture for open systems. Part 2 has an approximate cost of",
-    "3": " on the official ",
-    "4": " We do not have copyright to distribute the full document, but we can legitimately present excerpts and explanations based on its content, as it has been legally acquired for study and analysis. In addition, you can freely access the first part of the family ",
-    "5": "which offers definitions and foundational concepts to understand the security framework addressed in this section."
+  "headerAndNotice": {
+    "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Part 2: Security Architecture.",
+    "paragraph": "*This analysis refers to key concepts of the <strong>ISO 7498-2</strong> standard, part of the 7498 family on security architecture for open systems. Part 2 has an approximate cost of <strong>150 USD</strong> on the official <a class='text-blue-600 underline' href='https://www.iso.org/standard/14256.html' target='_blank' rel='noopener noreferrer'>ISO</a> website. We do not hold copyright for its full distribution, but we can legitimately present fragments and explanations based on its content, as it has been legally acquired for study and analysis. Additionally, you can consult the first part of the 7498 family for free at <a class='text-blue-600 underline' href='https://www.iso.org/es/contents/data/standard/02/02/20269.html?browse=tc' target='_blank' rel='noopener noreferrer'>ISO 7498</a>, which offers definitions and relevant foundations for understanding the security framework addressed in this section."
   },
-  "intro": {
-    "strong": "The title reveals",
-    "text": "that the purpose of this standard is to propose a security foundation for the exchange of information between application processes. In that sense, it's essential to first have a clear understanding of basic information security concepts."
+  "isoIntro": {
+    "highlight": "The title reveals to us",
+    "body": "that the purpose of this standard is to propose a security foundation for the exchange of information between application processes. In that sense, it is essential to first have a clear understanding of basic concepts in information security."
   },
-  "security": {
+  "securityDefinition": {
     "title": "What is meant by security?",
-    "description": "The term 'security' is used in the sense of minimizing vulnerabilities of a system's assets and resources. An asset is anything of value. A vulnerability is any weakness that can be exploited to compromise a system. A threat is a potential violation of security."
+    "body": {
+      "1": "The term ",
+      "2": " is anything of value. A ",
+      "3": " is any weakness that can be exploited to compromise a system. A ",
+      "4": " is a potential breach of security."
+    },
+    "terms": {
+      "asset": "«asset»",
+      "vulnerability": "«vulnerability»",
+      "threat": "«threat»"
+    }
   },
-  "questions": {
-    "title": "It's normal to have questions.",
+  "keyQuestions": {
+    "title": "It is normal to have questions.",
     "list": [
       "What is a system?",
       "What is an asset?",
@@ -165,9 +171,9 @@
       "What is risk?",
       "What is an attack?"
     ],
-    "footer": "To answer these questions, we must first define what system we want to protect. It can be almost anything: a house, a car, a building, or an IT system."
+    "conclusion": "To answer these questions, we must first define what system we want to protect. It can be almost anything: a house, a car, a building, or an information system."
   },
-  "system": {
+  "systemDiagram": {
     "title": "System.",
     "items": [
       "1. Information.",
@@ -179,32 +185,32 @@
   "deepQuestions": [
     {
       "title": "1. What do I want to protect?",
-      "body": "The essential components of my system. If any of them fail or are lost, the system stops working. Commonly referred to as assets.",
-      "note": "* There is a security field responsible for classifying asset hierarchy. Risk Management."
+      "body": "The fundamental components of my system. If any of them fail or are lost, the system stops functioning. Commonly referred to as assets.",
+      "note": "* There is a security area responsible for classifying asset hierarchy: Risk Management."
     },
     {
       "title": "2. What weaknesses does my system have?",
-      "body": "The system may have inherent weaknesses in each asset. These are known as vulnerabilities.",
-      "note": "* There is a security field dedicated to finding vulnerabilities called Pentesting."
+      "body": "The system may have inherent weaknesses in each asset. These weaknesses are known as vulnerabilities.",
+      "note": "* There is a security area focused on vulnerability discovery called Pentesting."
     },
     {
       "title": "3. What do I want to protect it from?",
-      "body": "From any event or circumstance that could potentially cause loss or damage to my assets. This is called a threat.",
-      "note": "* There is a security field dedicated to threat analysis. Risk Management."
+      "body": "From any event or circumstance that has the potential to cause loss or damage to my assets. We call this a threat.",
+      "note": "* There is a security area dedicated to threat analysis: Risk Management."
     },
     {
       "title": "4. How do I protect it?",
-      "body": "There are different security properties that can be fully guaranteed. These are known as security services.",
-      "note": "* This standard aims to define which services can be guaranteed and how to do so."
+      "body": "There are different security properties I can guarantee absolutely. These are better known as security services.",
+      "note": "* This standard covers which services can be guaranteed and how to achieve them."
     },
     {
-      "title": "5. What happens if I fail to protect it?",
-      "body": "An attack is a functionality that, exploiting a vulnerability, realizes a threat.",
-      "note": "* There is a security field dedicated to handling attacks. Incident Response."
+      "title": "5. What if I fail to protect?",
+      "body": "An attack is a functionality that, by exploiting a specific vulnerability, materializes a threat.",
+      "note": "* There is a security area focused on handling attacks: Incident Response."
     },
     {
       "title": "6. Can the probability of an attack be calculated?",
-      "body": "Yes, risk is the probability of occurrence multiplied by the impact it would cause to the system.",
+      "body": "Yes, risk is the probability of occurrence multiplied by the impact it would have on my system.",
       "note": "R = P (occurrence) × Impact"
     }
   ]

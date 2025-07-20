@@ -7,7 +7,7 @@ const SecurityLanding = () => {
 
   return (
     <section className="w-full px-6 py-12 md:py-10 text-center">
-      <h1 className="text-3xl md:text-5xl font-extrabold mb-4">
+      <h1 className="text-3xl md:text-5xl font-extrabold mb-8">
         {t("securityLanding.title")}
       </h1>
       <p className="text-base md:text-lg max-w-2xl mx-auto font-medium italic mb-2">
