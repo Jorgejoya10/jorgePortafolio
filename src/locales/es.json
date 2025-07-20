@@ -26,7 +26,7 @@
     "enterprise": "¿Eres una empresa?"
   },
   "enterpriseForm": {
-    "title": "Formulario de Contacto Empresarial",
+    "title": "Contacto Empresarial",
     "name": "Nombre Completo",
     "company": "Nombre de la Empresa",
     "companySize": "Tamaño de la Empresa",
@@ -51,58 +51,77 @@
       "email": "Ej: contacto@empresa.com"
     }
   },
-  "iso7498": {
-    "intro": "El objetivo de este documento es proponer una base de seguridad para el intercambio de información entre procesos de aplicación.",
-    "securityDefinitionTitle": "¿Qué es seguridad según ISO 7498-2?",
-    "securityDefinition": "Seguridad es minimizar las vulnerabilidades de los activos de un sistema. Una vulnerabilidad es una debilidad explotable. Una amenaza es una posible violación de seguridad.",
-    "questionsTitle": "Preguntas clave:",
-    "questions": {
-      "1": "¿Qué es un sistema?",
-      "2": "¿Qué es un activo?",
-      "3": "¿Qué es una vulnerabilidad?",
-      "4": "¿Qué es una amenaza?",
-      "5": "¿Qué es el riesgo?",
-      "6": "¿Qué es un ataque?"
-    },
-    "systemDefinition": "Definimos qué sistema queremos proteger",
-    "systemInfo": "Usaremos un sistema informático como ejemplo.",
-    "systemComponents": {
-      "title": "Sistema:",
-      "items": {
-        "1": "Información",
-        "2": "Software",
-        "3": "Hardware",
-        "4": "Personas"
-      }
-    },
-    "answersTitle": "Respuestas a las preguntas:",
-    "answers": {
-      "1": {
-        "q": "¿Qué quiero proteger?",
-        "a": "Los componentes fundamentales del sistema. Si uno falla, el sistema deja de funcionar."
-      },
-      "2": {
-        "q": "¿Qué debilidades tiene el sistema?",
-        "a": "Cada activo tiene vulnerabilidades inherentes, técnicas o humanas."
-      },
-      "3": {
-        "q": "¿Contra qué lo quiero proteger?",
-        "a": "Contra amenazas que explotan vulnerabilidades."
-      },
-      "4": {
-        "q": "¿Cómo lo protejo?",
-        "a": "Aplicando propiedades de seguridad: confidencialidad, integridad y disponibilidad."
-      },
-      "5": {
-        "q": "¿Qué pasa si fallan?",
-        "a": "Ocurre un ataque, que explota vulnerabilidades y viola la seguridad."
-      },
-      "6": {
-        "q": "¿Qué probabilidad hay de que ocurra?",
-        "a": "Riesgo = probabilidad × impacto."
-      }
-    }
+ "iso7498": {
+  "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Parte 2: Arquitectura de Seguridad.",
+  "disclaimer": {
+    "1": "*Este análisis hace referencia a conceptos clave del estándar",
+    "2": ", parte de la familia 7498 sobre arquitectura de seguridad para sistemas abiertos. La parte 2 tiene un costo aproximado de",
+    "3": " en el sitio oficial de ",
+    "4": " No contamos con derechos de autor para su distribución completa, pero sí podemos presentar de forma legítima fragmentos y explicaciones basadas en su contenido, ya que ha sido adquirido legalmente para estudio y análisis. Además, puedes consultar de forma gratuita la primera parte de la familia ",
+    "5": "que ofrece definiciones y fundamentos relevantes para comprender el marco de seguridad abordado en esta sección."
   },
+  "intro": {
+    "strong": "El título nos revela",
+    "text": "que el objetivo de este estándar es proponer una base de seguridad para el intercambio de información entre procesos de aplicación. En ese sentido, es fundamental contar primero con una comprensión clara de los conceptos básicos en materia de seguridad de la información."
+  },
+  "security": {
+    "title": "¿Qué se entiende por seguridad?",
+    "description": "El término «seguridad» se utiliza en el sentido de minimizar las vulnerabilidades de los activos y recursos de un sistema. Un activo es cualquier cosa de valor. Una vulnerabilidad es cualquier debilidad que pueda explotarse para vulnerar un sistema. Una amenaza es una posible violación de la seguridad."
+  },
+  "questions": {
+    "title": "Es normal que tengas preguntas.",
+    "list": [
+      "¿Qué es un sistema?",
+      "¿Qué es un activo?",
+      "¿Qué es una vulnerabilidad?",
+      "¿Qué es una amenaza?",
+      "¿Qué es el riesgo?",
+      "¿Qué es un ataque?"
+    ],
+    "footer": "Para poder responder estas preguntas primero debemos definir cuál es nuestro sistema que queremos proteger. Puede ser casi cualquier cosa: una casa, un automóvil, un edificio o un sistema informático."
+  },
+  "system": {
+    "title": "Sistema.",
+    "items": [
+      "1. Información.",
+      "2. Software.",
+      "3. Hardware.",
+      "4. Personas."
+    ]
+  },
+  "deepQuestions": [
+    {
+      "title": "1. ¿Qué quiero proteger?",
+      "body": "Los componentes fundamentales de mi sistema. Si alguno de estos falla o se pierde, el sistema deja de funcionar. Más comúnmente llamados activos.",
+      "note": "* Existe una área de seguridad encargada de clasificar la jerarquía de los activos. Administración de Riesgos."
+    },
+    {
+      "title": "2. ¿Qué debilidades tiene mi sistema?",
+      "body": "El sistema puede tener debilidades inherentes de cada activo. A esas debilidades se les conoce como vulnerabilidades.",
+      "note": "* Existe una área de seguridad dedicada a la búsqueda de vulnerabilidades llamada Pentesting."
+    },
+    {
+      "title": "3. ¿Contra qué lo quiero proteger?",
+      "body": "De cualquier evento o circunstancia con el potencial de provocar pérdida o daño de mis activos. A esto le llamamos amenaza.",
+      "note": "* Existe una área de seguridad dedicada al análisis de amenazas. Administración de Riesgos."
+    },
+    {
+      "title": "4. ¿Cómo lo protejo?",
+      "body": "Existen diferentes propiedades de seguridad que puedo garantizar de manera absoluta. Mejor conocidas como servicios de seguridad.",
+      "note": "* Es tema de este estándar saber qué servicios puedo garantizar y cómo puedo hacerlo."
+    },
+    {
+      "title": "5. ¿Qué pasa si fallo en proteger?",
+      "body": "Un ataque es una funcionalidad que explotando una vulnerabilidad concreta una amenaza.",
+      "note": "* Existe una área de seguridad dedicada a gestionar ataques. Respuesta a incidentes."
+    },
+    {
+      "title": "6. ¿Se puede calcular la probabilidad de ocurrencia de un ataque?",
+      "body": "Sí, el riesgo es la probabilidad de ocurrencia multiplicado por el impacto que esta provocaría a mi sistema.",
+      "note": "R = P (ocurrencia) × Impacto"
+    }
+  ]
+},
   "notifications": {
     "invalidEmail": "❌ Email no válido",
     "incompleteFields": "⚠️ Por favor completa todos los campos",

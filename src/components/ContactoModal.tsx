@@ -134,7 +134,6 @@ const ContactModal = ({ isOpen, onClose, darkMode }: ContactModalProps) => {
              <Link
                 to="/enterprise"
                 className="underline text-blue-700 hover:text-blue-500"
-                target="_blank"
               >
                 {t("contact_modal.enterprise")}
               </Link>

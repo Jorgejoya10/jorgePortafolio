@@ -26,7 +26,7 @@
     "enterprise": "Are you a company?"
   },
   "enterpriseForm": {
-    "title": "Enterprise Contact Form",
+    "title": "Enterprise Contact",
     "name": "Full Name",
     "company": "Company Name",
     "companySize": "Company Size",
@@ -138,6 +138,77 @@
     "math": "It’s having\nmathematical foundations.",
     "phases": "It’s security in\nall phases\nof development."
   },
+  "iso7498": {
+  "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Part 2: Security Architecture.",
+  "disclaimer": {
+    "1": "*This analysis refers to key concepts from the standard",
+    "2": ", part of the 7498 family on security architecture for open systems. Part 2 has an approximate cost of",
+    "3": " on the official ",
+    "4": " We do not have copyright to distribute the full document, but we can legitimately present excerpts and explanations based on its content, as it has been legally acquired for study and analysis. In addition, you can freely access the first part of the family ",
+    "5": "which offers definitions and foundational concepts to understand the security framework addressed in this section."
+  },
+  "intro": {
+    "strong": "The title reveals",
+    "text": "that the purpose of this standard is to propose a security foundation for the exchange of information between application processes. In that sense, it's essential to first have a clear understanding of basic information security concepts."
+  },
+  "security": {
+    "title": "What is meant by security?",
+    "description": "The term 'security' is used in the sense of minimizing vulnerabilities of a system's assets and resources. An asset is anything of value. A vulnerability is any weakness that can be exploited to compromise a system. A threat is a potential violation of security."
+  },
+  "questions": {
+    "title": "It's normal to have questions.",
+    "list": [
+      "What is a system?",
+      "What is an asset?",
+      "What is a vulnerability?",
+      "What is a threat?",
+      "What is risk?",
+      "What is an attack?"
+    ],
+    "footer": "To answer these questions, we must first define what system we want to protect. It can be almost anything: a house, a car, a building, or an IT system."
+  },
+  "system": {
+    "title": "System.",
+    "items": [
+      "1. Information.",
+      "2. Software.",
+      "3. Hardware.",
+      "4. People."
+    ]
+  },
+  "deepQuestions": [
+    {
+      "title": "1. What do I want to protect?",
+      "body": "The essential components of my system. If any of them fail or are lost, the system stops working. Commonly referred to as assets.",
+      "note": "* There is a security field responsible for classifying asset hierarchy. Risk Management."
+    },
+    {
+      "title": "2. What weaknesses does my system have?",
+      "body": "The system may have inherent weaknesses in each asset. These are known as vulnerabilities.",
+      "note": "* There is a security field dedicated to finding vulnerabilities called Pentesting."
+    },
+    {
+      "title": "3. What do I want to protect it from?",
+      "body": "From any event or circumstance that could potentially cause loss or damage to my assets. This is called a threat.",
+      "note": "* There is a security field dedicated to threat analysis. Risk Management."
+    },
+    {
+      "title": "4. How do I protect it?",
+      "body": "There are different security properties that can be fully guaranteed. These are known as security services.",
+      "note": "* This standard aims to define which services can be guaranteed and how to do so."
+    },
+    {
+      "title": "5. What happens if I fail to protect it?",
+      "body": "An attack is a functionality that, exploiting a vulnerability, realizes a threat.",
+      "note": "* There is a security field dedicated to handling attacks. Incident Response."
+    },
+    {
+      "title": "6. Can the probability of an attack be calculated?",
+      "body": "Yes, risk is the probability of occurrence multiplied by the impact it would cause to the system.",
+      "note": "R = P (occurrence) × Impact"
+    }
+  ]
+},
   "projects": {
     "title": "My Projects."
   },
