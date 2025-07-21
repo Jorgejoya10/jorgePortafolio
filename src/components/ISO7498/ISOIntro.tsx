@@ -5,8 +5,8 @@ const ISOIntro = () => {
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-16 space-y-16">
-      <div className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-lg shadow-md">
-        <p className="text-lg md:text-xl leading-relaxed text-gray-800">
+      <div className=" p-8 rounded-lg border">
+        <p className="text-lg md:text-xl leading-relaxed">
           <span className="font-semibold">
             {t("iso7498.isoIntro.highlight")}
           </span>{" "}

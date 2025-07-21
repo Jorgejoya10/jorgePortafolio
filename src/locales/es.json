@@ -51,84 +51,6 @@
       "email": "Ej: contacto@empresa.com"
     }
   },
- "iso7498": {
-  "headerAndNotice": {
-    "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Part 2: Security Architecture.",
-    "paragraph": "*Este análisis hace referencia a conceptos clave del estándar <strong>ISO 7498-2</strong>, parte de la familia 7498 sobre arquitectura de seguridad para sistemas abiertos. La parte 2 tiene un costo aproximado de <strong>150 USD</strong> en el sitio oficial de <a class='text-blue-600 underline' href='https://www.iso.org/standard/14256.html' target='_blank' rel='noopener noreferrer'>ISO</a>. No contamos con derechos de autor para su distribución completa, pero sí podemos presentar de forma legítima fragmentos y explicaciones basadas en su contenido, ya que ha sido adquirido legalmente para estudio y análisis. Además, puedes consultar de forma gratuita la primera parte de la familia <a class='text-blue-600 underline' href='https://www.iso.org/es/contents/data/standard/02/02/20269.html?browse=tc' target='_blank' rel='noopener noreferrer'>ISO 7498</a>, que ofrece definiciones y fundamentos relevantes para comprender el marco de seguridad abordado en esta sección."
-  },
-  "isoIntro": {
-    "highlight": "El título nos revela",
-    "body": "que el objetivo de este estándar es proponer una base de seguridad para el intercambio de información entre procesos de aplicación. En ese sentido, es fundamental contar primero con una comprensión clara de los conceptos básicos en materia de seguridad de la información."
-  },
-   "securityDefinition": {
-    "title": "¿Qué se entiende por seguridad?",
-    "body": {
-      "1": "El término ",
-      "2": " es cualquier cosa de valor. Una ",
-      "3": " es cualquier debilidad que pueda explotarse para vulnerar un sistema. Una ",
-      "4": " es una posible violación de la seguridad."
-    },
-    "terms": {
-      "asset": "«activo»",
-      "vulnerability": "«vulnerabilidad»",
-      "threat": "«amenaza»"
-    }
-  },
-  "keyQuestions": {
-    "title": "Es normal que tengas preguntas.",
-    "list": [
-      "¿Qué es un sistema?",
-      "¿Qué es un activo?",
-      "¿Qué es una vulnerabilidad?",
-      "¿Qué es una amenaza?",
-      "¿Qué es el riesgo?",
-      "¿Qué es un ataque?"
-    ],
-    "conclusion": "Para poder responder estas preguntas primero debemos definir cuál es nuestro sistema que queremos proteger. Puede ser casi cualquier cosa: una casa, un automóvil, un edificio o un sistema informático."
-  },
-   "systemDiagram": {
-    "title": "Sistema.",
-    "items": [
-      "1. Información.",
-      "2. Software.",
-      "3. Hardware.",
-      "4. Personas."
-    ]
-  },
-  "deepQuestions": [
-    {
-      "title": "1. ¿Qué quiero proteger?",
-      "body": "Los componentes fundamentales de mi sistema. Si alguno de estos falla o se pierde, el sistema deja de funcionar. Más comúnmente llamados activos.",
-      "note": "* Existe una área de seguridad encargada de clasificar la jerarquía de los activos. Administración de Riesgos."
-    },
-    {
-      "title": "2. ¿Qué debilidades tiene mi sistema?",
-      "body": "El sistema puede tener debilidades inherentes de cada activo. A esas debilidades se les conoce como vulnerabilidades.",
-      "note": "* Existe una área de seguridad dedicada a la búsqueda de vulnerabilidades llamada Pentesting."
-    },
-    {
-      "title": "3. ¿Contra qué lo quiero proteger?",
-      "body": "De cualquier evento o circunstancia con el potencial de provocar pérdida o daño de mis activos. A esto le llamamos amenaza.",
-      "note": "* Existe una área de seguridad dedicada al análisis de amenazas. Administración de Riesgos."
-    },
-    {
-      "title": "4. ¿Cómo lo protejo?",
-      "body": "Existen diferentes propiedades de seguridad que puedo garantizar de manera absoluta. Mejor conocidas como servicios de seguridad.",
-      "note": "* Es tema de este estándar saber qué servicios puedo garantizar y cómo puedo hacerlo."
-    },
-    {
-      "title": "5. ¿Qué pasa si fallo en proteger?",
-      "body": "Un ataque es una funcionalidad que explotando una vulnerabilidad concreta una amenaza.",
-      "note": "* Existe una área de seguridad dedicada a gestionar ataques. Respuesta a incidentes."
-    },
-    {
-      "title": "6. ¿Se puede calcular la probabilidad de ocurrencia de un ataque?",
-      "body": "Sí, el riesgo es la probabilidad de ocurrencia multiplicado por el impacto que esta provocaría a mi sistema.",
-      "note": "R = P (ocurrencia) × Impacto"
-    }
-  ]
-
-},
   "notifications": {
     "invalidEmail": "❌ Email no válido",
     "incompleteFields": "⚠️ Por favor completa todos los campos",
@@ -216,6 +138,102 @@
     "math": "Es tener\nfundamentos matemáticos.",
     "phases": "Es seguridad en\ntodas las fases\ndel desarrollo."
   },
+  "standards": {
+    "standardsIntro": {
+      "title": "Organización Internacional de Normalización.",
+      "description1": "La Organización Internacional de Normalización (ISO) es una entidad independiente, no gubernamental, reconocida a nivel mundial por desarrollar normas internacionales que promueven la calidad, la seguridad y la eficiencia en una amplia gama de industrias y sectores.",
+      "description2": "En el contexto de la tecnología y la seguridad informática, ISO ha desarrollado estándares esenciales que ayudan a establecer buenas prácticas, proteger activos críticos y garantizar la continuidad operativa de los sistemas.",
+      "whyTitle": "¿Por qué son importantes los estándares?",
+      "whyText1": "Los estándares permiten establecer un lenguaje común y un marco de referencia para diseñar, implementar y evaluar la seguridad de los sistemas. Su aplicación ayuda a minimizar vulnerabilidades, cumplir con requisitos legales y generar confianza en productos y servicios.",
+      "whyText2": "En esta sección abordaremos dos de los estándares más importantes en materia de seguridad de la información, que servirán de base para comprender y aplicar conceptos clave en el desarrollo de software seguro.",
+      "standard1": {
+        "title": "ISO 7498-2: Arquitectura de Seguridad.",
+        "description1": "Este estándar forma parte del modelo OSI (Open Systems Interconnection) y se enfoca en la arquitectura de seguridad de sistemas abiertos. Define los servicios de seguridad esenciales que deben integrarse en la comunicación entre procesos, tales como la Confidencialidad, Verificación de Integridad, Autenticación, No Repudio y Control de Acceso."
+      },
+      "standard2": {
+        "title": "Familia ISO/IEC 27000: Gestión de Seguridad de la Información.",
+        "description1": "Esta familia de normas establece las directrices para implementar un Sistema de Gestión de Seguridad de la Información (SGSI) dentro de una organización. Incluye políticas, controles, procedimientos y evaluaciones de riesgo que permiten gestionar y proteger la información de forma sistemática.",
+        "description2": "Es ampliamente utilizada en auditorías de seguridad, cumplimiento normativo y certificaciones como la ISO/IEC 27001."
+      }
+    }
+  },
+  "iso7498": {
+    "headerAndNotice": {
+      "title": "Information Processing Systems - Open Systems Interconnection - Basic Reference Model. Part 2: Security Architecture.",
+      "paragraph": "*Este análisis hace referencia a conceptos clave del estándar <strong>ISO 7498-2</strong>, parte de la familia 7498 sobre arquitectura de seguridad para sistemas abiertos. La parte 2 tiene un costo aproximado de <strong>150 USD</strong> en el sitio oficial de <a class='text-blue-600 underline' href='https://www.iso.org/standard/14256.html' target='_blank' rel='noopener noreferrer'>ISO</a>. No contamos con derechos de autor para su distribución completa, pero sí podemos presentar de forma legítima fragmentos y explicaciones basadas en su contenido, ya que ha sido adquirido legalmente para estudio y análisis. Además, puedes consultar de forma gratuita la primera parte de la familia <a class='text-blue-600 underline' href='https://www.iso.org/es/contents/data/standard/02/02/20269.html?browse=tc' target='_blank' rel='noopener noreferrer'>ISO 7498</a>, que ofrece definiciones y fundamentos relevantes para comprender el marco de seguridad abordado en esta sección."
+    },
+    "isoIntro": {
+      "highlight": "El título nos revela",
+      "body": "que el objetivo de este estándar es proponer una base de seguridad para el intercambio de información entre procesos de aplicación. En ese sentido, es fundamental contar primero con una comprensión clara de los conceptos básicos en materia de seguridad de la información."
+    },
+    "securityDefinition": {
+      "title": "¿Qué se entiende por seguridad?",
+      "body": {
+        "1": "El término ",
+        "2": " es cualquier cosa de valor. Una ",
+        "3": " es cualquier debilidad que pueda explotarse para vulnerar un sistema. Una ",
+        "4": " es una posible violación de la seguridad."
+      },
+      "terms": {
+        "asset": "«activo»",
+        "vulnerability": "«vulnerabilidad»",
+        "threat": "«amenaza»"
+      }
+    },
+    "keyQuestions": {
+      "title": "Es normal que tengas preguntas.",
+      "list": [
+        "¿Qué es un sistema?",
+        "¿Qué es un activo?",
+        "¿Qué es una vulnerabilidad?",
+        "¿Qué es una amenaza?",
+        "¿Qué es el riesgo?",
+        "¿Qué es un ataque?"
+      ],
+      "conclusion": "Para poder responder estas preguntas primero debemos definir cuál es nuestro sistema que queremos proteger. Puede ser casi cualquier cosa: una casa, un automóvil, un edificio o un sistema informático."
+    },
+    "systemDiagram": {
+      "title": "Sistema.",
+      "items": [
+        "1. Información.",
+        "2. Software.",
+        "3. Hardware.",
+        "4. Personas."
+      ]
+    },
+    "deepQuestions": [
+      {
+        "title": "1. ¿Qué quiero proteger?",
+        "body": "Los componentes fundamentales de mi sistema. Si alguno de estos falla o se pierde, el sistema deja de funcionar. Más comúnmente llamados activos.",
+        "note": "* Existe una área de seguridad encargada de clasificar la jerarquía de los activos. Administración de Riesgos."
+      },
+      {
+        "title": "2. ¿Qué debilidades tiene mi sistema?",
+        "body": "El sistema puede tener debilidades inherentes de cada activo. A esas debilidades se les conoce como vulnerabilidades.",
+        "note": "* Existe una área de seguridad dedicada a la búsqueda de vulnerabilidades llamada Pentesting."
+      },
+      {
+        "title": "3. ¿Contra qué lo quiero proteger?",
+        "body": "De cualquier evento o circunstancia con el potencial de provocar pérdida o daño de mis activos. A esto le llamamos amenaza.",
+        "note": "* Existe una área de seguridad dedicada al análisis de amenazas. Administración de Riesgos."
+      },
+      {
+        "title": "4. ¿Cómo lo protejo?",
+        "body": "Existen diferentes propiedades de seguridad que puedo garantizar de manera absoluta. Mejor conocidas como servicios de seguridad.",
+        "note": "* Es tema de este estándar saber qué servicios puedo garantizar y cómo puedo hacerlo."
+      },
+      {
+        "title": "5. ¿Qué pasa si fallo en proteger?",
+        "body": "Un ataque es una funcionalidad que explotando una vulnerabilidad concreta una amenaza.",
+        "note": "* Existe una área de seguridad dedicada a gestionar ataques. Respuesta a incidentes."
+      },
+      {
+        "title": "6. ¿Se puede calcular la probabilidad de ocurrencia de un ataque?",
+        "body": "Sí, el riesgo es la probabilidad de ocurrencia multiplicado por el impacto que esta provocaría a mi sistema.",
+        "note": "R = P (ocurrencia) × Impacto"
+      }
+    ]
+  },
   "projects": {
     "title": "Mis proyectos."
   },
@@ -224,7 +242,7 @@
     "iso": {
       "title": "Estandares.",
       "iso7498-2": "ISO 7498-2.",
-      "iso2700": "ISO 27000."
+      "iso2700": "Familia 27000."
     },
     "crypto": {
       "title": "Criptología.",
