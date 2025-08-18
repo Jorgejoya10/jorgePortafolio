@@ -148,7 +148,7 @@
       "whyText2": "In this section, we will explore two of the most important information security standards, which will serve as a foundation for understanding and applying key concepts in secure software development.",
       "standard1": {
         "title": "ISO 7498-2: Security Architecture.",
-        "description1": "This standard is part of the OSI (Open Systems Interconnection) model and focuses on the security architecture of open systems. It defines the essential security services that must be integrated into communication between processes, such as Confidentiality, Integrity Verification, Authentication, Non-repudiation, and Access Control."
+        "description1": "This standard is part of the OSI (Open Systems Interconnection) model and focuses on the security architecture of open systems. It defines the security services that can be guaranteed absolutely, such as Confidentiality, Integrity Verification, Authentication, Non-Repudiation, and Access Control."
       },
       "standard2": {
         "title": "ISO/IEC 27000 Family: Information Security Management.",
@@ -168,17 +168,7 @@
     },
     "securityDefinition": {
       "title": "What is meant by security?",
-      "body": {
-        "1": "The term ",
-        "2": " is anything of value. A ",
-        "3": " is any weakness that can be exploited to compromise a system. A ",
-        "4": " is a potential breach of security."
-      },
-      "terms": {
-        "asset": "«asset»",
-        "vulnerability": "«vulnerability»",
-        "threat": "«threat»"
-      }
+      "definition": "The term ‘Security’ is used in the sense of minimizing the vulnerabilities of assets and resources. An asset is anything of value. A vulnerability is any weakness that could be exploited to violate a system or the information it contains. A threat is a potential violation of security."
     },
     "keyQuestions": {
       "title": "It is normal to have questions.",

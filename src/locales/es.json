@@ -148,7 +148,7 @@
       "whyText2": "En esta sección abordaremos dos de los estándares más importantes en materia de seguridad de la información, que servirán de base para comprender y aplicar conceptos clave en el desarrollo de software seguro.",
       "standard1": {
         "title": "ISO 7498-2: Arquitectura de Seguridad.",
-        "description1": "Este estándar forma parte del modelo OSI (Open Systems Interconnection) y se enfoca en la arquitectura de seguridad de sistemas abiertos. Define los servicios de seguridad esenciales que deben integrarse en la comunicación entre procesos, tales como la Confidencialidad, Verificación de Integridad, Autenticación, No Repudio y Control de Acceso."
+        "description1": "Este estándar forma parte del modelo OSI (Open Systems Interconnection) y se enfoca en la arquitectura de seguridad de sistemas abiertos. Define los servicios de seguridad que pueden garantizarse de manera abosoluta, tales como la Confidencialidad, Verificación de Integridad, Autenticación, No Repudio y Control de Acceso."
       },
       "standard2": {
         "title": "Familia ISO/IEC 27000: Gestión de Seguridad de la Información.",
@@ -168,17 +168,7 @@
     },
     "securityDefinition": {
       "title": "¿Qué se entiende por seguridad?",
-      "body": {
-        "1": "El término ",
-        "2": " es cualquier cosa de valor. Una ",
-        "3": " es cualquier debilidad que pueda explotarse para vulnerar un sistema. Una ",
-        "4": " es una posible violación de la seguridad."
-      },
-      "terms": {
-        "asset": "«activo»",
-        "vulnerability": "«vulnerabilidad»",
-        "threat": "«amenaza»"
-      }
+      "definition": "El término 'seguridad' se utiliza en el sentido de minimizar las vulnerabilidades de los activos y recursos. Un activo es cualquier cosa de valor. Una vulnerabilidad es cualquier debilidad que pueda explotarse para vulnerar un sistema o la información que contiene. Una amenaza es una posible violación de la seguridad."
     },
     "keyQuestions": {
       "title": "Es normal que tengas preguntas.",

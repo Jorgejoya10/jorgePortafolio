@@ -5,7 +5,7 @@ const StandardsIntro = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="max-w-6xl mx-auto px-6 space-y-10">
+    <section className="max-w-6xl mx-auto px-2 space-y-10">
       {/* ¿Qué es ISO? */}
       <div className="space-y-5">
         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 text-center sm:text-left">

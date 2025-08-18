@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const SystemDiagram = () => {
+const SystemDiagram = () => {  //Vamos a hacer esta seccion interactiva para el usuario.
   const { t } = useTranslation();
 
   return (
