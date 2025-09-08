@@ -1,3 +1,4 @@
+// src/routes/routes.tsx
 import type { RouteObject } from "react-router-dom";
 import Layout from "../layout/Layout";
 import Home from "../pages/Home";
@@ -12,7 +13,8 @@ import Steganography from "../pages/seguridad/Cryptology/Steganography";
 import Protocols from "../pages/seguridad/Protocols";
 import Privacy from "../pages/legal/Privacy";
 import Terms from "../pages/legal/Terms";
-import Enterprise from '../pages/enterprise'
+import Enterprise from "../pages/Enterprise";
+import Laboratorio from "../pages/lab/Laboratorio";
 
 const routes: RouteObject[] = [
   {
@@ -32,6 +34,8 @@ const routes: RouteObject[] = [
           { path: "Cryptography", element: <Cryptography /> },
           { path: "Steganography", element: <Steganography /> },
           { path: "Protocols", element: <Protocols /> },
+          { path: "lab", element: <Laboratorio /> },
+          { path: "lab/:algoId", element: <Laboratorio /> },
         ],
       },
       { path: "Terms", element: <Terms /> },
