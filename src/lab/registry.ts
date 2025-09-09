@@ -3,9 +3,9 @@ import type { Algorithm } from "./core/types";
 
 // ✅ Implementaciones listas
 import CaesarImpl from "./algos/caesar";
+import VigenereImpl from "./algos/vigenere";
 
 // ⏳ Cuando tengas las demás, las importas aquí:
-// import VigenereImpl from "./algos/vigenere";
 // import DESImpl from "./algos/des";
 // import TDESImpl from "./algos/3des";
 // import AESGCMImpl from "./algos/aes_gcm";
@@ -18,7 +18,7 @@ import CaesarImpl from "./algos/caesar";
  */
 const TABLE: Record<string, Algorithm> = {
   "caesar": CaesarImpl,
-  // "vigenere": VigenereImpl,
+  "vigenere": VigenereImpl,
   // "des": DESImpl,
   // "3des": TDESImpl,
   // "aes-gcm": AESGCMImpl,

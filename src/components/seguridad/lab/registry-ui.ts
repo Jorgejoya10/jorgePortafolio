@@ -15,8 +15,8 @@ export interface AlgoMeta {
 export const CATALOG: AlgoMeta[] = [
   { id:"caesar",   name:"César",     year:-50,  era:"classics",         status:"insecure",
     ui: React.lazy(() => import("./Cesar")) },         // <-- sin /algorithms y usando 'Cesar'
-//   { id:"vigenere", name:"Vigenère",  year:1553, era:"classics",         status:"insecure",
-//     ui: React.lazy(() => import("./Vigenere")) },
+  { id:"vigenere", name:"Vigenère",  year:1553, era:"classics",         status:"insecure",
+    ui: React.lazy(() => import("./Vigenere")) },
 //   { id:"des",      name:"DES",       year:1977, era:"modern-symmetric", status:"insecure",
 //     ui: React.lazy(() => import("./DES")) },
 //   { id:"3des",     name:"3DES",      year:1998, era:"modern-symmetric", status:"legacy",
