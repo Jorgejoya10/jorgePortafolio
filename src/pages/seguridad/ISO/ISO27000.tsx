@@ -53,7 +53,7 @@ export default function ISO27000() {
               <tr
                 key={std.id}
                 className={`border-b border-neutral-800 ${
-                  std.available ? "hover:bg-gray-100" : "opacity-30"
+                  std.available ? "hover:" : "opacity-30"
                 }`}
               >
                 {/* Columna: ISO/IEC #### */}
@@ -81,12 +81,12 @@ export default function ISO27000() {
                 {/* Columna: Estado */}
                 <td className="py-3 px-4 text-center">
                   {std.available ? (
-                    <span className="px-3 py-1 text-xs rounded bg-green-700/30 text-green-400 border border-green-700">
+                    <span className="px-3 py-1 text-xs rounded text-green-400 border border-green-700">
                       {t("iso27000.status.available")}
                     </span>
                   ) : (
                     <span
-                      className="inline-flex items-center gap-1 px-3 py-1 text-xs rounded bg-neutral-800 text-neutral-500 border border-neutral-700"
+                      className="inline-flex items-center gap-1 px-3 py-1 text-xs rounded text-neutral-500 border border-neutral-700"
                       aria-disabled="true"
                     >
                       <Lock size={12} /> {t("iso27000.status.locked")}
