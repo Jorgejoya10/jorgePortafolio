@@ -145,7 +145,7 @@
       "description2": "In the context of technology and cybersecurity, ISO has developed essential standards that help establish best practices, protect critical assets, and ensure the operational continuity of systems.",
       "whyTitle": "Why are standards important?",
       "whyText1": "Standards provide a common language and a reference framework for designing, implementing, and assessing system security. Their application helps reduce vulnerabilities, meet legal requirements, and build trust in products and services.",
-      "whyText2": "In this section, we will explore two of the most important information security standards, which will serve as a foundation for understanding and applying key concepts in secure software development.",
+      "whyText2": "In this section, we will explore the most important information security standards, which will serve as a foundation for understanding and applying key concepts in secure software development.",
       "standard1": {
         "title": "ISO 7498-2: Security Architecture.",
         "description1": "This standard is part of the OSI (Open Systems Interconnection) model and focuses on the security architecture of open systems. It defines the security services that can be guaranteed absolutely, such as Confidentiality, Integrity Verification, Authentication, Non-Repudiation, and Access Control."
@@ -223,6 +223,102 @@
         "note": "R = P (occurrence) × Impact"
       }
     ]
+  },
+  "iso27000": {
+    "title": "ISO/IEC 27000 Family",
+    "description": {
+      "prefix": "The ISO/IEC 27000 family defines the international framework for information security management. Standard",
+      "mid": "is the only certifiable one, while",
+      "suffix": "details the recommended set of controls. The other documents complement its implementation in different contexts."
+    },
+    "table": {
+      "standard": "Standard",
+      "title": "Title",
+      "status": "Status"
+    },
+    "status": {
+      "available": "Available",
+      "locked": "Locked"
+    },
+    "footer": {
+      "comingSoon": "Technical analyses and practical guidance for each standard will be published soon."
+    },
+    "items": {
+      "27000": {
+        "title": "Overview and vocabulary"
+      },
+      "27001": {
+        "title": "Information Security Management Systems (ISMS) — Requirements"
+      },
+      "27002": {
+        "title": "Code of practice for information security controls"
+      },
+      "27003": {
+        "title": "Implementation guidance"
+      },
+      "27004": {
+        "title": "Monitoring, measurement, analysis and evaluation"
+      },
+      "27005": {
+        "title": "Information security risk management"
+      },
+      "27006": {
+        "title": "Requirements for bodies providing audit and certification"
+      },
+      "27007": {
+        "title": "Guidelines for auditing information security management systems"
+      },
+      "27008": {
+        "title": "Guidelines for auditors on information security controls"
+      },
+      "27009": {
+        "title": "Sector-specific implementation guidance"
+      },
+      "27017": {
+        "title": "Security controls for cloud services"
+      },
+      "27018": {
+        "title": "Protection of PII in public clouds"
+      },
+      "27019": {
+        "title": "Information security for energy utilities"
+      }
+    }
+  },
+  "iso27001": {
+    "page": {
+      "title": "Information security, cybersecurity and privacy protection — Information security management systems — Requirements.",
+      "badgeCertifiable": "Certifiable.",
+      "notice": "*This document refers to key concepts of the <strong>ISO 27001</strong> standard, part of the 27000 family on the creation of an Information Security Management System (ISMS). Part 1 has an approximate cost of <strong>130 USD</strong> on the official <a class='text-blue-600 underline' href='https://www.iso.org/standard/27001' target='_blank' rel='noopener noreferrer'>ISO</a> website. We do not hold copyright for its full distribution, but we can legitimately present excerpts and explanations based on its content, as it has been lawfully acquired for study and analysis. You can also consult the free version <a class='text-blue-600 underline' href='https://www.iso.org/standard/73906.html' target='_blank' rel='noopener noreferrer'>27000</a>, which provides a general description and vocabulary.",
+      "intro": "This standard establishes the requirements to implement, maintain, and continually improve an Information Security Management System (ISMS). Its application must be based on a deep understanding of the organizational context, including its economic, reputational, and strategic objectives, as well as its mission and responsibilities toward clients, stakeholders, and society.",
+      "whatsISMS": {
+        "title": "What is an ISMS?",
+        "body": "An Information Security Management System (ISMS) focuses on the governance of security within an organization. It represents the institutional capability to establish, implement, operate, monitor, review, maintain, and continually improve information security and other critical assets, with the purpose of ensuring the achievement of the organization’s strategic objectives."
+      },
+      "objectives": {
+        "title": "What do I expect to achieve with an ISMS within my organization?",
+        "preamble": "Based on a thorough understanding of the organization’s mission and institutional objectives, an ISMS aims to:",
+        "items": {
+          "missionAligned": "Build a security mission aligned with the organization’s business, economic, and reputational objectives.",
+          "securityServices": "Define policies and controls that ensure compliance with the security services established in the ISO/IEC 7498-2 standard."
+        }
+      },
+      "services": {
+        "confidentiality": "Confidentiality.",
+        "integrity": "Integrity Verification.",
+        "authentication": "Authentication.",
+        "nonRepudiation": "Non-repudiation.",
+        "accessControl": "Access Control."
+      },
+      "availability": {
+        "term": "Availability",
+        "note": {
+          "prefix": "We understand that",
+          "mid": "is vital for the continuity of the organization, and although there is no way to guarantee 100%, we can approach that percentage to about",
+          "suffix": "It is also the scope and motivation of an ISMS to implement policies and controls that ensure the availability of information."
+        }
+      }
+    }
   },
   "projects": {
     "title": "My Projects."

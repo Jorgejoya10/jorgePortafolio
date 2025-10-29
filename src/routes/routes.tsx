@@ -7,6 +7,7 @@ import Seguridad from "../pages/Seguridad";
 import Standars from "../pages/seguridad/ISO/Standars";
 import ISO7498 from "../pages/seguridad/ISO/ISO7498";
 import ISO27000 from "../pages/seguridad/ISO/ISO27000";
+import ISO27001 from "../components/ISO27000/ISO27001/Page";
 import Cryptology from "../pages/seguridad/Cryptology/Cryptology";
 import Cryptography from "../pages/seguridad/Cryptology/Cryptography";
 import Steganography from "../pages/seguridad/Cryptology/Steganography";
@@ -28,6 +29,7 @@ const routes: RouteObject[] = [
         element: <Seguridad />,
         children: [
           { path: "ISO7498-2", element: <ISO7498 /> },
+          { path: "ISO27001", element: <ISO27001 /> },
           { path: "Standars", element: <Standars /> },
           { path: "ISO27000", element: <ISO27000 /> },
           { path: "Cryptology", element: <Cryptology /> },

@@ -145,7 +145,7 @@
       "description2": "En el contexto de la tecnología y la seguridad informática, ISO ha desarrollado estándares esenciales que ayudan a establecer buenas prácticas, proteger activos críticos y garantizar la continuidad operativa de los sistemas.",
       "whyTitle": "¿Por qué son importantes los estándares?",
       "whyText1": "Los estándares permiten establecer un lenguaje común y un marco de referencia para diseñar, implementar y evaluar la seguridad de los sistemas. Su aplicación ayuda a minimizar vulnerabilidades, cumplir con requisitos legales y generar confianza en productos y servicios.",
-      "whyText2": "En esta sección abordaremos dos de los estándares más importantes en materia de seguridad de la información, que servirán de base para comprender y aplicar conceptos clave en el desarrollo de software seguro.",
+      "whyText2": "En esta sección abordaremos los estándares más importantes en materia de seguridad de la información, que servirán de base para comprender y aplicar conceptos clave en el desarrollo de software seguro.",
       "standard1": {
         "title": "ISO 7498-2: Arquitectura de Seguridad.",
         "description1": "Este estándar forma parte del modelo OSI (Open Systems Interconnection) y se enfoca en la arquitectura de seguridad de sistemas abiertos. Define los servicios de seguridad que pueden garantizarse de manera abosoluta, tales como la Confidencialidad, Verificación de Integridad, Autenticación, No Repudio y Control de Acceso."
@@ -223,6 +223,102 @@
         "note": "R = P (ocurrencia) × Impacto"
       }
     ]
+  },
+  "iso27000": {
+    "title": "Familia ISO/IEC 27000",
+    "description": {
+      "prefix": "La familia ISO/IEC 27000 define el marco internacional para la gestión de la seguridad de la información. El estándar",
+      "mid": "es el único certificable, mientras que",
+      "suffix": "detalla el conjunto de controles recomendados. Los demás documentos complementan su implementación en diferentes contextos."
+    },
+    "table": {
+      "standard": "Estándar",
+      "title": "Título",
+      "status": "Estado"
+    },
+    "status": {
+      "available": "Disponible",
+      "locked": "No disponible"
+    },
+    "footer": {
+      "comingSoon": "Próximamente se activarán los análisis técnicos y de aplicación práctica de cada estándar."
+    },
+    "items": {
+      "27000": {
+        "title": "Visión general y vocabulario"
+      },
+      "27001": {
+        "title": "Sistemas de Gestión de Seguridad de la Información (SGSI) — Requisitos"
+      },
+      "27002": {
+        "title": "Código de buenas prácticas para controles de seguridad de la información"
+      },
+      "27003": {
+        "title": "Guía de implementación"
+      },
+      "27004": {
+        "title": "Monitoreo, medición, análisis y evaluación"
+      },
+      "27005": {
+        "title": "Gestión del riesgo de seguridad de la información"
+      },
+      "27006": {
+        "title": "Requisitos para organismos de auditoría y certificación"
+      },
+      "27007": {
+        "title": "Guías para auditar sistemas de gestión de seguridad de la información"
+      },
+      "27008": {
+        "title": "Guías para auditores sobre controles de seguridad de la información"
+      },
+      "27009": {
+        "title": "Guía de implementación específica por sector"
+      },
+      "27017": {
+        "title": "Controles de seguridad para servicios en la nube"
+      },
+      "27018": {
+        "title": "Protección de PII en nubes públicas"
+      },
+      "27019": {
+        "title": "Seguridad de la información para empresas de energía"
+      }
+    }
+  },
+  "iso27001": {
+    "page": {
+      "title": "Seguridad de la información, ciberseguridad y protección de la privacidad — Sistemas de gestión de la seguridad de la información — Requisitos.",
+      "badgeCertifiable": "Certificable.",
+      "notice": "*Este documento hace referencia a conceptos clave del estándar <strong>ISO 27001</strong> parte de la familia 27000 sobre la creación de un Sistema de Gestión de la Seguridad de la Información. La parte 1 tiene un costo aproximado de <strong>130 USD</strong> en el sitio oficial del <a class='text-blue-600 underline' href='https://www.iso.org/standard/27001' target='_blank' rel='noopener noreferrer'>ISO</a>. No contamos con derechos de autor para su distribución completa, pero sí podemos presentar de forma legítima fragmentos y explicaciones basadas en su contenido, ya que ha sido adquirido legalmente para estudio y análisis. Además puedes consultar la versión gratuita <a class='text-blue-600 underline' href='https://www.iso.org/standard/73906.html' target='_blank' rel='noopener noreferrer'>27000</a> en donde se presenta una descripción general y vocabulario.",
+      "intro": "Este estándar establece los requisitos para implantar, mantener y mejorar de forma continua un Sistema de Gestión de la Seguridad de la Información (SGSI). Su aplicación debe partir de un conocimiento profundo del contexto organizacional, incluyendo sus objetivos económicos, reputacionales y estratégicos, así como de su misión y responsabilidades frente a sus clientes, partes interesadas y la sociedad.",
+      "whatsISMS": {
+        "title": "¿Qué es un SGSI?",
+        "body": "Un Sistema de Gestión de la Seguridad de la Información (SGSI) se centra en la gobernanza de la seguridad dentro de una organización. Representa la capacidad institucional para establecer, implementar, operar, supervisar, revisar, mantener y mejorar de forma continua la seguridad de la información y de los demás activos críticos, con el propósito de garantizar los objetivos estratégicos del negocio."
+      },
+      "objectives": {
+        "title": "¿Qué espero lograr con SGSI dentro de mi organización?",
+        "preamble": "A partir del conocimiento previo de la misión y los objetivos institucionales de la organización, un SGSI busca:",
+        "items": {
+          "missionAligned": "Construir una misión de seguridad alineada con los objetivos empresariales, económicos y reputacionales de la organización.",
+          "securityServices": "Definir políticas y controles que garanticen el cumplimiento de los servicios de seguridad establecidos en el estándar ISO/IEC 7498-2."
+        }
+      },
+      "services": {
+        "confidentiality": "Confidencialidad.",
+        "integrity": "Verificación de Integridad.",
+        "authentication": "Autenticación.",
+        "nonRepudiation": "No repudio.",
+        "accessControl": "Control de Acceso."
+      },
+      "availability": {
+        "term": "Disponibilidad",
+        "note": {
+          "prefix": "Entendemos que la",
+          "mid": "es vital para la continuidad de la organización y aunque no hay manera de garantizar un 100% podemos acercarnos a ese porcentaje en un",
+          "suffix": "También es alcance y motivación de un SGSI implementar políticas y controles para garantizar la disponibilidad de la información."
+        }
+      }
+    }
   },
   "projects": {
     "title": "Mis proyectos."

@@ -151,7 +151,7 @@ function normalizeKey(k: string, alph: string) {
   return normalizeText(k, alph).split("").filter(ch => alph.includes(ch)).join("");
 }
 function stripAccentsKeepEnye(s: string) {
-  return s
+  return s 
     .replace(/[áàäâ]/gi, "a")
     .replace(/[éèëê]/gi, "e")
     .replace(/[íìïî]/gi, "i")
