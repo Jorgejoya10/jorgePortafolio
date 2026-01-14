@@ -124,7 +124,7 @@ function VerticalTimeline() {
   const sorted = [...CATALOG].sort((a, b) => a.year - b.year);
   return (
     <ol className="relative border-s border-neutral-800">
-      {sorted.map((a, i) => (
+      {sorted.map((a) => (
         <li key={a.id} className="ms-6 py-5">
           {/* punto */}
           <span className="absolute -start-1.5 mt-2 h-3 w-3 rounded-full bg-neutral-700 ring-4 ring-white/0" />

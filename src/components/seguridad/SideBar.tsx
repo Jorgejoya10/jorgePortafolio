@@ -86,13 +86,13 @@ const SideBar = ({ darkMode }: SideBarProps) => {
             to="/security/Cryptology"
             collapsed={collapsed}
             items={[
-              {
-                label: t("sidebar.crypto.cryptography"),
-                to: "/security/Cryptography",
-              },
-              {
+               {
                 label: t("sidebar.crypto.steganography"),
                 to: "/security/Steganography",
+              },
+              { 
+                label: t("sidebar.crypto.cryptography"),
+                to: "/security/Cryptography",
               },
             ]}
           />

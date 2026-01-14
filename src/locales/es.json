@@ -320,6 +320,26 @@
       }
     }
   },
+  "cryptology": {
+    "title": "Criptología.",
+    "intro": {
+      "p1": "La criptología es la ciencia que estudia el ocultamiento de información. Antes de consolidarse como disciplina científica, fue un arte practicado por nuestros antepasados: existen manifestaciones muy antiguas de la necesidad de reservar y ocultar el significado de ciertos mensajes, que se remontan a miles de años atrás, cuando los seres humanos comenzaron a desarrollar un fuerte sentido de pertenencia a espacios como las cuevas. Un ejemplo representativo de ello son las pinturas rupestres de Altamira.",
+      "p2": "Con el tiempo, el ocultamiento de información evolucionó hasta convertirse en un campo formal, impulsado especialmente por los avances y necesidades surgidos durante la Segunda Guerra Mundial. En la actualidad, representa una ventaja estratégica para naciones, corporaciones y cualquier persona que busque proteger su información frente a individuos no autorizados.",
+      "p3": "Esta ciencia se divide en dos grandes ramas: por un lado, la Esteganografía, asociada a la seguridad por ocultamiento (esconder la existencia del mensaje); y por el otro, la Criptografía, vinculada a la seguridad computacional (proteger el contenido mediante algoritmos matemáticos)."
+    },
+    "steganography": {
+      "title": "Esteganografía.",
+      "p1": "La esteganografía es una de las técnicas de ocultamiento de información más antiguas. Se basa en esconder la existencia de un secreto: puede tratarse de la ubicación de una llave, mensajes subliminales o información oculta dentro de otros textos (o contenidos). En este enfoque, la fortaleza del método depende de qué tan bien se logre ocultar el secreto.",
+      "p2": "En la actualidad, por sí sola, esta técnica se considera insuficiente y no se utiliza como mecanismo principal en procesos críticos de seguridad, ya que, si el ocultamiento se descubre, la información queda expuesta. Aun así, puede combinarse con la criptografía como una capa adicional para reducir sospechas y dificultar el análisis de los más curiosos."
+    },
+    "cryptography": {
+      "title": "Criptografía.",
+      "p1": "La criptografía es la técnica de transformación de la información. A diferencia de la seguridad por ocultamiento (seguridad por oscuridad), aquí no se busca esconder el mensaje para que nadie lo vea; en su lugar, se transforma de tal forma que, aunque sea visible para terceros, carezca de significado semántico para quien no esté autorizado. Es decir, pueden observarla, pero no pueden interpretarla ni comprenderla.",
+      "p2": "La fortaleza de la criptografía no reside en ocultar el algoritmo con el que se cifra, sino en su diseño y en el uso de problemas matemáticos cuya resolución es computacionalmente inviable en tiempos prácticos. De este modo, la seguridad se sostiene en la dificultad real de romper el cifrado, incluso cuando el método es conocido.",
+      "noteLabel": "Nota:",
+      "note": "Para utilizar estos algoritmos también es necesario acordar y resguardar un secreto (por ejemplo, una llave). Sin embargo, dicho secreto no se protege mediante técnicas esteganográficas, sino mediante otros mecanismos que explicaremos a fondo en esta sección."
+    }
+  },
   "projects": {
     "title": "Mis proyectos."
   },

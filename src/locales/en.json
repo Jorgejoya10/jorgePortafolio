@@ -320,6 +320,26 @@
       }
     }
   },
+  "cryptology": {
+    "title": "Cryptology",
+    "intro": {
+      "p1": "Cryptology is the science that studies information concealment. Before becoming a formal discipline, it was an art practiced by our ancestors: there are very old manifestations of the need to reserve or control the meaning of certain messages, dating back thousands of years, when humans began developing a strong sense of belonging to places such as caves. A representative example is the cave paintings of Altamira.",
+      "p2": "Over time, information concealment evolved into a formal field, especially driven by the advances and needs that emerged during World War II. Today, it represents a strategic advantage for nations, corporations, and anyone seeking to protect their information from unauthorized individuals.",
+      "p3": "This field is commonly divided into two major branches: Steganography, associated with concealment-based security (hiding the existence of the message); and Cryptography, linked to computational security (protecting the content through mathematical algorithms)."
+    },
+    "steganography": {
+      "title": "Steganography.",
+      "p1": "Steganography is one of the oldest information concealment techniques. It focuses on hiding the existence of a secret: it may involve the location of a key, subliminal messages, or information embedded within other texts (or media). In this approach, the strength of the method depends on how well the secret is hidden.",
+      "p2": "Today, by itself, this technique is considered insufficient and is not used as the primary mechanism in critical security processes, because if the concealment is discovered, the information becomes exposed. Even so, it can be combined with cryptography as an additional layer to reduce suspicion and make analysis harder for the most curious."
+    },
+    "cryptography": {
+      "title": "Cryptography.",
+      "p1": "Cryptography is the technique of transforming information. Unlike concealment-based security (security through obscurity), the goal is not to hide the message so that no one can see it; instead, it is transformed so that—even if it is visible to third parties—it has no semantic meaning for unauthorized readers. In other words, they may see it, but they cannot interpret or understand it.",
+      "p2": "The strength of cryptography does not rely on hiding the algorithm used for encryption, but on its design and on mathematical problems whose solution is computationally infeasible in practical timeframes. This is how security rests on the real difficulty of breaking the cipher, even when the method is known.",
+      "noteLabel": "Note:",
+      "note": "To use these algorithms, it is also necessary to agree on and protect a secret (for example, a key). However, that secret is not protected through steganographic techniques, but through other mechanisms that we will explain in depth in this section."
+    }
+  },
   "projects": {
     "title": "My Projects."
   },

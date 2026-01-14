@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Download } from "lucide-react";
+// import { Download } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 interface NavProps {
@@ -34,15 +34,15 @@ const Nav = ({ setIsModalOpen, darkMode, setDarkMode }: NavProps) => {
     setIsOpen(false);
   }, [location]);
 
-  const downloadCV = () => {
-    const fileName =
-      language === "es" ? "CV-Jorge-Español2.pdf" : "CV-Jorge-English2.pdf";
-    const url = `/cv/${fileName}`;
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = fileName;
-    link.click();
-  };
+  // const downloadCV = () => {
+  //   const fileName =
+  //     language === "es" ? "CV-Jorge-Español2.pdf" : "CV-Jorge-English2.pdf";
+  //   const url = `/cv/${fileName}`;
+  //   const link = document.createElement("a");
+  //   link.href = url;
+  //   link.download = fileName;
+  //   link.click();
+  // };
 
   const handleNavClick = (path: string) => {
     if (location.pathname === path) {
@@ -165,13 +165,13 @@ const Nav = ({ setIsModalOpen, darkMode, setDarkMode }: NavProps) => {
           </button>
 
           {/* Boton para descargar C.V */}
-          <button
+          {/* <button
             onClick={downloadCV}
             className="p-2 rounded hover:bg-white/10 transition hover:cursor-pointer"
             title={t("navbar.download_cv")}
           >
             <Download size={20} />
-          </button>
+          </button> */}
 
           <button onClick={toggleLanguage} className="w-6 h-6">
             <img
