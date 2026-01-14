@@ -18,7 +18,7 @@ export default function Vigenere({ algoId }: Props) {
     const K = normalizeKey(key, alph);
     if (!K) return "";
     let i = 0;
-    return [...normalizeText(text, alph)].map(ch => {
+    return [...normalizeText(text)].map((ch) => {
       if (alph.includes(ch)) {
         const k = K[i % K.length]; i++;
         return k;
@@ -144,18 +144,24 @@ export default function Vigenere({ algoId }: Props) {
 }
 
 /* helpers locales (solo para el preview de la clave) */
-function normalizeText(s: string, alph: string) {
+function normalizeText(s: string) {
   return stripAccentsKeepEnye(s).toUpperCase();
 }
+
 function normalizeKey(k: string, alph: string) {
-  return normalizeText(k, alph).split("").filter(ch => alph.includes(ch)).join("");
+  return normalizeText(k)
+    .split("")
+    .filter((ch) => alph.includes(ch))
+    .join("");
 }
+
 function stripAccentsKeepEnye(s: string) {
-  return s 
+  return s
     .replace(/[áàäâ]/gi, "a")
     .replace(/[éèëê]/gi, "e")
     .replace(/[íìïî]/gi, "i")
     .replace(/[óòöô]/gi, "o")
     .replace(/[úùüû]/gi, "u")
-    .replace(/ç/gi, "c"); // conserva ñ tal cual
+    .replace(/ç/gi, "c"); // ñ se conserva tal cual
 }
+
