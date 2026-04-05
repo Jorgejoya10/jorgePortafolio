@@ -43,7 +43,7 @@ const ProtocolCatalogTable = ({ items }: ProtocolCatalogTableProps) => {
             return (
               <tr
                 key={item.id}
-                className="border-b border-neutral-300 transition-colors hover:bg-neutral-50/70 dark:border-neutral-700 dark:hover:bg-neutral-900/40"
+                className="border-b border-neutral-300 transition-color dark:border-neutral-70"
               >
                 <td className="px-5 py-5 text-sm font-semibold align-middle">
                   {item.isNavigable && item.route ? (
@@ -54,7 +54,7 @@ const ProtocolCatalogTable = ({ items }: ProtocolCatalogTableProps) => {
                       {name}
                     </Link>
                   ) : (
-                    <span className="text-neutral-700 dark:text-neutral-300">
+                    <span className="text-neutral-700 dark:text-neutral-400">
                       {name}
                     </span>
                   )}

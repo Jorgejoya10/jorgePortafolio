@@ -16,7 +16,7 @@ const ProtocolSectionHeader = ({
       </h2>
 
       {description && (
-        <p className="max-w-[1200px] text-sm md:text-base leading-7 text-neutral-800 dark:text-neutral-300">
+        <p className="max-w-[1200px] text-sm md:text-base leading-7">
           {description}
         </p>
       )}

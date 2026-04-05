@@ -21,12 +21,11 @@ export interface ProtocolCatalogGroup {
 export interface ProtocolTimelineItem {
   id: string;
   translationKey: string;
-  year: number;
   publicationDate: string;
   historicalRfc: string;
-  osiLayer: string;
-  shortObjective: string;
   color: string;
-  historicalNote?: string;
+  route?: string;
+  isNavigable?: boolean;
+  year?: string;
 }
 
