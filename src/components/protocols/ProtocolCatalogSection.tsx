@@ -17,7 +17,7 @@ const ProtocolCatalogSection = ({
   items,
 }: ProtocolCatalogSectionProps) => {
   return (
-    <section className="space-y-4">
+    <section className="space-y-5">
       <ProtocolSectionHeader title={title} description={description} />
       <ProtocolCatalogTable items={items} />
     </section>

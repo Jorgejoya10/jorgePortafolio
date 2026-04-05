@@ -389,6 +389,171 @@
       "bytesCode": "A = 65 = 01000001\\n\\nWe take 8 carrier bytes and replace their last bit (LSB)\\nso it matches each bit of the message.\\n\\nMessage bits: 0 1 0 0 0 0 0 1\\nCarrier LSBs: ? ? ? ? ? ? ? ?\\nModified LSBs: 0 1 0 0 0 0 0 1"
     }
   },
+  "protocols": {
+  "home": {
+    "title": "Protocols.",
+    "intro": "This section presents a historical and technical overview of the protocols that underpin the Internet and enable communication between open systems. Rather than emerging in isolation, these protocols were standardized as solutions to concrete problems: physical interconnection, local identification of devices, internetwork routing, reliable transport between processes, application-level data exchange, and, eventually, cryptographic protection of communications. This evolution can be understood through the layered model proposed by ISO 7498-1. From a security perspective, studying protocols is essential. Most real-world attacks do not break mathematical algorithms directly; instead, they exploit weaknesses in protocol design, implementation flaws, insecure defaults, or operational mistakes. Many of the protocols created decades ago to guarantee interoperability and reliability still sustain modern Internet communications today. Understanding their origin, purpose, and evolution is therefore fundamental to understanding both the history of the Internet and the security challenges that persist in contemporary systems."
+  },
+  "tables": {
+    "headers": {
+      "protocol": "Protocol",
+      "title": "Title",
+      "osiLayer": "OSI Layer",
+      "historicalRfc": "Historical RFC",
+      "publicationDate": "Publication date"
+    }
+  },
+  "groups": {
+    "foundation": {
+      "title": "Basic chronology I: foundation of the stack and local infrastructure"
+    },
+    "webSecurityHttps": {
+      "title": "Basic chronology II: Web, channel security, and HTTPS formalization"
+    },
+    "ssh": {
+      "title": "Basic chronology III: SSH family"
+    },
+    "milestones": {
+      "title": "Basic chronology IV: historical milestones of prohibition, archival, and deprecation"
+    }
+  },
+  "timeline": {
+    "title": "Suggested Historical Reading",
+    "subtitle": "The sequence shows how the network evolved from addressing and datagrams to reliable process communication, distributed naming, automated configuration, Web services, and finally secure channels built on cryptographic algorithms."
+  },
+  "items": {
+    "ip": {
+      "name": "IP",
+      "title": "Internet Protocol.",
+      "osiLayer": "Layer 3 Network."
+    },
+    "icmp": {
+      "name": "ICMP",
+      "title": "Internet Control Message Protocol.",
+      "osiLayer": "Layer 3 Network."
+    },
+    "tcp": {
+      "name": "TCP",
+      "title": "Transfer Control Protocol.",
+      "osiLayer": "Layer 4 Transport."
+    },
+    "smtp": {
+      "name": "SMTP",
+      "title": "Simple Mail Transfer Protocol.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "arp": {
+      "name": "ARP",
+      "title": "Address Resolution Protocol.",
+      "osiLayer": "Boundary between Layer 2 and 3."
+    },
+    "telnet": {
+      "name": "TELNET",
+      "title": "Teletype Network.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "ethernet": {
+      "name": "Ethernet / IEEE 802.3",
+      "title": "Ethernet standard and local frame exchange.",
+      "osiLayer": "Layers 1 and 2."
+    },
+    "ftp": {
+      "name": "FTP",
+      "title": "File Transfer Protocol.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "dns": {
+      "name": "DNS",
+      "title": "Domain Name System.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "dhcp": {
+      "name": "DHCP",
+      "title": "Dynamic Host Configuration Protocol.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "http10": {
+      "name": "HTTP/1.0",
+      "title": "Hypertext Transfer Protocol 1.0.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "ssl30": {
+      "name": "SSL 3.0",
+      "title": "Secure Sockets Layer 3.0.",
+      "osiLayer": "Security over TCP."
+    },
+    "tls10": {
+      "name": "TLS 1.0",
+      "title": "Transport Layer Security 1.0.",
+      "osiLayer": "Security over TCP."
+    },
+    "http11": {
+      "name": "HTTP/1.1",
+      "title": "Hypertext Transfer Protocol 1.1.",
+      "osiLayer": "Layer 7 Application."
+    },
+    "httpOverTls": {
+      "name": "HTTP over TLS",
+      "title": "Formalization of HTTPS.",
+      "osiLayer": "HTTP over TLS."
+    },
+    "sshAssignedNumbers": {
+      "name": "SSH Assigned Numbers",
+      "title": "Secure Shell protocol assigned numbers.",
+      "osiLayer": "SSH family."
+    },
+    "sshArchitecture": {
+      "name": "SSH Architecture",
+      "title": "Secure Shell protocol architecture.",
+      "osiLayer": "SSH family."
+    },
+    "sshAuthentication": {
+      "name": "SSH Authentication",
+      "title": "Secure Shell authentication protocol.",
+      "osiLayer": "SSH family."
+    },
+    "sshTransport": {
+      "name": "SSH Transport Layer",
+      "title": "Secure Shell transport layer protocol.",
+      "osiLayer": "SSH family."
+    },
+    "sshConnection": {
+      "name": "SSH Connection",
+      "title": "Secure Shell connection protocol.",
+      "osiLayer": "SSH family."
+    },
+    "sshfpDns": {
+      "name": "SSHFP / DNS for SSH",
+      "title": "Using DNS to securely publish SSH fingerprints.",
+      "osiLayer": "SSH family."
+    },
+    "sshKeyboardInteractive": {
+      "name": "SSH Keyboard-Interactive",
+      "title": "Generic message exchange authentication for SSH.",
+      "osiLayer": "SSH family."
+    },
+    "ssl20Prohibited": {
+      "name": "SSL 2.0 prohibited",
+      "title": "Historical prohibition milestone.",
+      "osiLayer": "—"
+    },
+    "ssl30Historic": {
+      "name": "SSL 3.0 archived as Historic",
+      "title": "Historical archival of SSL 3.0.",
+      "osiLayer": "—"
+    },
+    "ssl30Deprecated": {
+      "name": "SSL 3.0 deprecated",
+      "title": "Historical deprecation milestone.",
+      "osiLayer": "—"
+    },
+    "tls10Tls11Deprecated": {
+      "name": "TLS 1.0 / TLS 1.1 deprecated",
+      "title": "Historical deprecation milestone.",
+      "osiLayer": "—"
+    }
+  }
+},
   "projects": {
     "title": "My Projects."
   },

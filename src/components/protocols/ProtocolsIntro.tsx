@@ -10,7 +10,7 @@ const ProtocolsIntro = ({ title, intro }: ProtocolsIntroProps) => {
     <section className="space-y-4">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight">{title}</h1>
 
-      <p className="max-w-7xl text-sm md:text-base leading-7 text-neutral-800 dark:text-neutral-200">
+      <p className="max-w-7xl text-sm md:text-base leading-7">
         {intro}
       </p>
     </section>

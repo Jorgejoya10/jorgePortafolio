@@ -11,10 +11,12 @@ const ProtocolSectionHeader = ({
 }: ProtocolSectionHeaderProps) => {
   return (
     <div className="space-y-2">
-      <h2 className="text-2xl md:text-3xl font-bold tracking-tight">{title}</h2>
+      <h2 className="text-2xl md:text-[40px] font-bold tracking-tight leading-tight">
+        {title}
+      </h2>
 
       {description && (
-        <p className="text-sm md:text-base leading-7 text-neutral-700 dark:text-neutral-300">
+        <p className="max-w-[1200px] text-sm md:text-base leading-7 text-neutral-800 dark:text-neutral-300">
           {description}
         </p>
       )}
