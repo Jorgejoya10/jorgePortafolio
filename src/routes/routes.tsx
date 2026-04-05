@@ -12,7 +12,7 @@ import ISO27002 from "../components/ISO27000/ISO27002/Page";
 import Cryptology from "../pages/seguridad/Cryptology/Cryptology";
 import Cryptography from "../pages/seguridad/Cryptology/Cryptography";
 import Steganography from "../pages/seguridad/Cryptology/Steganography";
-import Protocols from "../pages/seguridad/Protocols";
+import Protocols from "../pages/seguridad/Protocols/home";
 import Privacy from "../pages/legal/Privacy";
 import Terms from "../pages/legal/Terms";
 import Enterprise from "../pages/Enterprise";

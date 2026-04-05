@@ -62,14 +62,14 @@
       {
         "title": "Computer Engineering – UNAM FES Aragón",
         "description": "Studies at the Faculty of Higher Studies Aragón focused on web development, operating systems, and software architecture.",
-        "date": "August 2021 – Present",
+        "date": "August 2021 – August 2025",
         "logo": "/imagenes/unam.png",
         "link": "https://www.aragon.unam.mx/fes-aragon/?utm_source=LUA&fbclid=IwAR2N_TeV4eeDkQ1KzDAnnLtEQQO9AtIAi2ymk2xSaUu1VT7ACXKjgP_36Ic#!/oferta-academica/licenciaturas/computacion"
       },
       {
         "title": "Oracle Academy",
         "description": "Fundamentals of the JAVA programming language, object oriented programming, and essential data structures.",
-        "date": "August 2023 – October 2023",
+        "date": "August 2023 – November 2023",
         "logo": "/imagenes/oracle.png",
         "link": "https://academy.oracle.com/es/solutions-curriculum-java.html#java1-tab"
       },
@@ -83,14 +83,14 @@
       {
         "title": "Computer Security Lab – FES Aragón",
         "description": "Active participation in LabSec, specializing in cryptography, protocols, standards such as ISO 7498-2, and risk analysis.",
-        "date": "August 2024 – Present",
+        "date": "August 2024 – August 2025",
         "logo": "/imagenes/labo.png",
         "link": "https://siberiano.aragon.unam.mx/labsec/"
       },
       {
         "title": "Taloon.org",
-        "description": "Full Stack Developer leading platform refactorings, secure architecture (SSAM), public API development, and visual components.",
-        "date": "August 2024 – Present",
+        "description": "Full Stack Developer",
+        "date": "August 2024 – December 2025",
         "logo": "/imagenes/taloonDark.png",
         "link": "https://taloon.org/"
       },
@@ -106,6 +106,13 @@
         "date": "August 2025 – In Progress",
         "logo": "/imagenes/seguridad.png",
         "link": "https://siberiano.aragon.unam.mx/labsec/dsi_etcom3/"
+      },
+      {
+        "title": "CSSLP Certification Preparation (ISC)²",
+        "description": "Preparing for the Certified Secure Software Lifecycle Professional (CSSLP) certification: studying the CBK and secure SDLC practices (requirements, design, implementation, testing, deployment, and maintenance).",
+        "date": "January 2026 – In progress",
+        "logo": "/imagenes/ISC2.png",
+        "link": "https://www.isc2.org/certifications/csslp"
       }
     ],
     "visitSite": "Visit Site"
@@ -338,6 +345,48 @@
       "p2": "The strength of cryptography does not rely on hiding the algorithm used for encryption, but on its design and on mathematical problems whose solution is computationally infeasible in practical timeframes. This is how security rests on the real difficulty of breaking the cipher, even when the method is known.",
       "noteLabel": "Note:",
       "note": "To use these algorithms, it is also necessary to agree on and protect a secret (for example, a key). However, that secret is not protected through steganographic techniques, but through other mechanisms that we will explain in depth in this section."
+    }
+  },
+  "steganography": {
+    "title": "Steganography.",
+    "intro": "Steganography is the art of hiding information. To understand the difference between steganography and cryptography, we will use the Alice and Bob model we introduced in ISO 7498-2.",
+    "mLabel": "M = {{message}}",
+    "secretMessage": "I love Bob.",
+    "steps": {
+      "1": "Alice wants to send a <strong>confidential</strong> message to Bob over an insecure channel such as the Internet.",
+      "1Note": "In <link>ISO 27001</link> we discuss why it is important to classify the information we access or share.",
+      "2": "Alice has 3 options:",
+      "a": "Send the message in clear text, hoping no one is observing the channel.",
+      "aResult": "Anyone can read the message in clear text and learn what Alice feels about Bob. Therefore, this method provides no security: it does not protect confidentiality or prevent third parties from accessing the content.",
+      "b": "Alice does not want to fully trust the Internet, so she uses a <strong>steganographic</strong> method to protect her message: hiding it inside another seemingly harmless text.",
+      "bobReceives": "Bob receives this message:",
+      "coverMessage": "I left the notes in Drive. Let me know if you join the daily early. On the report, I'm missing two numbers. Version of the deck is already in the folder. Expect to close the ticket today if the client replies. Backlog can be reordered if you want. Once you're free, review the change. Bring any comments when you can.",
+      "hint": "At first glance, Bob notices nothing unusual: it looks like a normal work email. However, along with the message he receives an envelope with a note revealing the reading key: “Read the uppercase letters in the email I sent you. Sincerely: Alice.”",
+      "extractionTitle": "Extraction",
+      "extraction": "Secret = Read the uppercase letters. M = {{message}}",
+      "obscurity": "It may seem that Alice successfully hid her message and that only Bob will understand it. However, this is an example of <strong>security by obscurity</strong>: the “protection” depends entirely on the method remaining secret. If someone discovers the rule, the message is exposed.",
+      "modern": "In the modern world, using steganography as the <strong>only</strong> mechanism to protect confidential information is not realistic. That is why, especially during World War II, an alternative based on mathematics gained momentum: modern cryptography, designed to protect information even if an adversary intercepts the message and knows the method, but not the key.",
+      "cryptoOutro": "In the <strong>Cryptography</strong> section we will see the correct way to protect information so that understanding the message is computationally infeasible, even if a third party intercepts it. In this example, if Alice wants to express her feelings to Bob safely, she should rely on cryptography rather than hiding alone.",
+      "cryptoLink": "Go to the Cryptography section"
+    },
+    "extra": {
+      "historyTitle": "Historical context",
+      "historyItems": [
+        "Ancient Greece: wax tablets and messages hidden on the messenger.",
+        "Renaissance: Cardano grille techniques to reveal text only with a template.",
+        "20th century: invisible ink and microdots to hide information in correspondence."
+      ],
+      "methodsTitle": "Common methods (analog and digital)",
+      "methodsItems": [
+        "Text: acrostics, whitespace, invisible Unicode characters.",
+        "Images: LSB in pixels (BMP/PNG) or frequency-domain techniques (JPEG/DCT).",
+        "Audio: LSB on samples, phase coding, spread spectrum.",
+        "Network: covert channels (DNS tunneling, timing channels)."
+      ],
+      "bytesTitle": "Modern example (bits/bytes)",
+      "bytesIntro": "A classic technique is to modify the least significant bit (LSB) of carrier bytes to encode a message with minimal perceptible change.",
+      "bytesCodeTitle": "Example (LSB)",
+      "bytesCode": "A = 65 = 01000001\\n\\nWe take 8 carrier bytes and replace their last bit (LSB)\\nso it matches each bit of the message.\\n\\nMessage bits: 0 1 0 0 0 0 0 1\\nCarrier LSBs: ? ? ? ? ? ? ? ?\\nModified LSBs: 0 1 0 0 0 0 0 1"
     }
   },
   "projects": {

@@ -62,35 +62,35 @@
       {
         "title": "Ingeniería en Computación – UNAM FES Aragón.",
         "description": "Estudios en la Facultad de Estudios Superiores Aragón con enfoque en desarrollo web, sistemas operativos y arquitectura de software.",
-        "date": "Agosto 2021 – Presente",
+        "date": "Agosto 2021 – Agosto 2025",
         "logo": "/imagenes/unam.png",
         "link": "https://www.aragon.unam.mx/fes-aragon/?utm_source=LUA&fbclid=IwAR2N_TeV4eeDkQ1KzDAnnLtEQQO9AtIAi2ymk2xSaUu1VT7ACXKjgP_36Ic#!/oferta-academica/licenciaturas/computacion"
       },
       {
         "title": "Oracle Academy",
         "description": "Fundamentos del lenguaje JAVA, programación orientada a objetos y estructuras de datos esenciales.",
-        "date": "Agosto 2023 – Octubre 2023",
+        "date": "Agosto 2023 – Noviembre 2023",
         "logo": "/imagenes/oracle.png",
         "link": "https://academy.oracle.com/es/solutions-curriculum-java.html#java1-tab"
       },
       {
         "title": "Cisco Academy",
         "description": "Curso 'Network Security Fundamentals', con énfasis en modelos OSI, protocolos de red y análisis de tráfico.",
-        "date": "Enero 2024 – Mar 2024",
+        "date": "Enero 2024 – Marzo 2024",
         "logo": "/imagenes/cisco.png",
         "link": "https://www.netacad.com/courses/network-security?courseLang=en-US"
       },
       {
         "title": "Laboratorio de Seguridad Informática – FES Aragón.",
         "description": "Participación activa en el LabSec, especializándome en criptografía, protocolos, estándares como ISO 7498-2 y análisis de riesgos.",
-        "date": "Agosto 2024 – Presente",
+        "date": "Agosto 2024 – Agosto 2025",
         "logo": "/imagenes/labo.png",
         "link": "https://siberiano.aragon.unam.mx/labsec/"
       },
       {
         "title": "Taloon.org",
-        "description": "Desarrollador Full Stack liderando refactorización de plataformas, arquitectura segura (SSAM), desarrollo de API pública y componentes visuales.",
-        "date": "Agosto 2024 – Presente",
+        "description": "Desarrollador Full Stack.",
+        "date": "Agosto 2024 – Diciembre 2025",
         "logo": "/imagenes/taloonDark.png",
         "link": "https://taloon.org/"
       },
@@ -103,9 +103,16 @@
       {
         "title": "Diplomado seguridad de la información – ET COMUNICACIONES & UNAM",
         "description": "Diplomado de 25 módulos donde se abordan aspectos técnicos, legales y arquitectónicos en ciberseguridad.",
-        "date": "Ago 2025 – En proceso",
+        "date": "Agosto 2025 – En proceso",
         "logo": "/imagenes/seguridad.png",
         "link": "https://siberiano.aragon.unam.mx/labsec/dsi_etcom3/"
+      },
+      {
+        "title": "Preparación para la certificación CSSLP (ISC)²",
+        "description": "Preparación para la certificación Certified Secure Software Lifecycle Professional (CSSLP): estudio del CBK y prácticas de SDLC seguro (requisitos, diseño, implementación, pruebas, despliegue y mantenimiento).",
+        "date": "Enero 2026 – En proceso",
+        "logo": "/imagenes/ISC2.png",
+        "link": "https://www.isc2.org/certifications/csslp"
       }
     ],
     "visitSite": "Visitar sitio"
@@ -338,6 +345,48 @@
       "p2": "La fortaleza de la criptografía no reside en ocultar el algoritmo con el que se cifra, sino en su diseño y en el uso de problemas matemáticos cuya resolución es computacionalmente inviable en tiempos prácticos. De este modo, la seguridad se sostiene en la dificultad real de romper el cifrado, incluso cuando el método es conocido.",
       "noteLabel": "Nota:",
       "note": "Para utilizar estos algoritmos también es necesario acordar y resguardar un secreto (por ejemplo, una llave). Sin embargo, dicho secreto no se protege mediante técnicas esteganográficas, sino mediante otros mecanismos que explicaremos a fondo en esta sección."
+    }
+  },
+  "steganography": {
+    "title": "Esteganografía.",
+    "intro": "La esteganografía es el arte de ocultar información. Para entender la diferencia entre la esteganografía y la criptografía utilizaremos el modelo de Alice y Bob que propusimos en la ISO 7498-2.",
+    "mLabel": "M = {{message}}",
+    "secretMessage": "Te amo Bob.",
+    "steps": {
+      "1": "Alice quiere enviarle un mensaje <strong>confidencial</strong> a Bob mediante un canal inseguro como lo es Internet.",
+      "1Note": "En la <link>ISO 27001</link> hablamos de la importancia de clasificar la información a la que tenemos acceso o que queremos compartir.",
+      "2": "Alice tiene 3 opciones:",
+      "a": "Enviar el mensaje en texto claro con la esperanza de que no haya nadie observando el canal.",
+      "aResult": "Cualquier curioso puede leer el mensaje en claro y enterarse de lo que Alice siente por Bob. Por lo tanto, este método no ofrece seguridad: no protege la confidencialidad ni evita que terceros accedan al contenido.",
+      "b": "Alice no quiere confiar plenamente en Internet, así que decide usar un método <strong>esteganográfico</strong> para proteger su mensaje: ocultarlo dentro de otro texto aparentemente inocente.",
+      "bobReceives": "Bob recibe este mensaje:",
+      "coverMessage": "Te dejé el resumen en el drive. En la tarde reviso el release. Avísame si llegas antes al daily. Me faltan dos datos del reporte. Ojalá el cliente responda hoy y cerremos el ticket. Busqué la versión final de la presentación. Ordeno el backlog si quieres. Bájale un comentario al cambio cuando puedas.",
+      "hint": "A primera vista, Bob no nota nada fuera de lo normal: parece un correo más de trabajo. Sin embargo, junto con el mensaje recibe un sobre con una nota que revela la clave de lectura: “Lee las letras mayúsculas del correo que te envié. Atte.: Alice.”",
+      "extractionTitle": "Extracción",
+      "extraction": "Secreto = Lee las letras mayúsculas. M = {{message}}",
+      "obscurity": "Puede parecer que Alice logró ocultar su mensaje y que nadie, salvo Bob, se enterará de lo que siente. Sin embargo, esto es un ejemplo de <strong>seguridad por oscuridad</strong>: la “protección” depende únicamente de que el método permanezca en secreto. Si alguien descubre la regla, el mensaje queda expuesto.",
+      "modern": "En el mundo moderno, usar esteganografía como <strong>único</strong> mecanismo para proteger información confidencial no es una opción realista. Por eso, especialmente durante la Segunda Guerra Mundial, se impulsó con fuerza una alternativa basada en matemáticas: la criptografía moderna, diseñada para proteger información incluso si el adversario intercepta el mensaje y conoce el método, pero no la clave.",
+      "cryptoOutro": "En la sección de <strong>Criptografía</strong> veremos la forma correcta de proteger la información para que sea computacionalmente inviable comprender el mensaje, incluso si un tercero lo intercepta. En este caso, si Alice quiere expresar sus sentimientos a Bob de manera segura, debe recurrir a la criptografía en lugar de depender únicamente del ocultamiento.",
+      "cryptoLink": "Ir a la sección de Criptografía"
+    },
+    "extra": {
+      "historyTitle": "Contexto histórico",
+      "historyItems": [
+        "Grecia antigua: tablillas enceradas y mensajes ocultos en el cuerpo del mensajero.",
+        "Renacimiento: rejilla de Cardano para escribir texto legible solo con una plantilla.",
+        "Siglo XX: tinta invisible y microdots para ocultar información en correspondencia."
+      ],
+      "methodsTitle": "Métodos comunes (analógicos y digitales)",
+      "methodsItems": [
+        "Texto: acrósticos, espacios, caracteres Unicode invisibles.",
+        "Imágenes: LSB en píxeles (BMP/PNG) o técnicas en dominio de frecuencia (JPEG/DCT).",
+        "Audio: LSB en muestras, codificación por fase, spread spectrum.",
+        "Red: canales encubiertos (DNS tunneling, timing channels)."
+      ],
+      "bytesTitle": "Ejemplo moderno (bits/bytes)",
+      "bytesIntro": "Una técnica clásica es modificar el bit menos significativo (LSB) de bytes del portador para codificar el mensaje sin cambios perceptibles.",
+      "bytesCodeTitle": "Ejemplo (LSB)",
+      "bytesCode": "A = 65 = 01000001\\n\\nTomamos 8 bytes del portador y reemplazamos su último bit (LSB)\\npara que coincida con cada bit del mensaje.\\n\\nBits del mensaje: 0 1 0 0 0 0 0 1\\nLSB del portador: ? ? ? ? ? ? ? ?\\nLSB modificado:   0 1 0 0 0 0 0 1"
     }
   },
   "projects": {
