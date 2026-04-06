@@ -13,7 +13,7 @@ const ProtocolCatalogTable = ({ items }: ProtocolCatalogTableProps) => {
 
   return (
     <div className="overflow-x-auto">
-      <table className="w-full min-w-[980px] border-collapse">
+      <table className="w-5xl max-w-5xl border-collapse">
         <thead>
           <tr className="border-b border-neutral-300 dark:border-neutral-700">
             <th className="px-5 py-4 text-left text-sm font-bold">

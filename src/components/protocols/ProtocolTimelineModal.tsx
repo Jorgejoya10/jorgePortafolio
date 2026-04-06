@@ -47,7 +47,7 @@ const ProtocolTimelineModal = ({
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-2xl overflow-hidden rounded-3xl border "
+        className="relative w-full max-w-2xl overflow-hidden rounded-3xl border border-neutral-300 bg-white shadow-2xl dark:border-neutral-800 dark:bg-neutral-950"
         onClick={(event) => event.stopPropagation()}
       >
         <div
@@ -59,11 +59,15 @@ const ProtocolTimelineModal = ({
         <div className="p-6 md:p-8">
           <div className="mb-6 flex items-start justify-between gap-4">
             <div className="space-y-2">
-              <p className="text-sm font-semibold tracking-wide">
+              <p className="text-sm font-semibold tracking-wide text-neutral-500 dark:text-neutral-400">
                 {item.publicationDate}
               </p>
-              <h3 className="text-3xl font-bold tracking-tight">{name}</h3>
-              <p className="text-base">
+
+              <h3 className="text-3xl font-bold tracking-tight text-neutral-950 dark:text-neutral-50">
+                {name}
+              </h3>
+
+              <p className="text-base text-neutral-700 dark:text-neutral-300">
                 {title}
               </p>
             </div>
@@ -71,45 +75,53 @@ const ProtocolTimelineModal = ({
             <button
               type="button"
               onClick={onClose}
-              className="rounded-full border  px-3 py-1.5 text-sm font-medium  transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-900"
+              aria-label={t("protocols.timeline.modal.closeLabel")}
+              className="rounded-full border border-neutral-300 px-3 py-1.5 text-sm font-medium text-neutral-700 transition hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-200 dark:hover:bg-neutral-900"
             >
               ×
             </button>
           </div>
 
           <div className="mb-6 grid gap-3 md:grid-cols-3">
-            <div className="rounded-2xl border border-neutral-200 p-4 dark:border-neutral-800">
+            <div className="rounded-2xl border border-neutral-300 p-4 dark:border-neutral-800">
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                RFC
+                {t("protocols.timeline.modal.rfcLabel")}
               </p>
-              <p className="mt-1 text-sm font-medium">{item.historicalRfc}</p>
+              <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-100">
+                {item.historicalRfc}
+              </p>
             </div>
 
-            <div className="rounded-2xl border border-neutral-200 p-4 dark:border-neutral-800">
+            <div className="rounded-2xl border border-neutral-300 p-4 dark:border-neutral-800">
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                OSI
+                {t("protocols.timeline.modal.osiLabel")}
               </p>
-              <p className="mt-1 text-sm font-medium">{osiLayer}</p>
+              <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-100">
+                {osiLayer}
+              </p>
             </div>
 
-            <div className="rounded-2xl border border-neutral-200 p-4 dark:border-neutral-800">
+            <div className="rounded-2xl border border-neutral-300 p-4 dark:border-neutral-800">
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                Date
+                {t("protocols.timeline.modal.dateLabel")}
               </p>
-              <p className="mt-1 text-sm font-medium">{item.publicationDate}</p>
+              <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-100">
+                {item.publicationDate}
+              </p>
             </div>
           </div>
 
           <div className="space-y-3">
-            <h4 className="text-lg font-semibold">
+            <h4 className="text-lg font-semibold text-neutral-950 dark:text-neutral-50">
               {t("protocols.timeline.modal.objectiveTitle")}
             </h4>
+
             <p className="text-sm leading-7 text-neutral-700 dark:text-neutral-300">
               {shortObjective}
             </p>
 
             {historicalNote && (
-              <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
+              <div className="rounded-2xl border border-neutral-300 bg-neutral-50 p-4 dark:border-neutral-800 dark:bg-neutral-900/40">
                 <p className="text-sm leading-7 text-neutral-700 dark:text-neutral-300">
                   {historicalNote}
                 </p>

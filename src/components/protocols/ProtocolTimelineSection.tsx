@@ -35,7 +35,7 @@ const ProtocolTimelineSection = ({
     <section className="space-y-6">
       <ProtocolSectionHeader title={title} description={subtitle} />
 
-      <div className="rounded-3xl border p-6">
+      <div className="rounded-3xl p-2">
         <ProtocolTimeline
           items={items}
           activeItemId={selectedItem?.id ?? null}
