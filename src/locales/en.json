@@ -389,215 +389,215 @@
       "bytesCode": "A = 65 = 01000001\\n\\nWe take 8 carrier bytes and replace their last bit (LSB)\\nso it matches each bit of the message.\\n\\nMessage bits: 0 1 0 0 0 0 0 1\\nCarrier LSBs: ? ? ? ? ? ? ? ?\\nModified LSBs: 0 1 0 0 0 0 0 1"
     }
   },
-  "protocols": {
+"protocols": {
   "home": {
-    "title": "Protocolos.",
-    "intro": "Esta sección presenta una visión histórica y técnica de los protocolos que sostienen Internet y permiten la comunicación entre sistemas abiertos. Lejos de surgir de forma aislada, estos protocolos fueron estandarizados como respuesta a problemas concretos: la interconexión física, la identificación local de dispositivos, el encaminamiento entre redes, el transporte fiable entre procesos, el intercambio de información a nivel de aplicación y, finalmente, la protección criptográfica de las comunicaciones. Esta evolución puede entenderse a través del modelo en capas propuesto por ISO 7498-1. Desde la perspectiva de la seguridad, estudiar los protocolos es indispensable. La mayoría de los ataques reales no rompen directamente los algoritmos matemáticos, sino que explotan debilidades en el diseño de los protocolos, errores de implementación, configuraciones inseguras o fallas operativas. Muchos de los protocolos creados hace décadas para garantizar interoperabilidad y fiabilidad siguen sosteniendo la comunicación actual sobre Internet. Comprender su origen, propósito y evolución es, por tanto, fundamental para entender tanto la historia de Internet como los retos de seguridad que persisten en los sistemas contemporáneos."
+    "title": "Protocols.",
+    "intro": "This section presents a historical and technical overview of the protocols that underpin the Internet and enable communication between open systems. Rather than emerging in isolation, these protocols were standardized as solutions to concrete problems: physical interconnection, local identification of devices, internetwork routing, reliable transport between processes, application-level data exchange, and, eventually, cryptographic protection of communications. This evolution can be understood through the layered model proposed by ISO 7498-1. From a security perspective, studying protocols is essential. Most real-world attacks do not break mathematical algorithms directly; instead, they exploit weaknesses in protocol design, implementation flaws, insecure defaults, or operational mistakes. Many of the protocols created decades ago to guarantee interoperability and reliability still sustain modern Internet communications today. Understanding their origin, purpose, and evolution is therefore fundamental to understanding both the history of the Internet and the security challenges that persist in contemporary systems."
   },
   "tables": {
     "headers": {
-      "protocol": "Protocolo",
-      "title": "Título",
-      "osiLayer": "Capa OSI",
-      "historicalRfc": "RFC Histórico",
-      "publicationDate": "Fecha de publicación"
+      "protocol": "Protocol",
+      "title": "Title",
+      "osiLayer": "OSI Layer",
+      "historicalRfc": "Historical RFC",
+      "publicationDate": "Publication date"
     }
   },
   "groups": {
     "foundation": {
-      "title": "Cronología básica I: fundación de la pila y de la infraestructura local"
+      "title": "Basic chronology I: foundation of the stack and local infrastructure"
     },
     "webSecurityHttps": {
-      "title": "Cronología básica II: Web, seguridad del canal y formalización de HTTPS"
+      "title": "Basic chronology II: Web, channel security, and HTTPS formalization"
     },
     "ssh": {
-      "title": "Cronología básica III: familia SSH"
+      "title": "Basic chronology III: SSH family"
     },
     "milestones": {
-      "title": "Cronología básica IV: hitos históricos de prohibición, archivo y deprecación"
+      "title": "Basic chronology IV: historical milestones of prohibition, archival, and deprecation"
     }
   },
   "timeline": {
-    "title": "Lectura Histórica Sugerida",
-    "subtitle": "La secuencia muestra cómo la red pasó de resolver direccionamiento y datagramas, a ofrecer confiabilidad entre procesos, nombres distribuidos, automatización de configuración, servicios Web y finalmente canales seguros usando algoritmos criptográficos.",
+    "title": "Suggested Historical Reading",
+    "subtitle": "The sequence shows how the network evolved from addressing and datagrams to reliable process communication, distributed naming, automated configuration, Web services, and finally secure channels built on cryptographic algorithms.",
     "modal": {
-      "objectiveTitle": "Objetivo breve",
-      "viewSpec": "Ver especificación técnica",
+      "objectiveTitle": "Short objective",
+      "viewSpec": "View technical specification",
       "rfcLabel": "RFC",
       "osiLabel": "OSI",
-      "dateLabel": "Fecha",
-      "closeLabel": "Cerrar"
+      "dateLabel": "Date",
+      "closeLabel": "Close"
     }
   },
   "items": {
     "ip": {
       "name": "IP",
       "title": "Internet Protocol.",
-      "osiLayer": "3 Capa de red.",
-      "shortObjective": "Direccionamiento lógico y entrega best-effort de datagramas entre redes interconectadas."
+      "osiLayer": "Layer 3 Network.",
+      "shortObjective": "Logical addressing and best-effort delivery of datagrams across interconnected networks."
     },
     "icmp": {
       "name": "ICMP",
       "title": "Internet Control Message Protocol.",
-      "osiLayer": "3 Capa de red.",
-      "shortObjective": "Mensajería de control y diagnóstico para el funcionamiento del servicio IP."
+      "osiLayer": "Layer 3 Network.",
+      "shortObjective": "Control and diagnostic messaging for the operation of the IP service."
     },
     "tcp": {
       "name": "TCP",
       "title": "Transfer Control Protocol.",
-      "osiLayer": "4 Capa de transporte.",
-      "shortObjective": "Comunicación fiable entre procesos mediante secuenciación, retransmisión y control de flujo."
+      "osiLayer": "Layer 4 Transport.",
+      "shortObjective": "Reliable process-to-process communication through sequencing, retransmission, and flow control."
     },
     "smtp": {
       "name": "SMTP",
       "title": "Simple Mail Transfer Protocol.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Transferencia eficiente y fiable de correo entre procesos emisores y receptores."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "Efficient and reliable transfer of mail between sending and receiving processes."
     },
     "arp": {
       "name": "ARP",
       "title": "Address Resolution Protocol.",
-      "osiLayer": "Frontera entre capa 2 y 3.",
-      "shortObjective": "Resolución entre direcciones de protocolo y direcciones locales en redes Ethernet."
+      "osiLayer": "Boundary between Layer 2 and 3.",
+      "shortObjective": "Resolution between protocol addresses and local addresses in Ethernet networks."
     },
     "telnet": {
       "name": "TELNET",
       "title": "Teletype Network.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Acceso remoto interactivo mediante una terminal virtual de red interoperable."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "Interactive remote access through an interoperable network virtual terminal."
     },
     "ethernet": {
       "name": "Ethernet / IEEE 802.3",
       "title": "Ethernet standard and local frame exchange.",
-      "osiLayer": "Capas 1 y 2.",
-      "shortObjective": "Estandarización del intercambio local de tramas y del acceso al medio en redes Ethernet, proporcionando una base común para la comunicación en redes locales.",
-      "historicalNote": "En la cronología se utiliza como hito la primera edición publicada del estándar IEEE Std 802.3-1985."
+      "osiLayer": "Layers 1 and 2.",
+      "shortObjective": "Standardization of local frame exchange and medium access in Ethernet networks, providing a common base for communication in local environments.",
+      "historicalNote": "In the chronology, the milestone used is the first published edition of IEEE Std 802.3-1985."
     },
     "ftp": {
       "name": "FTP",
       "title": "File Transfer Protocol.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Intercambio de archivos mediante una conexión de control y una conexión separada de datos."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "File exchange through a control connection and a separate data connection."
     },
     "dns": {
       "name": "DNS",
       "title": "Domain Name System.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Sistema distribuido de nombres para localizar recursos sin depender de direcciones numéricas embebidas."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "Distributed naming system for locating resources without relying on embedded numeric addresses."
     },
     "dhcp": {
       "name": "DHCP",
       "title": "Dynamic Host Configuration Protocol.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Asignación y entrega automática de parámetros de configuración para incorporar hosts a la red."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "Automatic assignment and delivery of configuration parameters to bring hosts into the network."
     },
     "http10": {
       "name": "HTTP/1.0",
       "title": "Hypertext Transfer Protocol 1.0.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Modelo request/response para recuperar y representar recursos identificados por URI.",
-      "historicalNote": "HTTP/1.0 representa la primera formalización extendida del modelo request/response para recursos identificados por URI, antecediendo a las mejoras operativas introducidas por HTTP/1.1."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "A request/response model to retrieve and represent resources identified by URI.",
+      "historicalNote": "HTTP/1.0 represents the first broadly formalized request/response model for URI-identified resources, preceding the operational refinements introduced by HTTP/1.1."
     },
     "ssl30": {
       "name": "SSL 3.0",
       "title": "Secure Sockets Layer 3.0.",
-      "osiLayer": "Seguridad sobre TCP.",
-      "shortObjective": "Antecedente histórico de la seguridad del canal para confidencialidad, integridad y autenticación entre aplicaciones.",
-      "historicalNote": "Históricamente, SSL 3.0 antecede a TLS 1.0. Sin embargo, su texto fue publicado por la IETF de manera posterior como RFC 6101 en 2011, únicamente como documento histórico."
+      "osiLayer": "Security over TCP.",
+      "shortObjective": "Historical predecessor of channel security for confidentiality, integrity, and authentication between applications.",
+      "historicalNote": "Historically, SSL 3.0 predates TLS 1.0. However, its text was later published by the IETF as RFC 6101 in 2011 only as a historical document."
     },
     "tls10": {
       "name": "TLS 1.0",
       "title": "Transport Layer Security 1.0.",
-      "osiLayer": "Seguridad sobre TCP.",
-      "shortObjective": "Estandarización IETF de un canal seguro sobre TCP para proteger aplicaciones cliente-servidor.",
-      "historicalNote": "TLS 1.0 fue el primer estándar IETF formal derivado de SSL 3.0 para proteger aplicaciones cliente-servidor sobre TCP."
+      "osiLayer": "Security over TCP.",
+      "shortObjective": "IETF standardization of a secure channel over TCP to protect client-server applications.",
+      "historicalNote": "TLS 1.0 was the first formal IETF standard derived from SSL 3.0 for protecting client-server applications over TCP."
     },
     "http11": {
       "name": "HTTP/1.1",
       "title": "Hypertext Transfer Protocol 1.1.",
-      "osiLayer": "7 Capa de aplicación.",
-      "shortObjective": "Refinamiento del modelo HTTP con mejoras para interoperabilidad, persistencia y operación en la Web."
+      "osiLayer": "Layer 7 Application.",
+      "shortObjective": "Refinement of the HTTP model with improvements for interoperability, persistence, and Web operation."
     },
     "httpOverTls": {
       "name": "HTTP over TLS",
-      "title": "Formalización de HTTPS.",
-      "osiLayer": "HTTP sobre TLS.",
-      "shortObjective": "Formalización del uso de HTTP sobre TLS para proteger tráfico Web con el esquema https.",
-      "historicalNote": "HTTP over TLS formaliza el uso de HTTP sobre un canal TLS, consolidando el esquema https y el puerto 443 como base del tráfico Web seguro."
+      "title": "Formalization of HTTPS.",
+      "osiLayer": "HTTP over TLS.",
+      "shortObjective": "Formalization of the use of HTTP over TLS to protect Web traffic through the https scheme.",
+      "historicalNote": "HTTP over TLS formalizes the use of HTTP over a TLS-protected channel, consolidating the https scheme and port 443 as the basis of secure Web traffic."
     },
     "sshAssignedNumbers": {
       "name": "SSH Assigned Numbers",
       "title": "Secure Shell protocol assigned numbers.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Definir los espacios de nombres y valores asignados necesarios para mantener interoperabilidad en la familia SSH.",
-      "historicalNote": "Este documento no introduce un nuevo servicio operativo, sino que normaliza identificadores y valores usados por el ecosistema SSH."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Define the assigned namespaces and values required to preserve interoperability across the SSH family.",
+      "historicalNote": "This document does not introduce a new operational service; instead, it standardizes identifiers and values used across the SSH ecosystem."
     },
     "sshArchitecture": {
       "name": "SSH Architecture",
       "title": "Secure Shell protocol architecture.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Arquitectura modular para login remoto seguro y otros servicios protegidos sobre redes inseguras."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Modular architecture for secure remote login and other protected services over insecure networks."
     },
     "sshAuthentication": {
       "name": "SSH Authentication",
       "title": "Secure Shell authentication protocol.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Autenticación segura de usuario sobre un canal SSH ya protegido."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Secure user authentication over an already protected SSH channel."
     },
     "sshTransport": {
       "name": "SSH Transport Layer",
       "title": "Secure Shell transport layer protocol.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Cifrado, integridad, negociación de algoritmos y autenticación del host para establecer el túnel SSH."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Encryption, integrity, algorithm negotiation, and host authentication for establishing the SSH tunnel."
     },
     "sshConnection": {
       "name": "SSH Connection",
       "title": "Secure Shell connection protocol.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Multiplexar canales lógicos sobre un túnel SSH seguro para sesiones interactivas, ejecución remota y reenvío de conexiones.",
-      "historicalNote": "El protocolo de conexión convierte el canal criptográficamente protegido de SSH en una plataforma operativa para múltiples servicios."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Multiplex logical channels over a secure SSH tunnel for interactive sessions, remote execution, and connection forwarding.",
+      "historicalNote": "The connection protocol turns the cryptographically protected SSH channel into an operational platform for multiple services."
     },
     "sshfpDns": {
       "name": "SSHFP / DNS for SSH",
       "title": "Using DNS to securely publish SSH fingerprints.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Publicar fingerprints de claves públicas SSH en DNS para fortalecer la validación de la identidad del host remoto.",
-      "historicalNote": "Su objetivo es reducir la aceptación ciega de claves de host y mejorar el arranque de confianza cuando existe soporte de DNSSEC."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Publish SSH public key fingerprints in DNS to strengthen validation of the remote host identity.",
+      "historicalNote": "Its purpose is to reduce blind host-key acceptance and improve trust bootstrapping when DNSSEC support is available."
     },
     "sshKeyboardInteractive": {
       "name": "SSH Keyboard-Interactive",
       "title": "Generic message exchange authentication for SSH.",
-      "osiLayer": "Familia SSH.",
-      "shortObjective": "Permitir autenticación interactiva genérica en SSH sin acoplar al cliente a un mecanismo específico de backend.",
-      "historicalNote": "Este método facilita integrar esquemas challenge-response y mecanismos de autenticación interactiva sin requerir lógica particular del lado cliente."
+      "osiLayer": "SSH family.",
+      "shortObjective": "Provide generic interactive authentication in SSH without coupling the client to a specific backend mechanism.",
+      "historicalNote": "This method enables challenge-response and other interactive schemes without requiring client-side knowledge of the underlying authentication system."
     },
     "ssl20Prohibited": {
       "name": "SSL 2.0 prohibited",
-      "title": "Hito histórico de prohibición.",
+      "title": "Historical prohibition milestone.",
       "osiLayer": "—",
-      "shortObjective": "Hito regulatorio que prohíbe el uso de SSL 2.0 por deficiencias de seguridad.",
-      "historicalNote": "RFC 6176 prohíbe el uso de SSL 2.0 debido a deficiencias de seguridad incompatibles con los requisitos modernos de protección del canal."
+      "shortObjective": "Regulatory milestone that forbids the use of SSL 2.0 due to security deficiencies.",
+      "historicalNote": "RFC 6176 prohibits the use of SSL 2.0 due to security deficiencies incompatible with modern protected-channel requirements."
     },
     "ssl30Historic": {
       "name": "SSL 3.0 archived as Historic",
-      "title": "Archivo histórico de SSL 3.0.",
+      "title": "Historical archival of SSL 3.0.",
       "osiLayer": "—",
-      "shortObjective": "Publicación histórica posterior de SSL 3.0 como referencia archivada y no como nacimiento del protocolo.",
-      "historicalNote": "RFC 6101 no marca el nacimiento de SSL 3.0; solo archiva su especificación como referencia histórica estable dentro del corpus de la IETF."
+      "shortObjective": "Later historical publication of SSL 3.0 as an archived reference rather than the birth of the protocol.",
+      "historicalNote": "RFC 6101 does not mark the birth of SSL 3.0; it only archives its specification as a stable historical reference within the IETF corpus."
     },
     "ssl30Deprecated": {
       "name": "SSL 3.0 deprecated",
-      "title": "Hito histórico de deprecación.",
+      "title": "Historical deprecation milestone.",
       "osiLayer": "—",
-      "shortObjective": "Hito regulatorio que declara insuficientemente seguro el uso de SSL 3.0.",
-      "historicalNote": "RFC 7568 declara que SSL 3.0 ya no ofrece seguridad suficiente y prohíbe su uso en implementaciones modernas."
+      "shortObjective": "Regulatory milestone declaring SSL 3.0 insufficiently secure for modern use.",
+      "historicalNote": "RFC 7568 states that SSL 3.0 no longer provides sufficient security and forbids its use in modern implementations."
     },
     "tls10Tls11Deprecated": {
       "name": "TLS 1.0 / TLS 1.1 deprecated",
-      "title": "Hito histórico de deprecación.",
+      "title": "Historical deprecation milestone.",
       "osiLayer": "—",
-      "shortObjective": "Hito regulatorio que mueve TLS 1.0 y TLS 1.1 a estado histórico.",
-      "historicalNote": "RFC 8996 mueve TLS 1.0 y TLS 1.1 a estado histórico, recomendando el uso de TLS 1.2 y versiones posteriores."
+      "shortObjective": "Regulatory milestone that moves TLS 1.0 and TLS 1.1 to Historic status.",
+      "historicalNote": "RFC 8996 moves TLS 1.0 and TLS 1.1 to Historic status and recommends the use of TLS 1.2 and later versions."
     }
   }
 },
